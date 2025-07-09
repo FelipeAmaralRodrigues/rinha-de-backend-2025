@@ -1,0 +1,6 @@
+@MandiocaCozidinha.Services.Api_HostAddress = http://localhost:5244
+
+GET {{MandiocaCozidinha.Services.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
