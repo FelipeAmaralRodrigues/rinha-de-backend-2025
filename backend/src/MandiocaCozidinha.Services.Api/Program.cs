@@ -1,34 +1,55 @@
-var builder = WebApplication.CreateBuilder(args);
+using MandiocaCozidinha.Services.Api.Configurations;
 
-// Add services to the container.
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddOpenConfig();
 
 var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-
+app.UseOpenApiWithScalarConfig();
 app.UseHttpsRedirection();
 
-var summaries = new[]
+app.MapPost("/payments", (PaymentRequest request) =>
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+    return Results.Created($"/payments/{request.CorrelationId}", request);
+});
 
-app.MapGet("/weatherforecast", () =>
+app.MapGet("/payments-summary", ([AsParameters]PaymentSummaryRequest request) =>
 {
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
+    return Results.Ok(new PaymentSummaryResponse
+    {
+        Default = new PaymentSummaryTypeProcessorResponse
+        {
+            TotalRequests = 43236,
+            TotalAmount = 415542345.98M
+        },
+        Fallback = new PaymentSummaryTypeProcessorResponse
+        {
+            TotalRequests = 423545,
+            TotalAmount = 329347.34M
+        },
+    });
 });
 
 app.Run();
 
-internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+internal record PaymentRequest
 {
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    public Guid CorrelationId { get; set; }
+    public decimal Amount { get; set; }
+}
+
+internal record PaymentSummaryRequest
+{
+    public DateTime From { get; set; }
+    public DateTime To { get; set; }
+}
+internal record PaymentSummaryResponse
+{
+    public PaymentSummaryTypeProcessorResponse Default { get; set; }
+    public PaymentSummaryTypeProcessorResponse Fallback { get; set; }
+}
+
+internal record PaymentSummaryTypeProcessorResponse
+{
+    public int TotalRequests { get; set; }
+    public decimal TotalAmount { get; set; }
 }
