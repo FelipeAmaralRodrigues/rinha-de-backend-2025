@@ -1,14 +1,23 @@
 using MandiocaCozidinha.Services.Api.Configurations;
+using MandiocaCozidinha.CrossCutting.PaymentProcessor.Services;
+using MandiocaCozidinha.CrossCutting.PaymentProcessor.DTOs;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenConfig();
+builder.Services.AddProcessorPaymentServices(builder.Configuration);
 
 var app = builder.Build();
 app.UseOpenApiWithScalarConfig();
 app.UseHttpsRedirection();
 
-app.MapPost("/payments", (PaymentRequest request) =>
+app.MapPost("/payments", async (PaymentRequest request, IPaymentProcessorService processorPaymentService) =>
 {
+    await processorPaymentService.SendPaymentAsync(new PaymentProcessorRequest
+    {
+        CorrelationId = request.CorrelationId,
+        Amount = request.Amount,
+        RequestedAt = DateTime.UtcNow
+    });
     return Results.Created($"/payments/{request.CorrelationId}", request);
 });
 
@@ -31,7 +40,7 @@ app.MapGet("/payments-summary", ([AsParameters]PaymentSummaryRequest request) =>
 
 app.Run();
 
-internal record PaymentRequest
+public record PaymentRequest
 {
     public Guid CorrelationId { get; set; }
     public decimal Amount { get; set; }
