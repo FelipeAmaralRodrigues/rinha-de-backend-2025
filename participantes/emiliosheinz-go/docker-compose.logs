@@ -1,0 +1,490 @@
+
+ Network emiliosheinz-go_rinha  Creating
+ Network emiliosheinz-go_rinha  Created
+ Container emiliosheinz-go-redis-1  Creating
+ Container emiliosheinz-go-postgres-1  Creating
+ Container emiliosheinz-go-postgres-1  Created
+ Container emiliosheinz-go-redis-1  Created
+ Container emiliosheinz-go-api02-1  Creating
+ Container emiliosheinz-go-api01-1  Creating
+ Container emiliosheinz-go-api02-1  Created
+ Container emiliosheinz-go-api01-1  Created
+ Container emiliosheinz-go-nginx-1  Creating
+ Container emiliosheinz-go-nginx-1  Created
+Attaching to api01-1, api02-1, nginx-1, postgres-1, redis-1
+postgres-1  | The files belonging to this database system will be owned by user "postgres".
+postgres-1  | This user must also own the server process.
+postgres-1  | 
+postgres-1  | The database cluster will be initialized with locale "en_US.utf8".
+postgres-1  | The default database encoding has accordingly been set to "UTF8".
+postgres-1  | The default text search configuration will be set to "english".
+postgres-1  | 
+postgres-1  | Data page checksums are disabled.
+postgres-1  | 
+postgres-1  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+postgres-1  | creating subdirectories ... ok
+postgres-1  | selecting dynamic shared memory implementation ... posix
+postgres-1  | selecting default "max_connections" ... 100
+redis-1     | Starting Redis Server
+redis-1     | 1:C 22 Jul 2025 17:20:04.787 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis-1     | 1:C 22 Jul 2025 17:20:04.787 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1     | 1:C 22 Jul 2025 17:20:04.787 * Redis version=8.0.3, bits=64, commit=00000000, modified=1, pid=1, just started
+redis-1     | 1:C 22 Jul 2025 17:20:04.787 * Configuration loaded
+redis-1     | 1:M 22 Jul 2025 17:20:04.788 * monotonic clock: POSIX clock_gettime
+postgres-1  | selecting default "shared_buffers" ... 128MB
+redis-1     | 1:M 22 Jul 2025 17:20:04.788 * Running mode=standalone, port=6379.
+redis-1     | 1:M 22 Jul 2025 17:20:04.789 * <bf> RedisBloom version 8.0.1 (Git=unknown)
+redis-1     | 1:M 22 Jul 2025 17:20:04.789 * <bf> Registering configuration options: [
+redis-1     | 1:M 22 Jul 2025 17:20:04.789 * <bf> 	{ bf-error-rate       :      0.01 }
+redis-1     | 1:M 22 Jul 2025 17:20:04.789 * <bf> 	{ bf-initial-size     :       100 }
+redis-1     | 1:M 22 Jul 2025 17:20:04.789 * <bf> 	{ bf-expansion-factor :         2 }
+redis-1     | 1:M 22 Jul 2025 17:20:04.789 * <bf> 	{ cf-bucket-size      :         2 }
+redis-1     | 1:M 22 Jul 2025 17:20:04.789 * <bf> 	{ cf-initial-size     :      1024 }
+redis-1     | 1:M 22 Jul 2025 17:20:04.789 * <bf> 	{ cf-max-iterations   :        20 }
+redis-1     | 1:M 22 Jul 2025 17:20:04.789 * <bf> 	{ cf-expansion-factor :         1 }
+redis-1     | 1:M 22 Jul 2025 17:20:04.789 * <bf> 	{ cf-max-expansions   :        32 }
+redis-1     | 1:M 22 Jul 2025 17:20:04.789 * <bf> ]
+redis-1     | 1:M 22 Jul 2025 17:20:04.789 * Module 'bf' loaded from /usr/local/lib/redis/modules//redisbloom.so
+redis-1     | 1:M 22 Jul 2025 17:20:04.791 * <search> Redis version found by RedisSearch : 8.0.3 - oss
+redis-1     | 1:M 22 Jul 2025 17:20:04.791 * <search> RediSearch version 8.0.1 (Git=5688fcc)
+redis-1     | 1:M 22 Jul 2025 17:20:04.791 * <search> Low level api version 1 initialized successfully
+redis-1     | 1:M 22 Jul 2025 17:20:04.881 * <search> gc: ON, prefix min length: 2, min word length to stem: 4, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, 
+redis-1     | 1:M 22 Jul 2025 17:20:04.881 * <search> Initialized thread pools!
+redis-1     | 1:M 22 Jul 2025 17:20:04.881 * <search> Disabled workers threadpool of size 0
+redis-1     | 1:M 22 Jul 2025 17:20:04.881 * <search> Subscribe to config changes
+redis-1     | 1:M 22 Jul 2025 17:20:04.881 * <search> Enabled role change notification
+redis-1     | 1:M 22 Jul 2025 17:20:04.882 * <search> Cluster configuration: AUTO partitions, type: 0, coordinator timeout: 0ms
+redis-1     | 1:M 22 Jul 2025 17:20:04.882 * <search> Register write commands
+redis-1     | 1:M 22 Jul 2025 17:20:04.882 * Module 'search' loaded from /usr/local/lib/redis/modules//redisearch.so
+redis-1     | 1:M 22 Jul 2025 17:20:04.883 * <timeseries> RedisTimeSeries version 80001, git_sha=577bfa8b5909e7ee572f0b651399be8303dc6641
+redis-1     | 1:M 22 Jul 2025 17:20:04.883 * <timeseries> Redis version found by RedisTimeSeries : 8.0.3 - oss
+redis-1     | 1:M 22 Jul 2025 17:20:04.883 * <timeseries> Registering configuration options: [
+redis-1     | 1:M 22 Jul 2025 17:20:04.883 * <timeseries> 	{ ts-compaction-policy   :              }
+redis-1     | 1:M 22 Jul 2025 17:20:04.883 * <timeseries> 	{ ts-num-threads         :            3 }
+redis-1     | 1:M 22 Jul 2025 17:20:04.883 * <timeseries> 	{ ts-retention-policy    :            0 }
+redis-1     | 1:M 22 Jul 2025 17:20:04.883 * <timeseries> 	{ ts-duplicate-policy    :        block }
+redis-1     | 1:M 22 Jul 2025 17:20:04.883 * <timeseries> 	{ ts-chunk-size-bytes    :         4096 }
+redis-1     | 1:M 22 Jul 2025 17:20:04.883 * <timeseries> 	{ ts-encoding            :   compressed }
+redis-1     | 1:M 22 Jul 2025 17:20:04.883 * <timeseries> 	{ ts-ignore-max-time-diff:            0 }
+redis-1     | 1:M 22 Jul 2025 17:20:04.883 * <timeseries> 	{ ts-ignore-max-val-diff :     0.000000 }
+redis-1     | 1:M 22 Jul 2025 17:20:04.883 * <timeseries> ]
+redis-1     | 1:M 22 Jul 2025 17:20:04.883 * <timeseries> Detected redis oss
+redis-1     | 1:M 22 Jul 2025 17:20:04.883 * Module 'timeseries' loaded from /usr/local/lib/redis/modules//redistimeseries.so
+redis-1     | 1:M 22 Jul 2025 17:20:04.884 * <ReJSON> Created new data type 'ReJSON-RL'
+redis-1     | 1:M 22 Jul 2025 17:20:04.884 * <ReJSON> version: 80001 git sha: unknown branch: unknown
+redis-1     | 1:M 22 Jul 2025 17:20:04.884 * <ReJSON> Exported RedisJSON_V1 API
+redis-1     | 1:M 22 Jul 2025 17:20:04.884 * <ReJSON> Exported RedisJSON_V2 API
+redis-1     | 1:M 22 Jul 2025 17:20:04.884 * <ReJSON> Exported RedisJSON_V3 API
+redis-1     | 1:M 22 Jul 2025 17:20:04.884 * <ReJSON> Exported RedisJSON_V4 API
+redis-1     | 1:M 22 Jul 2025 17:20:04.884 * <ReJSON> Exported RedisJSON_V5 API
+redis-1     | 1:M 22 Jul 2025 17:20:04.884 * <ReJSON> Enabled diskless replication
+redis-1     | 1:M 22 Jul 2025 17:20:04.884 * <ReJSON> Initialized shared string cache, thread safe: false.
+redis-1     | 1:M 22 Jul 2025 17:20:04.884 * Module 'ReJSON' loaded from /usr/local/lib/redis/modules//rejson.so
+redis-1     | 1:M 22 Jul 2025 17:20:04.884 * <search> Acquired RedisJSON_V5 API
+redis-1     | 1:M 22 Jul 2025 17:20:04.884 * Server initialized
+redis-1     | 1:M 22 Jul 2025 17:20:04.884 * Ready to accept connections tcp
+postgres-1  | selecting default time zone ... UTC
+postgres-1  | creating configuration files ... ok
+postgres-1  | running bootstrap script ... ok
+postgres-1  | sh: locale: not found
+postgres-1  | 2025-07-22 17:20:07.598 UTC [35] WARNING:  no usable system locales were found
+postgres-1  | performing post-bootstrap initialization ... ok
+postgres-1  | initdb: warning: enabling "trust" authentication for local connections
+postgres-1  | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+postgres-1  | syncing data to disk ... ok
+postgres-1  | 
+postgres-1  | 
+postgres-1  | Success. You can now start the database server using:
+postgres-1  | 
+postgres-1  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+postgres-1  | 
+postgres-1  | waiting for server to start....2025-07-22 17:20:10.906 UTC [53] LOG:  starting PostgreSQL 17.5 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+postgres-1  | 2025-07-22 17:20:10.911 UTC [53] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-1  | 2025-07-22 17:20:10.927 UTC [56] LOG:  database system was shut down at 2025-07-22 17:20:10 UTC
+postgres-1  | 2025-07-22 17:20:10.938 UTC [53] LOG:  database system is ready to accept connections
+postgres-1  |  done
+postgres-1  | server started
+postgres-1  | CREATE DATABASE
+postgres-1  | 
+postgres-1  | 
+postgres-1  | /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/script.sql
+postgres-1  | DROP TABLE
+postgres-1  | psql:/docker-entrypoint-initdb.d/script.sql:1: NOTICE:  table "payments" does not exist, skipping
+postgres-1  | CREATE TYPE
+postgres-1  | CREATE TABLE
+postgres-1  | 
+postgres-1  | 
+postgres-1  | waiting for server to shut down....2025-07-22 17:20:11.604 UTC [53] LOG:  received fast shutdown request
+postgres-1  | 2025-07-22 17:20:11.611 UTC [53] LOG:  aborting any active transactions
+postgres-1  | 2025-07-22 17:20:11.684 UTC [53] LOG:  background worker "logical replication launcher" (PID 59) exited with exit code 1
+postgres-1  | 2025-07-22 17:20:11.685 UTC [54] LOG:  shutting down
+postgres-1  | 2025-07-22 17:20:11.705 UTC [54] LOG:  checkpoint starting: shutdown immediate
+postgres-1  | 2025-07-22 17:20:11.938 UTC [54] LOG:  checkpoint complete: wrote 937 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.062 s, sync=0.110 s, total=0.254 s; sync files=306, longest=0.040 s, average=0.001 s; distance=4282 kB, estimate=4282 kB; lsn=0/191BD88, redo lsn=0/191BD88
+postgres-1  | 2025-07-22 17:20:11.945 UTC [53] LOG:  database system is shut down
+postgres-1  |  done
+postgres-1  | server stopped
+postgres-1  | 
+postgres-1  | PostgreSQL init process complete; ready for start up.
+postgres-1  | 
+postgres-1  | 2025-07-22 17:20:12.081 UTC [1] LOG:  starting PostgreSQL 17.5 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+postgres-1  | 2025-07-22 17:20:12.081 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres-1  | 2025-07-22 17:20:12.082 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres-1  | 2025-07-22 17:20:12.105 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-1  | 2025-07-22 17:20:12.124 UTC [79] LOG:  database system was shut down at 2025-07-22 17:20:11 UTC
+postgres-1  | 2025-07-22 17:20:12.134 UTC [1] LOG:  database system is ready to accept connections
+api02-1     | 2025/07/22 17:20:12 Configuration initialized successfully
+api01-1     | 2025/07/22 17:20:12 Configuration initialized successfully
+api02-1     | Database connection established successfully
+api02-1     | 2025/07/22 17:20:12 Default health status initialized for default: &{Failing:false MinResponseTime:0}
+api02-1     | 2025/07/22 17:20:12 Default health status initialized for fallback: &{Failing:false MinResponseTime:0}
+api02-1     | asynq: pid=1 2025/07/22 17:20:12.196272 INFO: Starting processing
+api02-1     | asynq: pid=1 2025/07/22 17:20:12.196298 INFO: Send signal TSTP to stop processing new tasks
+api02-1     | asynq: pid=1 2025/07/22 17:20:12.196302 INFO: Send signal TERM or INT to terminate the process
+api01-1     | Database connection established successfully
+api01-1     | asynq: pid=1 2025/07/22 17:20:12.288033 INFO: Starting processing
+api01-1     | asynq: pid=1 2025/07/22 17:20:12.288049 INFO: Send signal TSTP to stop processing new tasks
+api01-1     | asynq: pid=1 2025/07/22 17:20:12.288052 INFO: Send signal TERM or INT to terminate the process
+nginx-1     | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx-1     | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+nginx-1     | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+nginx-1     | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+nginx-1     | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx-1     | /docker-entrypoint.sh: Configuration complete; ready for start up
+api02-1     | 2025/07/22 17:20:22 Acting as leader. Ensuring health checks are running.
+api01-1     | 2025/07/22 17:20:22 Not the leader.
+api02-1     | 2025/07/22 17:20:27 Health check for fallback OK: {Failing:false MinResponseTime:0}
+api02-1     | 2025/07/22 17:20:27 Health check for default OK: {Failing:false MinResponseTime:0}
+api02-1     | 2025/07/22 17:20:32 Acting as leader. Ensuring health checks are running.
+api02-1     | 2025/07/22 17:20:32 Health check for default OK: {Failing:false MinResponseTime:0}
+api01-1     | 2025/07/22 17:20:32 Not the leader.
+api02-1     | 2025/07/22 17:20:32 Health check for fallback OK: {Failing:false MinResponseTime:0}
+api02-1     | 2025/07/22 17:20:37 Health check for default OK: {Failing:false MinResponseTime:100}
+api02-1     | 2025/07/22 17:20:37 Health check for fallback OK: {Failing:false MinResponseTime:0}
+api01-1     | asynq: pid=1 2025/07/22 17:20:38.292827 WARN: Could not remove task id=70d6ce96-2b1e-4f7b-ac2a-5472340e747c type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND; Will retry syncing
+api01-1     | asynq: pid=1 2025/07/22 17:20:38.293058 WARN: Could not remove task id=e031f46c-3958-49e4-be8f-a12d6c6a5dc5 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND; Will retry syncing
+api01-1     | asynq: pid=1 2025/07/22 17:20:38.296520 WARN: Could not remove task id=4acb025a-1f48-44e7-998d-c2acf669d295 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND; Will retry syncing
+api01-1     | asynq: pid=1 2025/07/22 17:20:38.302592 WARN: Could not remove task id=44dc7e0c-93f5-44c5-9f0d-6d27b765b6c1 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND; Will retry syncing
+api01-1     | asynq: pid=1 2025/07/22 17:20:38.302600 WARN: Could not remove task id=19e246b0-a40b-4fee-86e3-c01fd8aaad25 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND; Will retry syncing
+api01-1     | asynq: pid=1 2025/07/22 17:20:38.302764 WARN: Could not remove task id=76a9af12-11b8-4be4-8544-8bfabc0b4e91 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND; Will retry syncing
+api01-1     | asynq: pid=1 2025/07/22 17:20:38.310291 WARN: Could not remove task id=72d993ad-cebc-4427-af47-fbc2c4a0e33e type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND; Will retry syncing
+api02-1     | 2025/07/22 17:20:42 Acting as leader. Ensuring health checks are running.
+api01-1     | 2025/07/22 17:20:42 Not the leader.
+api02-1     | 2025/07/22 17:20:42 Health check for default OK: {Failing:false MinResponseTime:100}
+api02-1     | 2025/07/22 17:20:42 Health check for fallback OK: {Failing:false MinResponseTime:0}
+api02-1     | 2025/07/22 17:20:47 Health check for default OK: {Failing:true MinResponseTime:100}
+api02-1     | 2025/07/22 17:20:47 Health check for fallback OK: {Failing:false MinResponseTime:0}
+postgres-1  | 2025-07-22 17:20:47.982 UTC [471] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:20:47.983 UTC [462] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:20:47.987 UTC [485] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:20:49.089 UTC [482] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:20:49.598 UTC [475] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:20:49.686 UTC [478] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:20:47.892 UTC [472] FATAL:  sorry, too many clients already
+api02-1     | 2025/07/22 17:20:51 Setting fallback as failing
+api02-1     | 2025/07/22 17:20:51 Setting fallback as failing
+api02-1     | 2025/07/22 17:20:52 Acting as leader. Ensuring health checks are running.
+api01-1     | 2025/07/22 17:20:52 Not the leader.
+api02-1     | 2025/07/22 17:20:52 Health check for default OK: {Failing:true MinResponseTime:100}
+api02-1     | 2025/07/22 17:20:52 Health check for fallback OK: {Failing:false MinResponseTime:0}
+api02-1     | 2025/07/22 17:20:53 Setting fallback as failing
+api02-1     | 2025/07/22 17:20:53 Setting fallback as failing
+postgres-1  | 2025-07-22 17:20:55.684 UTC [531] LOG:  could not send data to client: Broken pipe
+postgres-1  | 2025-07-22 17:20:55.684 UTC [531] FATAL:  connection to client lost
+api02-1     | 2025/07/22 17:20:57 Health check for fallback OK: {Failing:true MinResponseTime:1000}
+api02-1     | 2025/07/22 17:20:57 Health check for default OK: {Failing:true MinResponseTime:2000}
+api02-1     | 2025/07/22 17:21:02 Acting as leader. Ensuring health checks are running.
+api01-1     | 2025/07/22 17:21:02 Not the leader.
+api02-1     | 2025/07/22 17:21:02 Health check for default OK: {Failing:true MinResponseTime:2000}
+api02-1     | 2025/07/22 17:21:02 Health check for fallback OK: {Failing:true MinResponseTime:1000}
+api02-1     | 2025/07/22 17:21:07 Health check for default OK: {Failing:false MinResponseTime:20}
+api02-1     | 2025/07/22 17:21:07 Health check for fallback OK: {Failing:false MinResponseTime:20}
+postgres-1  | 2025-07-22 17:21:08.887 UTC [683] LOG:  could not send data to client: Broken pipe
+postgres-1  | 2025-07-22 17:21:08.887 UTC [683] FATAL:  connection to client lost
+postgres-1  | 2025-07-22 17:21:10.302 UTC [698] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:10.302 UTC [711] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:10.302 UTC [695] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:10.302 UTC [713] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:10.490 UTC [712] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:10.710 UTC [715] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:10.713 UTC [699] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:10.782 UTC [705] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:10.783 UTC [722] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:10.784 UTC [714] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:10.785 UTC [691] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:10.789 UTC [703] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:10.885 UTC [696] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:10.890 UTC [700] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:10.890 UTC [724] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:10.988 UTC [725] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:11.081 UTC [723] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:11.091 UTC [729] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:11.188 UTC [730] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:11.193 UTC [727] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:11.288 UTC [731] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:11.289 UTC [732] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:11.293 UTC [704] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:11.391 UTC [738] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:11.483 UTC [739] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:11.483 UTC [743] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:11.485 UTC [728] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:11.486 UTC [741] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:11.486 UTC [737] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:11.498 UTC [748] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:11.584 UTC [742] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:11.584 UTC [736] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:11.588 UTC [733] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:11.684 UTC [726] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:11.687 UTC [744] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:11.687 UTC [740] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:11.693 UTC [750] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:11.889 UTC [745] FATAL:  sorry, too many clients already
+api02-1     | asynq: pid=1 2025/07/22 17:21:11.984049 WARN: Could not remove task id=67d86567-1cae-4389-87da-307cf3b18801 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND; Will retry syncing
+api02-1     | asynq: pid=1 2025/07/22 17:21:11.984415 WARN: Could not remove task id=a9040ac4-0007-4222-9e74-6276bf62ffd9 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND; Will retry syncing
+postgres-1  | 2025-07-22 17:21:11.989 UTC [734] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:12.082 UTC [746] FATAL:  sorry, too many clients already
+api02-1     | 2025/07/22 17:21:12 Acting as leader. Ensuring health checks are running.
+api01-1     | 2025/07/22 17:21:12 Not the leader.
+api02-1     | 2025/07/22 17:21:12 Health check for default OK: {Failing:false MinResponseTime:20}
+api02-1     | 2025/07/22 17:21:12 Health check for fallback OK: {Failing:false MinResponseTime:20}
+postgres-1  | 2025-07-22 17:21:12.891 UTC [764] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:13.489 UTC [767] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:13.489 UTC [762] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:13.491 UTC [778] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:13.493 UTC [777] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:13.494 UTC [763] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:13.581 UTC [779] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:13.582 UTC [780] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:13.785 UTC [781] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:13.785 UTC [782] FATAL:  sorry, too many clients already
+api01-1     | asynq: pid=1 2025/07/22 17:21:14.519972 WARN: Could not remove task id=36bf2097-1aa5-4a33-a8da-e25161d80822 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: i/o timeout; Will retry syncing
+api01-1     | asynq: pid=1 2025/07/22 17:21:14.522573 WARN: Could not remove task id=73b562a5-0a2b-4124-9fbb-9efc09371e91 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: i/o timeout; Will retry syncing
+api01-1     | asynq: pid=1 2025/07/22 17:21:14.533250 WARN: Could not remove task id=ce3d5673-f2ae-41ff-a72a-8d13eab40a45 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: i/o timeout; Will retry syncing
+api01-1     | asynq: pid=1 2025/07/22 17:21:14.599536 WARN: Could not remove task id=713ed292-67bc-4c1e-a417-398f7b96f4d0 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND; Will retry syncing
+api01-1     | 2025/07/22 17:21:14 Error retrieving health for default: i/o timeout
+api01-1     | asynq: pid=1 2025/07/22 17:21:14.656645 WARN: Could not remove task id=420897f3-856f-407d-9f62-9ed758574388 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: i/o timeout; Will retry syncing
+api01-1     | asynq: pid=1 2025/07/22 17:21:14.657722 WARN: Could not remove task id=5625bb17-b071-48f2-b199-617295f57d54 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: i/o timeout; Will retry syncing
+api01-1     | asynq: pid=1 2025/07/22 17:21:14.664260 WARN: Could not remove task id=43c43f40-ac78-44d9-b7e9-9ea873f0d4a7 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: i/o timeout; Will retry syncing
+api01-1     | asynq: pid=1 2025/07/22 17:21:14.683382 WARN: Could not remove task id=a340f761-0bda-4b7b-8877-e4f5e645587f type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND; Will retry syncing
+api01-1     | asynq: pid=1 2025/07/22 17:21:14.683760 WARN: Could not remove task id=3e4815dd-c476-4365-b5ca-45265ed73f84 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND; Will retry syncing
+api01-1     | asynq: pid=1 2025/07/22 17:21:14.683832 WARN: Could not remove task id=0d76ef0f-d9c4-4747-942f-d3873f8d4726 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND; Will retry syncing
+api01-1     | asynq: pid=1 2025/07/22 17:21:14.691479 WARN: Could not remove task id=8ac938af-2c34-4eec-a035-98795d9e2e04 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND; Will retry syncing
+api01-1     | asynq: pid=1 2025/07/22 17:21:14.691655 WARN: Could not remove task id=3015f7c4-90ed-4d05-9282-771a3bc35e55 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND; Will retry syncing
+api01-1     | asynq: pid=1 2025/07/22 17:21:14.691668 WARN: Could not remove task id=6d39a6d3-aee0-4231-9634-1f9deda4dd95 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND; Will retry syncing
+api01-1     | asynq: pid=1 2025/07/22 17:21:14.696169 WARN: Could not remove task id=4e65c1de-a6a0-4d65-83cf-a5b271c4777b type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: i/o timeout; Will retry syncing
+api01-1     | asynq: pid=1 2025/07/22 17:21:14.704306 WARN: Could not remove task id=64ee65fe-0d02-4f4e-bacd-037ad4f3fa48 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: i/o timeout; Will retry syncing
+postgres-1  | 2025-07-22 17:21:16.295 UTC [802] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:16.295 UTC [797] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:16.386 UTC [799] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:16.387 UTC [795] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:16.387 UTC [805] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:16.387 UTC [804] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:16.587 UTC [825] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:16.588 UTC [830] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:16.593 UTC [823] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:16.682 UTC [826] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:16.683 UTC [822] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:16.593 UTC [824] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:16.790 UTC [803] FATAL:  sorry, too many clients already
+api02-1     | asynq: pid=1 2025/07/22 17:21:16.983637 WARN: Could not remove task id=fbba47df-c9a7-4c47-bdf8-b5f34d93e983 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND; Will retry syncing
+api02-1     | asynq: pid=1 2025/07/22 17:21:16.983691 WARN: Could not remove task id=a8838f38-8207-434a-bef0-eac71cba08df type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND; Will retry syncing
+api02-1     | asynq: pid=1 2025/07/22 17:21:16.983712 WARN: Could not remove task id=d0fdd95d-fe4a-42e8-89bb-1633aab6d3dd type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND; Will retry syncing
+postgres-1  | 2025-07-22 17:21:16.984 UTC [819] FATAL:  sorry, too many clients already
+api02-1     | asynq: pid=1 2025/07/22 17:21:16.989918 WARN: Could not remove task id=83117714-391e-4ce4-aaeb-ca7ceb33907b type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND; Will retry syncing
+api02-1     | asynq: pid=1 2025/07/22 17:21:16.989967 WARN: Could not remove task id=dfc29019-b8ac-4a20-9c42-770e12fd4fbe type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND; Will retry syncing
+api02-1     | asynq: pid=1 2025/07/22 17:21:16.990441 WARN: Could not remove task id=17d132c9-0bf3-4a35-9696-996b06f52c50 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND; Will retry syncing
+postgres-1  | 2025-07-22 17:21:17.484 UTC [828] FATAL:  sorry, too many clients already
+api02-1     | 2025/07/22 17:21:17 Health check for fallback OK: {Failing:false MinResponseTime:5000}
+api02-1     | 2025/07/22 17:21:17 Health check for default OK: {Failing:false MinResponseTime:0}
+postgres-1  | 2025-07-22 17:21:17.815 UTC [846] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:17.815 UTC [846] LOG:  could not send data to client: Broken pipe
+postgres-1  | 2025-07-22 17:21:17.985 UTC [860] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:18.183 UTC [848] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:18.184 UTC [847] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:18.188 UTC [857] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:18.189 UTC [854] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:18.191 UTC [853] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:18.191 UTC [858] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:18.285 UTC [855] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:18.287 UTC [856] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:18.288 UTC [862] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:20.787 UTC [876] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:20.888 UTC [894] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:20.985 UTC [895] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:20.985 UTC [889] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:21.882 UTC [907] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:21.891 UTC [911] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:21.898 UTC [915] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:21.993 UTC [897] FATAL:  sorry, too many clients already
+api02-1     | 2025/07/22 17:21:22 Acting as leader. Ensuring health checks are running.
+postgres-1  | 2025-07-22 17:21:22.286 UTC [924] FATAL:  sorry, too many clients already
+api01-1     | 2025/07/22 17:21:22 Not the leader.
+postgres-1  | 2025-07-22 17:21:22.391 UTC [905] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:22.552 UTC [920] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:22.553 UTC [918] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:22.557 UTC [912] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:22.753 UTC [922] FATAL:  sorry, too many clients already
+api02-1     | 2025/07/22 17:21:22 Health check for default OK: {Failing:false MinResponseTime:0}
+api02-1     | 2025/07/22 17:21:22 Health check for fallback OK: {Failing:false MinResponseTime:5000}
+postgres-1  | 2025-07-22 17:21:22.916 UTC [914] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.105 UTC [910] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.107 UTC [917] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.110 UTC [898] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.183 UTC [925] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.185 UTC [926] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.186 UTC [928] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.189 UTC [927] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.191 UTC [930] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.192 UTC [931] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.192 UTC [929] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.193 UTC [933] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.283 UTC [904] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.286 UTC [913] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.286 UTC [919] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.382 UTC [936] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.497 UTC [937] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.500 UTC [938] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.582 UTC [934] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.582 UTC [935] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.684 UTC [923] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.784 UTC [944] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.785 UTC [943] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.788 UTC [942] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.885 UTC [941] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:23.887 UTC [940] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:24.194 UTC [952] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:24.286 UTC [957] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:24.285 UTC [955] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:24.290 UTC [948] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:24.292 UTC [958] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:24.385 UTC [949] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:24.389 UTC [950] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:24.391 UTC [916] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:24.685 UTC [921] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:24.686 UTC [956] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:24.786 UTC [951] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:24.787 UTC [953] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:24.786 UTC [954] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:24.884 UTC [939] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:25.286 UTC [965] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:25.287 UTC [967] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:25.289 UTC [972] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:25.383 UTC [969] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:25.384 UTC [971] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:25.384 UTC [970] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:25.384 UTC [978] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:25.396 UTC [962] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:25.396 UTC [973] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:25.409 UTC [975] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:25.481 UTC [976] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:25.485 UTC [963] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:25.485 UTC [964] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:25.587 UTC [960] LOG:  could not send data to client: Broken pipe
+postgres-1  | 2025-07-22 17:21:25.587 UTC [960] FATAL:  connection to client lost
+postgres-1  | 2025-07-22 17:21:25.604 UTC [974] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:25.386 UTC [968] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:25.600 UTC [977] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:25.691 UTC [979] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:25.789 UTC [980] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:25.884 UTC [986] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.083 UTC [982] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.096 UTC [981] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.182 UTC [985] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.184 UTC [983] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.183 UTC [984] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.196 UTC [993] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.286 UTC [987] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.286 UTC [988] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.384 UTC [998] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.383 UTC [991] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.386 UTC [996] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.388 UTC [999] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.388 UTC [989] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.391 UTC [994] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.391 UTC [995] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.391 UTC [990] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.392 UTC [997] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.392 UTC [992] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.485 UTC [1001] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.491 UTC [1000] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.585 UTC [1002] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.685 UTC [1003] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.782 UTC [1004] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.792 UTC [1013] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.882 UTC [1007] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.889 UTC [1009] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.903 UTC [1012] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.982 UTC [1011] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.982 UTC [1008] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.983 UTC [1014] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.984 UTC [1015] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.984 UTC [1016] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:26.985 UTC [1017] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:27.083 UTC [1005] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:27.084 UTC [1010] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:27.084 UTC [1018] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:27.085 UTC [1021] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:27.090 UTC [1025] FATAL:  sorry, too many clients already
+postgres-1  | 2025-07-22 17:21:27.184 UTC [1026] FATAL:  sorry, too many clients already
+api02-1     | 2025/07/22 17:21:27 Health check for fallback OK: {Failing:false MinResponseTime:5000}
+api02-1     | 2025/07/22 17:21:27 Health check for default OK: {Failing:false MinResponseTime:0}
+[Knginx-1 exited with code 0
+api02-1     | asynq: pid=1 2025/07/22 17:21:31.949593 INFO: Stopping processor
+api02-1     | asynq: pid=1 2025/07/22 17:21:31.949626 INFO: Processor stopped
+api02-1     | asynq: pid=1 2025/07/22 17:21:31.949630 INFO: Starting graceful shutdown
+api02-1     | asynq: pid=1 2025/07/22 17:21:31.949642 INFO: Waiting for all workers to finish...
+api01-1     | asynq: pid=1 2025/07/22 17:21:31.949983 INFO: Stopping processor
+api01-1     | asynq: pid=1 2025/07/22 17:21:31.950008 INFO: Processor stopped
+api01-1     | asynq: pid=1 2025/07/22 17:21:31.950012 INFO: Starting graceful shutdown
+api01-1     | asynq: pid=1 2025/07/22 17:21:31.950019 INFO: Waiting for all workers to finish...
+api02-1     | 2025/07/22 17:21:32 Acting as leader. Ensuring health checks are running.
+api01-1     | 2025/07/22 17:21:32 Not the leader.
+postgres-1  | 2025-07-22 17:21:32.382 UTC [1065] LOG:  could not receive data from client: Connection reset by peer
+api02-1     | 2025/07/22 17:21:32 Health check for default OK: {Failing:false MinResponseTime:0}
+api02-1     | 2025/07/22 17:21:32 Health check for fallback OK: {Failing:false MinResponseTime:5000}
+api01-1     | asynq: pid=1 2025/07/22 17:21:35.087275 INFO: All workers have finished
+api01-1     | asynq: pid=1 2025/07/22 17:21:35.087374 ERROR: Could not remove task id=36bf2097-1aa5-4a33-a8da-e25161d80822 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: i/o timeout
+api01-1     | asynq: pid=1 2025/07/22 17:21:35.087386 ERROR: Could not remove task id=73b562a5-0a2b-4124-9fbb-9efc09371e91 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: i/o timeout
+api01-1     | asynq: pid=1 2025/07/22 17:21:35.087391 ERROR: Could not remove task id=ce3d5673-f2ae-41ff-a72a-8d13eab40a45 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: i/o timeout
+api01-1     | asynq: pid=1 2025/07/22 17:21:35.087396 ERROR: Could not remove task id=713ed292-67bc-4c1e-a417-398f7b96f4d0 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND
+api01-1     | asynq: pid=1 2025/07/22 17:21:35.087402 ERROR: Could not remove task id=420897f3-856f-407d-9f62-9ed758574388 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: i/o timeout
+api01-1     | asynq: pid=1 2025/07/22 17:21:35.087408 ERROR: Could not remove task id=5625bb17-b071-48f2-b199-617295f57d54 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: i/o timeout
+api01-1     | asynq: pid=1 2025/07/22 17:21:35.087416 ERROR: Could not remove task id=43c43f40-ac78-44d9-b7e9-9ea873f0d4a7 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: i/o timeout
+api01-1     | asynq: pid=1 2025/07/22 17:21:35.087423 ERROR: Could not remove task id=a340f761-0bda-4b7b-8877-e4f5e645587f type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND
+api01-1     | asynq: pid=1 2025/07/22 17:21:35.087431 ERROR: Could not remove task id=3e4815dd-c476-4365-b5ca-45265ed73f84 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND
+api01-1     | asynq: pid=1 2025/07/22 17:21:35.087437 ERROR: Could not remove task id=0d76ef0f-d9c4-4747-942f-d3873f8d4726 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND
+api01-1     | asynq: pid=1 2025/07/22 17:21:35.087446 ERROR: Could not remove task id=8ac938af-2c34-4eec-a035-98795d9e2e04 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND
+api01-1     | asynq: pid=1 2025/07/22 17:21:35.087451 ERROR: Could not remove task id=3015f7c4-90ed-4d05-9282-771a3bc35e55 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND
+api01-1     | asynq: pid=1 2025/07/22 17:21:35.087456 ERROR: Could not remove task id=6d39a6d3-aee0-4231-9634-1f9deda4dd95 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND
+api01-1     | asynq: pid=1 2025/07/22 17:21:35.087461 ERROR: Could not remove task id=4e65c1de-a6a0-4d65-83cf-a5b271c4777b type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: i/o timeout
+api01-1     | asynq: pid=1 2025/07/22 17:21:35.087466 ERROR: Could not remove task id=64ee65fe-0d02-4f4e-bacd-037ad4f3fa48 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: i/o timeout
+api02-1     | asynq: pid=1 2025/07/22 17:21:35.087326 INFO: All workers have finished
+api02-1     | asynq: pid=1 2025/07/22 17:21:35.087389 ERROR: Could not remove task id=67d86567-1cae-4389-87da-307cf3b18801 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND
+api02-1     | asynq: pid=1 2025/07/22 17:21:35.087396 ERROR: Could not remove task id=a9040ac4-0007-4222-9e74-6276bf62ffd9 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND
+api02-1     | asynq: pid=1 2025/07/22 17:21:35.087400 ERROR: Could not remove task id=fbba47df-c9a7-4c47-bdf8-b5f34d93e983 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND
+api02-1     | asynq: pid=1 2025/07/22 17:21:35.087404 ERROR: Could not remove task id=a8838f38-8207-434a-bef0-eac71cba08df type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND
+api02-1     | asynq: pid=1 2025/07/22 17:21:35.087408 ERROR: Could not remove task id=d0fdd95d-fe4a-42e8-89bb-1633aab6d3dd type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND
+api02-1     | asynq: pid=1 2025/07/22 17:21:35.087414 ERROR: Could not remove task id=83117714-391e-4ce4-aaeb-ca7ceb33907b type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND
+api02-1     | asynq: pid=1 2025/07/22 17:21:35.087417 ERROR: Could not remove task id=dfc29019-b8ac-4a20-9c42-770e12fd4fbe type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND
+api02-1     | asynq: pid=1 2025/07/22 17:21:35.087421 ERROR: Could not remove task id=17d132c9-0bf3-4a35-9696-996b06f52c50 type="payment:process" from "asynq:{default}:active" err: INTERNAL_ERROR: redis eval error: NOT FOUND
+api01-1     | asynq: pid=1 2025/07/22 17:21:35.088368 INFO: Exiting
+api02-1     | asynq: pid=1 2025/07/22 17:21:35.088512 INFO: Exiting
+api02-1     | 2025/07/22 17:21:38 Health check for default OK: {Failing:false MinResponseTime:0}
+api02-1     | 2025/07/22 17:21:38 Health check for fallback OK: {Failing:false MinResponseTime:5000}
+[Kapi01-1 exited with code 137
+[Kapi02-1 exited with code 137
+postgres-1  | 2025-07-22 17:21:42.681 UTC [1] LOG:  received fast shutdown request
+redis-1     | 1:signal-handler (1753204902) Received SIGTERM scheduling shutdown...
+redis-1     | 1:M 22 Jul 2025 17:21:42.681 * User requested shutdown...
+redis-1     | 1:M 22 Jul 2025 17:21:42.681 # Redis is now ready to exit, bye bye...
+postgres-1  | 2025-07-22 17:21:42.695 UTC [1] LOG:  aborting any active transactions
+postgres-1  | 2025-07-22 17:21:42.915 UTC [1] LOG:  background worker "logical replication launcher" (PID 82) exited with exit code 1
+postgres-1  | 2025-07-22 17:21:42.918 UTC [77] LOG:  shutting down
+postgres-1  | 2025-07-22 17:21:42.939 UTC [77] LOG:  checkpoint starting: shutdown immediate
+[Kredis-1 exited with code 0
+postgres-1  | 2025-07-22 17:21:43.182 UTC [77] LOG:  checkpoint complete: wrote 198 buffers (1.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.139 s, sync=0.019 s, total=0.263 s; sync files=29, longest=0.015 s, average=0.001 s; distance=2334 kB, estimate=2334 kB; lsn=0/1B63658, redo lsn=0/1B63658
+postgres-1  | 2025-07-22 17:21:43.189 UTC [1] LOG:  database system is shut down
+[Kpostgres-1 exited with code 0
+log truncated at line 1000

@@ -1,0 +1,1001 @@
+
+ Network anibalferreira-rust_backend  Creating
+ Network anibalferreira-rust_backend  Created
+ Container redis  Creating
+ Container postgres  Creating
+ Container redis  Created
+ Container postgres  Created
+ Container proxy  Creating
+ Container proxy  Created
+ Container core02  Creating
+ Container core01  Creating
+ Container core02  Created
+ Container core01  Created
+ Container haproxy  Creating
+ Container haproxy  Created
+Attaching to core01, core02, haproxy, postgres, proxy, redis
+redis     | 1:C 22 Jul 2025 19:01:15.585 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis     | 1:C 22 Jul 2025 19:01:15.585 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis     | 1:C 22 Jul 2025 19:01:15.585 * Redis version=7.4.5, bits=64, commit=00000000, modified=0, pid=1, just started
+redis     | 1:C 22 Jul 2025 19:01:15.585 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+redis     | 1:M 22 Jul 2025 19:01:15.585 * monotonic clock: POSIX clock_gettime
+redis     | 1:M 22 Jul 2025 19:01:15.586 * Running mode=standalone, port=6379.
+redis     | 1:M 22 Jul 2025 19:01:15.586 * Server initialized
+redis     | 1:M 22 Jul 2025 19:01:15.586 * Ready to accept connections tcp
+postgres  | The files belonging to this database system will be owned by user "postgres".
+postgres  | This user must also own the server process.
+postgres  | 
+postgres  | The database cluster will be initialized with locale "en_US.utf8".
+postgres  | The default database encoding has accordingly been set to "UTF8".
+postgres  | The default text search configuration will be set to "english".
+postgres  | 
+postgres  | Data page checksums are disabled.
+postgres  | 
+postgres  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+postgres  | creating subdirectories ... ok
+postgres  | selecting dynamic shared memory implementation ... posix
+postgres  | selecting default max_connections ... 100
+postgres  | selecting default shared_buffers ... 128MB
+postgres  | selecting default time zone ... Etc/UTC
+postgres  | creating configuration files ... ok
+proxy     | [2m2025-07-22T19:01:16.088083Z[0m [32m INFO[0m [2mactix_server::builder[0m[2m:[0m [2m310:[0m starting 1 workers
+proxy     | [2m2025-07-22T19:01:16.088131Z[0m [32m INFO[0m [2mactix_server::server[0m[2m:[0m [2m191:[0m Actix runtime found; starting in Actix runtime
+proxy     | [2m2025-07-22T19:01:16.088141Z[0m [32m INFO[0m [2mactix_server::server[0m[2m:[0m [2m197:[0m starting service: "actix-web-service-0.0.0.0:8005", workers: 1, listening on: 0.0.0.0:8005
+postgres  | running bootstrap script ... ok
+postgres  | performing post-bootstrap initialization ... ok
+postgres  | syncing data to disk ... ok
+postgres  | 
+postgres  | 
+postgres  | Success. You can now start the database server using:
+postgres  | 
+postgres  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+postgres  | 
+postgres  | initdb: warning: enabling "trust" authentication for local connections
+postgres  | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+postgres  | waiting for server to start....2025-07-22 19:01:17.242 UTC [48] LOG:  starting PostgreSQL 16.2 (Debian 16.2-1.pgdg120+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+postgres  | 2025-07-22 19:01:17.243 UTC [48] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres  | 2025-07-22 19:01:17.271 UTC [51] LOG:  database system was shut down at 2025-07-22 19:01:16 UTC
+postgres  | 2025-07-22 19:01:17.358 UTC [48] LOG:  database system is ready to accept connections
+postgres  |  done
+postgres  | server started
+postgres  | 
+postgres  | /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init-db.sql
+postgres  | CREATE TABLE
+postgres  | CREATE INDEX
+postgres  | CREATE INDEX
+postgres  | 
+postgres  | 
+postgres  | waiting for server to shut down...2025-07-22 19:01:17.741 UTC [48] LOG:  received fast shutdown request
+postgres  | .2025-07-22 19:01:17.741 UTC [48] LOG:  aborting any active transactions
+postgres  | 2025-07-22 19:01:17.743 UTC [48] LOG:  background worker "logical replication launcher" (PID 54) exited with exit code 1
+postgres  | 2025-07-22 19:01:17.804 UTC [49] LOG:  shutting down
+postgres  | 2025-07-22 19:01:17.845 UTC [48] LOG:  database system is shut down
+postgres  |  done
+postgres  | server stopped
+postgres  | 
+postgres  | PostgreSQL init process complete; ready for start up.
+postgres  | 
+postgres  | 2025-07-22 19:01:18.126 UTC [1] LOG:  starting PostgreSQL 16.2 (Debian 16.2-1.pgdg120+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+postgres  | 2025-07-22 19:01:18.128 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres  | 2025-07-22 19:01:18.128 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres  | 2025-07-22 19:01:18.129 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres  | 2025-07-22 19:01:18.132 UTC [64] LOG:  database system was shut down at 2025-07-22 19:01:17 UTC
+postgres  | 2025-07-22 19:01:18.182 UTC [1] LOG:  database system is ready to accept connections
+core01    | [2m2025-07-22T19:01:21.363394Z[0m [32m INFO[0m [2mcore[0m[2m:[0m [2m27:[0m Starting anibalmf1-rust server
+core01    | [2m2025-07-22T19:01:21.365079Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m27:[0m Connected to Redis at redis://redis:6379
+core01    | [2m2025-07-22T19:01:21.365095Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m185:[0m Connected to Redis at redis://redis:6379
+core02    | [2m2025-07-22T19:01:21.430508Z[0m [32m INFO[0m [2mcore[0m[2m:[0m [2m27:[0m Starting anibalmf1-rust server
+core02    | [2m2025-07-22T19:01:21.430700Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m27:[0m Connected to Redis at redis://redis:6379
+core02    | [2m2025-07-22T19:01:21.430708Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m185:[0m Connected to Redis at redis://redis:6379
+core01    | [2m2025-07-22T19:01:21.505841Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m99:[0m Connected to Redis at redis://redis:6379 for DLQ consumer
+core01    | [2m2025-07-22T19:01:21.505861Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m200:[0m Starting to consume messages from queue: payment
+core01    | [2m2025-07-22T19:01:21.505868Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m201:[0m DLQ configured as: payment_dlq
+core01    | [2m2025-07-22T19:01:21.505881Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m113:[0m Starting to consume messages from DLQ: payment_dlq
+core01    | [2m2025-07-22T19:01:21.506909Z[0m [32m INFO[0m [2mactix_server::builder[0m[2m:[0m [2m310:[0m starting 1 workers
+core01    | [2m2025-07-22T19:01:21.508087Z[0m [32m INFO[0m [2mactix_server::server[0m[2m:[0m [2m191:[0m Actix runtime found; starting in Actix runtime
+core01    | [2m2025-07-22T19:01:21.508102Z[0m [32m INFO[0m [2mactix_server::server[0m[2m:[0m [2m197:[0m starting service: "actix-web-service-0.0.0.0:8003", workers: 1, listening on: 0.0.0.0:8003
+core02    | [2m2025-07-22T19:01:21.593700Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m99:[0m Connected to Redis at redis://redis:6379 for DLQ consumer
+core02    | [2m2025-07-22T19:01:21.593717Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m200:[0m Starting to consume messages from queue: payment
+core02    | [2m2025-07-22T19:01:21.593761Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m201:[0m DLQ configured as: payment_dlq
+core02    | [2m2025-07-22T19:01:21.593792Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m113:[0m Starting to consume messages from DLQ: payment_dlq
+core02    | [2m2025-07-22T19:01:21.593942Z[0m [32m INFO[0m [2mactix_server::builder[0m[2m:[0m [2m310:[0m starting 1 workers
+core02    | [2m2025-07-22T19:01:21.593961Z[0m [32m INFO[0m [2mactix_server::server[0m[2m:[0m [2m191:[0m Actix runtime found; starting in Actix runtime
+core02    | [2m2025-07-22T19:01:21.593967Z[0m [32m INFO[0m [2mactix_server::server[0m[2m:[0m [2m197:[0m starting service: "actix-web-service-0.0.0.0:8004", workers: 1, listening on: 0.0.0.0:8004
+haproxy   | [NOTICE]   (1) : New worker (8) forked
+haproxy   | [NOTICE]   (1) : Loading success.
+core01    | [2m2025-07-22T19:01:23.151375Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "GET /payments-summary HTTP/1.1" 200 98 "-" "curl/7.88.1" 0.029842    
+core01    | [2m2025-07-22T19:01:24.586106Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m124:[0m Checking DLQ for messages: payment_dlq
+core01    | [2m2025-07-22T19:01:24.586342Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m164:[0m No more messages in DLQ
+core02    | [2m2025-07-22T19:01:24.596615Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m124:[0m Checking DLQ for messages: payment_dlq
+core02    | [2m2025-07-22T19:01:24.596801Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m164:[0m No more messages in DLQ
+core01    | [2m2025-07-22T19:01:27.588122Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m124:[0m Checking DLQ for messages: payment_dlq
+core01    | [2m2025-07-22T19:01:27.588328Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m164:[0m No more messages in DLQ
+core02    | [2m2025-07-22T19:01:27.597974Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m124:[0m Checking DLQ for messages: payment_dlq
+core02    | [2m2025-07-22T19:01:27.598164Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m164:[0m No more messages in DLQ
+core02    | [2m2025-07-22T19:01:29.443912Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /purge-payments HTTP/1.1" 404 0 "-" "Grafana k6/1.1.0" 0.000054    
+proxy     | [2m2025-07-22T19:01:29.452713Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:29.452748Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:29.452760Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"27c17ae8-8cdc-4d59-89d4-e9c5f38596ca","amount":"19.9","requestedAt":"2025-07-22T19:01:29.450150526+00:00"}
+proxy     | [2m2025-07-22T19:01:29.452767Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+core01    | [2m2025-07-22T19:01:29.454118Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "GET /payments-summary?from=2025-07-22T19:01:19.444Z&to=2025-07-22T19:01:29.344Z HTTP/1.1" 200 98 "-" "Grafana k6/1.1.0" 0.005398    
+proxy     | [2m2025-07-22T19:01:29.455112Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:29.506556Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:29.514068Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:29.514103Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.064032    
+proxy     | [2m2025-07-22T19:01:29.556081Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:29.556105Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:29.556115Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"e7818763-9301-4db6-94fe-9c8ed28f4c04","amount":"19.9","requestedAt":"2025-07-22T19:01:29.555250755+00:00"}
+proxy     | [2m2025-07-22T19:01:29.556122Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:29.556141Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:29.557803Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:29.558879Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:29.558903Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.003686    
+proxy     | [2m2025-07-22T19:01:29.665229Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:29.665245Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:29.665251Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"c26132b0-6cfc-4a53-9d95-7ee1ee040724","amount":"19.9","requestedAt":"2025-07-22T19:01:29.665095451+00:00"}
+proxy     | [2m2025-07-22T19:01:29.665255Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:29.665265Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:29.666890Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:29.667774Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:29.667811Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002777    
+proxy     | [2m2025-07-22T19:01:29.774652Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:29.774673Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:29.774684Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"cb8684eb-c9fc-4f85-9f86-2825ca53ec6c","amount":"19.9","requestedAt":"2025-07-22T19:01:29.774498937+00:00"}
+proxy     | [2m2025-07-22T19:01:29.774688Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:29.774702Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:29.776301Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:29.777561Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:29.777592Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.003166    
+proxy     | [2m2025-07-22T19:01:29.883281Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:29.883300Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:29.883309Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"a85d8698-c19c-4528-8a3a-0bd7db75af1a","amount":"19.9","requestedAt":"2025-07-22T19:01:29.883109610+00:00"}
+proxy     | [2m2025-07-22T19:01:29.883313Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:29.883327Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:29.884636Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:29.885621Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:29.885644Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002573    
+proxy     | [2m2025-07-22T19:01:29.992275Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:29.992293Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:29.992301Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"cd011b02-9925-47d9-8cbd-2e9b417fa2aa","amount":"19.9","requestedAt":"2025-07-22T19:01:29.992134963+00:00"}
+proxy     | [2m2025-07-22T19:01:29.992307Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:29.992321Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:29.993562Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:29.994386Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:29.994415Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002327    
+proxy     | [2m2025-07-22T19:01:30.101941Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:30.101962Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:30.101970Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"05bf4f83-0475-457c-ba30-2040a2338707","amount":"19.9","requestedAt":"2025-07-22T19:01:30.101776119+00:00"}
+proxy     | [2m2025-07-22T19:01:30.101975Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:30.101988Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:30.103380Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:30.104351Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:30.104381Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002688    
+proxy     | [2m2025-07-22T19:01:30.210900Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:30.210923Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:30.210933Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"570caaab-030f-461c-a079-82d04f87a6c5","amount":"19.9","requestedAt":"2025-07-22T19:01:30.210717713+00:00"}
+proxy     | [2m2025-07-22T19:01:30.210939Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:30.210955Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:30.212531Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:30.213258Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:30.213285Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002603    
+proxy     | [2m2025-07-22T19:01:30.320935Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:30.320958Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:30.320967Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"014ac10d-f07c-46b7-943b-5185c9b6f553","amount":"19.9","requestedAt":"2025-07-22T19:01:30.320781252+00:00"}
+proxy     | [2m2025-07-22T19:01:30.320971Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:30.320983Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:30.322770Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:30.323567Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:30.323592Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002873    
+proxy     | [2m2025-07-22T19:01:30.429957Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:30.429975Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:30.429981Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"4c625233-9b75-4552-b032-7b0a01c1c9f5","amount":"19.9","requestedAt":"2025-07-22T19:01:30.429806553+00:00"}
+proxy     | [2m2025-07-22T19:01:30.429985Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:30.429995Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:30.431410Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:30.432399Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:30.432422Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002704    
+proxy     | [2m2025-07-22T19:01:30.516939Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:30.516957Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:30.516966Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"f9f8925c-2a6b-4287-923d-3d4a565291c2","amount":"19.9","requestedAt":"2025-07-22T19:01:30.516786483+00:00"}
+proxy     | [2m2025-07-22T19:01:30.516971Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:30.516983Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:30.518217Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:30.519211Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:30.519250Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002525    
+proxy     | [2m2025-07-22T19:01:30.539229Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:30.539246Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:30.539269Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"cd0ec86d-cac7-47e2-924f-c9985f10977c","amount":"19.9","requestedAt":"2025-07-22T19:01:30.539093227+00:00"}
+proxy     | [2m2025-07-22T19:01:30.539274Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:30.539285Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:30.540432Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:30.541318Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:30.541358Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002298    
+proxy     | [2m2025-07-22T19:01:30.560895Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:30.560915Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:30.560923Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"dcf163f4-cd55-4fa2-b286-29fee3b89b77","amount":"19.9","requestedAt":"2025-07-22T19:01:30.560715394+00:00"}
+proxy     | [2m2025-07-22T19:01:30.560928Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:30.560941Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:30.562424Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:30.563271Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:30.563314Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002635    
+core01    | [2m2025-07-22T19:01:30.589565Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m124:[0m Checking DLQ for messages: payment_dlq
+core01    | [2m2025-07-22T19:01:30.589805Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m164:[0m No more messages in DLQ
+core02    | [2m2025-07-22T19:01:30.598671Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m124:[0m Checking DLQ for messages: payment_dlq
+core02    | [2m2025-07-22T19:01:30.598904Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m164:[0m No more messages in DLQ
+proxy     | [2m2025-07-22T19:01:30.648440Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:30.648472Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:30.648479Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"d211f665-6045-41ed-8fdf-bf9a876e26b3","amount":"19.9","requestedAt":"2025-07-22T19:01:30.648273915+00:00"}
+proxy     | [2m2025-07-22T19:01:30.648482Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:30.648493Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:30.649840Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:30.650599Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:30.650623Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002388    
+proxy     | [2m2025-07-22T19:01:30.670550Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:30.670570Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:30.670579Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"b4e55a23-8b8f-492a-a3b3-bd6be88fa132","amount":"19.9","requestedAt":"2025-07-22T19:01:30.670377326+00:00"}
+proxy     | [2m2025-07-22T19:01:30.670583Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:30.670598Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:30.672218Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:30.672934Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:30.672958Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002629    
+proxy     | [2m2025-07-22T19:01:30.757992Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:30.758011Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:30.758019Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"32ec38dd-dd29-40c1-a358-90a8d5e093da","amount":"19.9","requestedAt":"2025-07-22T19:01:30.757763740+00:00"}
+proxy     | [2m2025-07-22T19:01:30.758024Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:30.758037Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:30.760104Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:30.761160Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:30.761187Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.003476    
+proxy     | [2m2025-07-22T19:01:30.779696Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:30.779712Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:30.779718Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"084751ba-38f5-4b38-ba3b-451c860345fd","amount":"19.9","requestedAt":"2025-07-22T19:01:30.779527937+00:00"}
+proxy     | [2m2025-07-22T19:01:30.779721Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:30.779731Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:30.781135Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:30.782472Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:30.782500Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.003042    
+proxy     | [2m2025-07-22T19:01:30.867179Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:30.867200Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:30.867210Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"4646859d-d7d6-415b-be94-ba9116a34e31","amount":"19.9","requestedAt":"2025-07-22T19:01:30.866988306+00:00"}
+proxy     | [2m2025-07-22T19:01:30.867214Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:30.867228Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:30.868546Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:30.869364Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:30.869386Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002429    
+proxy     | [2m2025-07-22T19:01:30.887616Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:30.887634Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:30.887640Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"f5bd5fc9-692e-445c-9be0-4a644c676c79","amount":"19.9","requestedAt":"2025-07-22T19:01:30.887436533+00:00"}
+proxy     | [2m2025-07-22T19:01:30.887644Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:30.887654Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:30.888977Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:30.889894Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:30.889920Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002523    
+proxy     | [2m2025-07-22T19:01:30.976299Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:30.976317Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:30.976323Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"47749c8a-9dd0-4be3-a980-40af9582c06f","amount":"19.9","requestedAt":"2025-07-22T19:01:30.976140072+00:00"}
+proxy     | [2m2025-07-22T19:01:30.976326Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:30.976337Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:30.977517Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:30.978415Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:30.978454Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002349    
+proxy     | [2m2025-07-22T19:01:30.996104Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:30.996124Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:30.996146Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"d1fe99e5-e5ac-4952-ae34-5fd95624428b","amount":"19.9","requestedAt":"2025-07-22T19:01:30.995923698+00:00"}
+proxy     | [2m2025-07-22T19:01:30.996151Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:30.996165Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:30.997350Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:30.998038Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:30.998062Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002212    
+proxy     | [2m2025-07-22T19:01:31.086559Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.086585Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.086596Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"197fccff-4029-42ff-bf28-91e0feb3963d","amount":"19.9","requestedAt":"2025-07-22T19:01:31.086377584+00:00"}
+proxy     | [2m2025-07-22T19:01:31.086602Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.086618Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.088234Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:31.089167Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:31.089200Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002867    
+proxy     | [2m2025-07-22T19:01:31.106316Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.106338Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.106347Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"9f859f4e-dc61-4e9e-9744-d5d85ae14a9d","amount":"19.9","requestedAt":"2025-07-22T19:01:31.106104642+00:00"}
+proxy     | [2m2025-07-22T19:01:31.106352Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.106366Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.107920Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:31.108606Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:31.108629Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002578    
+proxy     | [2m2025-07-22T19:01:31.194933Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.194949Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.194955Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"cfe9365a-ebb9-4a1c-a22c-745f937c8c05","amount":"19.9","requestedAt":"2025-07-22T19:01:31.194786874+00:00"}
+proxy     | [2m2025-07-22T19:01:31.194958Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.194969Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.196205Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:31.197016Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:31.197038Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002300    
+proxy     | [2m2025-07-22T19:01:31.215466Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.215485Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.215491Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"970bec97-cd61-4432-83ba-017752505fe4","amount":"19.9","requestedAt":"2025-07-22T19:01:31.215300780+00:00"}
+proxy     | [2m2025-07-22T19:01:31.215495Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.215505Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.216795Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:31.217893Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:31.217941Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002707    
+proxy     | [2m2025-07-22T19:01:31.304235Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.304253Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.304259Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"176a01b3-3e53-46ec-a675-3487c6c30ffe","amount":"19.9","requestedAt":"2025-07-22T19:01:31.304074063+00:00"}
+proxy     | [2m2025-07-22T19:01:31.304263Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.304272Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.305627Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:31.306562Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:31.306590Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002556    
+proxy     | [2m2025-07-22T19:01:31.326035Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.326053Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.326064Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"5c82182f-98d3-46d0-aa05-9eca8ec3bb17","amount":"19.9","requestedAt":"2025-07-22T19:01:31.325878539+00:00"}
+proxy     | [2m2025-07-22T19:01:31.326069Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.326082Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.327468Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:31.328851Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:31.328881Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.003049    
+proxy     | [2m2025-07-22T19:01:31.413340Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.413358Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.413381Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"45e76ea6-11b7-4c08-89b3-179f5d96e118","amount":"19.9","requestedAt":"2025-07-22T19:01:31.413177274+00:00"}
+proxy     | [2m2025-07-22T19:01:31.413386Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.413398Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.414721Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:31.415495Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:31.415523Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002380    
+proxy     | [2m2025-07-22T19:01:31.434054Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.434073Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.434084Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"63bb16fd-7fe8-46ce-aea6-fcc750e7d8bc","amount":"19.9","requestedAt":"2025-07-22T19:01:31.433909978+00:00"}
+proxy     | [2m2025-07-22T19:01:31.434088Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.434103Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.435415Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:31.436214Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:31.436254Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002429    
+proxy     | [2m2025-07-22T19:01:31.520632Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.520652Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.520662Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"5729f8ba-d0c2-43cf-86c4-0071310c36d8","amount":"19.9","requestedAt":"2025-07-22T19:01:31.520488690+00:00"}
+proxy     | [2m2025-07-22T19:01:31.520667Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.520680Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.522369Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.522386Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.522392Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"4a5efc65-14ae-4616-b6a1-c198ac6e38e3","amount":"19.9","requestedAt":"2025-07-22T19:01:31.522189768+00:00"}
+proxy     | [2m2025-07-22T19:01:31.522395Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.522406Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.522673Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:31.523529Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:31.523557Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.003131    
+proxy     | [2m2025-07-22T19:01:31.524097Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:31.524925Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:31.524952Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002843    
+proxy     | [2m2025-07-22T19:01:31.543492Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.543512Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.543522Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"75d7e9d3-8cb7-4012-bc4b-5b6d64acb2a1","amount":"19.9","requestedAt":"2025-07-22T19:01:31.543318474+00:00"}
+proxy     | [2m2025-07-22T19:01:31.543526Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.543540Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.544836Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:31.545653Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:31.545681Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002398    
+proxy     | [2m2025-07-22T19:01:31.565045Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.565063Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.565069Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"cbdd0cf6-3033-4862-a682-7d0147e073be","amount":"19.9","requestedAt":"2025-07-22T19:01:31.564885790+00:00"}
+proxy     | [2m2025-07-22T19:01:31.565073Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.565083Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.566189Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:31.567021Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:31.567063Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002225    
+proxy     | [2m2025-07-22T19:01:31.632191Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.632210Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.632217Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"b306e70d-4444-4035-b812-47a5ceadaf68","amount":"19.9","requestedAt":"2025-07-22T19:01:31.632036640+00:00"}
+proxy     | [2m2025-07-22T19:01:31.632221Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.632231Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.633329Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:31.634196Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:31.634219Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002218    
+proxy     | [2m2025-07-22T19:01:31.653033Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.653053Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.653064Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"fd0ede81-b42c-4261-94ba-7e6cb3a86200","amount":"19.9","requestedAt":"2025-07-22T19:01:31.652862873+00:00"}
+proxy     | [2m2025-07-22T19:01:31.653070Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.653083Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.654387Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:31.655521Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:31.655549Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002723    
+proxy     | [2m2025-07-22T19:01:31.675013Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.675051Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.675062Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"31c7faf1-700a-4b94-a6a9-abb7a6f64887","amount":"19.9","requestedAt":"2025-07-22T19:01:31.674845725+00:00"}
+proxy     | [2m2025-07-22T19:01:31.675080Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.675094Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.676393Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:31.677309Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:31.677334Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002531    
+proxy     | [2m2025-07-22T19:01:31.741600Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.741624Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.741634Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"29f23de8-3ea5-4cc9-a31a-e5f402485591","amount":"19.9","requestedAt":"2025-07-22T19:01:31.741406324+00:00"}
+proxy     | [2m2025-07-22T19:01:31.741641Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.741656Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.742963Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:31.744055Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:31.744101Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002762    
+proxy     | [2m2025-07-22T19:01:31.763829Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.763847Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.763853Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"c0fd3aad-b5d1-4ef9-9366-8751b44fa248","amount":"19.9","requestedAt":"2025-07-22T19:01:31.763612911+00:00"}
+proxy     | [2m2025-07-22T19:01:31.763857Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.763867Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.765025Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:31.766078Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:31.766120Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002550    
+proxy     | [2m2025-07-22T19:01:31.784356Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.784375Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.784383Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"bad1a33f-e21c-4d93-9ea9-69100f7d315f","amount":"19.9","requestedAt":"2025-07-22T19:01:31.784200436+00:00"}
+proxy     | [2m2025-07-22T19:01:31.784388Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.784401Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.785615Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:31.786371Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:31.786397Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002239    
+proxy     | [2m2025-07-22T19:01:31.850749Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.850783Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.850791Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"f4dc16cc-6b38-45f7-be6d-c8a0949f054d","amount":"19.9","requestedAt":"2025-07-22T19:01:31.850617201+00:00"}
+proxy     | [2m2025-07-22T19:01:31.850797Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.850821Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.851907Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:31.852593Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:31.852615Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002038    
+proxy     | [2m2025-07-22T19:01:31.870841Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.870857Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.870863Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"dc3786a2-cffd-4492-b4d5-126103bb8ceb","amount":"19.9","requestedAt":"2025-07-22T19:01:31.870680465+00:00"}
+proxy     | [2m2025-07-22T19:01:31.870867Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.870878Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.871913Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:31.872660Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:31.872682Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002035    
+proxy     | [2m2025-07-22T19:01:31.892032Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.892050Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.892058Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"a77a2059-4e4e-4b84-bb51-2746c8956060","amount":"19.9","requestedAt":"2025-07-22T19:01:31.891887927+00:00"}
+proxy     | [2m2025-07-22T19:01:31.892063Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.892075Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.893116Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:31.893935Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:31.893958Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002110    
+proxy     | [2m2025-07-22T19:01:31.960187Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.960204Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.960210Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"97fdd59a-e053-44a8-b418-0f9f6d3fbd47","amount":"19.9","requestedAt":"2025-07-22T19:01:31.960001974+00:00"}
+proxy     | [2m2025-07-22T19:01:31.960214Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.960223Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.961223Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:31.962140Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:31.962170Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002217    
+proxy     | [2m2025-07-22T19:01:31.980441Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.980457Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.980463Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"2c98dcc5-fa48-4adc-8ac2-43231e0a95b5","amount":"19.9","requestedAt":"2025-07-22T19:01:31.980302600+00:00"}
+proxy     | [2m2025-07-22T19:01:31.980466Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.980476Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:31.981424Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:31.982376Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:31.982412Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002142    
+proxy     | [2m2025-07-22T19:01:31.999947Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:31.999964Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:31.999971Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"45dcd64e-7e0f-4666-9544-76735db08e59","amount":"19.9","requestedAt":"2025-07-22T19:01:31.999767791+00:00"}
+proxy     | [2m2025-07-22T19:01:31.999975Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:31.999998Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.001029Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:32.001677Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:32.001702Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002001    
+proxy     | [2m2025-07-22T19:01:32.068872Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.068893Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.068902Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"ae020910-0d71-46d2-9d76-5b0d475c010e","amount":"19.9","requestedAt":"2025-07-22T19:01:32.068686990+00:00"}
+proxy     | [2m2025-07-22T19:01:32.068908Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.068920Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.070130Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:32.071071Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:32.071114Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002466    
+proxy     | [2m2025-07-22T19:01:32.091620Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.091638Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.091649Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"2c771ad5-d88e-448b-8dd8-66f4e9415d82","amount":"19.9","requestedAt":"2025-07-22T19:01:32.091437442+00:00"}
+proxy     | [2m2025-07-22T19:01:32.091654Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.091670Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.092871Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:32.093665Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:32.093762Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002386    
+proxy     | [2m2025-07-22T19:01:32.110332Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.110353Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.110365Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"5d6647ee-4f24-4891-905e-2c551fd23826","amount":"19.9","requestedAt":"2025-07-22T19:01:32.110157293+00:00"}
+proxy     | [2m2025-07-22T19:01:32.110369Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.110384Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.111552Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:32.112494Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:32.112523Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002408    
+proxy     | [2m2025-07-22T19:01:32.178883Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.178903Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.178913Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"8b7f4af7-a9b2-4be6-b10d-786c3d7561d5","amount":"19.9","requestedAt":"2025-07-22T19:01:32.178749208+00:00"}
+proxy     | [2m2025-07-22T19:01:32.178917Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.178931Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.179879Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:32.180617Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:32.180641Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001942    
+proxy     | [2m2025-07-22T19:01:32.199261Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.199278Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.199285Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"ce3cce04-ea47-40af-9d87-ec32ca93749a","amount":"19.9","requestedAt":"2025-07-22T19:01:32.199054619+00:00"}
+proxy     | [2m2025-07-22T19:01:32.199288Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.199298Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.200157Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:32.201170Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:32.201198Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002187    
+proxy     | [2m2025-07-22T19:01:32.219613Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.219631Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.219637Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"11f03c5a-1988-4907-abfe-2298fb9ad47e","amount":"19.9","requestedAt":"2025-07-22T19:01:32.219433737+00:00"}
+proxy     | [2m2025-07-22T19:01:32.219641Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.219650Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.220610Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:32.221536Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:32.221559Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002184    
+proxy     | [2m2025-07-22T19:01:32.287657Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.287675Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.287681Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"a71e36ab-0474-4838-acde-cf1099586daf","amount":"19.9","requestedAt":"2025-07-22T19:01:32.287535428+00:00"}
+proxy     | [2m2025-07-22T19:01:32.287684Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.287694Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.288582Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:32.289313Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:32.289364Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001868    
+proxy     | [2m2025-07-22T19:01:32.308783Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.308801Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.308809Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"3cb97582-dd7f-48df-9706-c89310cff160","amount":"19.9","requestedAt":"2025-07-22T19:01:32.308599382+00:00"}
+proxy     | [2m2025-07-22T19:01:32.308815Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.308827Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.309664Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:32.310465Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:32.310494Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001932    
+proxy     | [2m2025-07-22T19:01:32.330805Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.330822Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.330829Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"0ac1424f-2b02-4566-9a91-3ce7e07998fb","amount":"19.9","requestedAt":"2025-07-22T19:01:32.330629125+00:00"}
+proxy     | [2m2025-07-22T19:01:32.330835Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.330847Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.331691Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:32.332818Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:32.332850Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002260    
+proxy     | [2m2025-07-22T19:01:32.397378Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.397394Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.397400Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"d5c5ea23-2a65-40a9-a5ca-e53d88379d63","amount":"19.9","requestedAt":"2025-07-22T19:01:32.397242070+00:00"}
+proxy     | [2m2025-07-22T19:01:32.397417Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.397433Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.398464Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:32.399149Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:32.399220Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002017    
+proxy     | [2m2025-07-22T19:01:32.417625Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.417643Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.417649Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"ea92b712-f702-4136-a898-6f4f67e3d3ba","amount":"19.9","requestedAt":"2025-07-22T19:01:32.417444919+00:00"}
+proxy     | [2m2025-07-22T19:01:32.417653Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.417662Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.418646Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:32.419585Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:32.419610Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002201    
+proxy     | [2m2025-07-22T19:01:32.437732Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.437756Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.437763Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"0a1ea9bf-a97c-495c-9729-7cb82d478fde","amount":"19.9","requestedAt":"2025-07-22T19:01:32.437586364+00:00"}
+proxy     | [2m2025-07-22T19:01:32.437782Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.437793Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.438610Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:32.439635Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:32.439658Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002112    
+proxy     | [2m2025-07-22T19:01:32.506693Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.506712Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.506722Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"ef0cc290-04a7-44b2-88af-fff2965dd96b","amount":"19.9","requestedAt":"2025-07-22T19:01:32.506568726+00:00"}
+proxy     | [2m2025-07-22T19:01:32.506726Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.506769Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.507879Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:32.508554Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:32.508582Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002052    
+proxy     | [2m2025-07-22T19:01:32.524847Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.524879Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.524885Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"2b7fb825-6f4a-4b21-ad15-c30e79821ce5","amount":"19.9","requestedAt":"2025-07-22T19:01:32.524671189+00:00"}
+proxy     | [2m2025-07-22T19:01:32.524889Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.524900Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.525898Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:32.526683Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:32.526707Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002070    
+proxy     | [2m2025-07-22T19:01:32.527063Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.527076Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.527082Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"155ec5a9-e6cb-4d87-a058-053464feaf4c","amount":"19.9","requestedAt":"2025-07-22T19:01:32.526852883+00:00"}
+proxy     | [2m2025-07-22T19:01:32.527085Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.527094Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.528004Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:32.528648Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:32.528670Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001861    
+proxy     | [2m2025-07-22T19:01:32.547280Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.547301Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.547311Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"fb8ca055-9702-47af-bb94-5efc98181ffc","amount":"19.9","requestedAt":"2025-07-22T19:01:32.547083616+00:00"}
+proxy     | [2m2025-07-22T19:01:32.547318Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.547332Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.548349Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:32.549073Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:32.549100Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002056    
+proxy     | [2m2025-07-22T19:01:32.568533Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.568552Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.568562Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"bb2bc3d6-e267-49a4-8954-4e7b66338ad0","amount":"19.9","requestedAt":"2025-07-22T19:01:32.568345726+00:00"}
+proxy     | [2m2025-07-22T19:01:32.568565Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.568579Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.569668Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:32.570420Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:32.570442Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002130    
+proxy     | [2m2025-07-22T19:01:32.615520Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.615537Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.615544Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"2a1ad8e2-e69b-42ad-a8dc-eb8405f01823","amount":"19.9","requestedAt":"2025-07-22T19:01:32.615396487+00:00"}
+proxy     | [2m2025-07-22T19:01:32.615547Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.615557Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.616636Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:32.617333Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:32.617375Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002020    
+proxy     | [2m2025-07-22T19:01:32.635681Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.635699Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.635705Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"e0765c3b-35b5-440a-80ba-4e3e8dbf8781","amount":"19.9","requestedAt":"2025-07-22T19:01:32.635498216+00:00"}
+proxy     | [2m2025-07-22T19:01:32.635709Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.635720Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.636824Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:32.637679Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:32.637701Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002239    
+proxy     | [2m2025-07-22T19:01:32.657538Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.657558Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.657568Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"0348cf9b-e5d8-4643-868e-4db80d0f0ce8","amount":"19.9","requestedAt":"2025-07-22T19:01:32.657357297+00:00"}
+proxy     | [2m2025-07-22T19:01:32.657575Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.657599Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.658530Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:32.659301Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:32.659329Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002012    
+proxy     | [2m2025-07-22T19:01:32.679717Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.679745Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.679752Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"6e8b032f-e02b-40af-86ea-a747ad33a43f","amount":"19.9","requestedAt":"2025-07-22T19:01:32.679529976+00:00"}
+proxy     | [2m2025-07-22T19:01:32.679756Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.679767Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.680669Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:32.681551Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:32.681578Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002096    
+proxy     | [2m2025-07-22T19:01:32.724898Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.724920Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.724931Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"11d272e4-c2ec-4634-8aeb-36eae60997ca","amount":"19.9","requestedAt":"2025-07-22T19:01:32.724744495+00:00"}
+proxy     | [2m2025-07-22T19:01:32.724937Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.724955Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.726007Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:32.726875Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:32.726901Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002204    
+proxy     | [2m2025-07-22T19:01:32.746520Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.746544Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.746553Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"43979ff3-5afd-4a13-8726-6ff88b568b60","amount":"19.9","requestedAt":"2025-07-22T19:01:32.746350228+00:00"}
+proxy     | [2m2025-07-22T19:01:32.746557Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.746571Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.747815Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:32.748614Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:32.748647Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002338    
+proxy     | [2m2025-07-22T19:01:32.768188Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.768212Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.768221Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"656a9d2d-d7e0-4d6d-9e25-ec42c4b810fb","amount":"19.9","requestedAt":"2025-07-22T19:01:32.767990922+00:00"}
+proxy     | [2m2025-07-22T19:01:32.768225Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.768239Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.769207Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:32.770071Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:32.770107Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002167    
+proxy     | [2m2025-07-22T19:01:32.788337Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.788354Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.788360Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"6ef6bd80-cd93-46bf-9b19-8a449dadd4c2","amount":"19.9","requestedAt":"2025-07-22T19:01:32.788196466+00:00"}
+proxy     | [2m2025-07-22T19:01:32.788363Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.788374Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.789242Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:32.790121Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:32.790160Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002035    
+proxy     | [2m2025-07-22T19:01:32.834136Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.834154Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.834165Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"64026a26-8d0a-4faa-87cc-eac3a919718a","amount":"19.9","requestedAt":"2025-07-22T19:01:32.834007912+00:00"}
+proxy     | [2m2025-07-22T19:01:32.834169Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.834182Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.835225Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:32.835848Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:32.835872Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001897    
+proxy     | [2m2025-07-22T19:01:32.854455Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.854475Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.854486Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"858e6b7c-d859-42c4-859d-e934fd7866f0","amount":"19.9","requestedAt":"2025-07-22T19:01:32.854275721+00:00"}
+proxy     | [2m2025-07-22T19:01:32.854490Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.854503Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.855363Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:32.856289Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:32.856313Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002076    
+proxy     | [2m2025-07-22T19:01:32.874518Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.874536Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.874542Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"6c15f345-c198-40be-b857-dedbef440136","amount":"19.9","requestedAt":"2025-07-22T19:01:32.874375653+00:00"}
+proxy     | [2m2025-07-22T19:01:32.874546Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.874556Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.875407Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:32.876341Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:32.876383Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002045    
+proxy     | [2m2025-07-22T19:01:32.895898Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.895916Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.895922Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"b9b9a7da-b97d-4f6d-a20d-cd1551a600f8","amount":"19.9","requestedAt":"2025-07-22T19:01:32.895687255+00:00"}
+proxy     | [2m2025-07-22T19:01:32.895926Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.895935Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.896892Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:32.897530Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:32.897553Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001935    
+proxy     | [2m2025-07-22T19:01:32.943469Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.943487Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.943507Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"1cebda10-c830-44b8-bfc7-680936fa5c71","amount":"19.9","requestedAt":"2025-07-22T19:01:32.943305951+00:00"}
+proxy     | [2m2025-07-22T19:01:32.943511Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.943534Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.944687Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:32.945582Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:32.945606Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002333    
+proxy     | [2m2025-07-22T19:01:32.964185Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.964205Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.964215Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"40d70387-3cd0-4a4c-8e92-a80c0ceb8ee4","amount":"19.9","requestedAt":"2025-07-22T19:01:32.964046607+00:00"}
+proxy     | [2m2025-07-22T19:01:32.964220Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.964234Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.965279Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:32.966375Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:32.966404Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002398    
+proxy     | [2m2025-07-22T19:01:32.983663Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:32.983681Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:32.983688Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"2990d375-89ee-4b41-8f9f-0f2e9f502b23","amount":"19.9","requestedAt":"2025-07-22T19:01:32.983493984+00:00"}
+proxy     | [2m2025-07-22T19:01:32.983691Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:32.983702Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:32.984972Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:32.985688Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:32.985714Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002258    
+proxy     | [2m2025-07-22T19:01:33.003570Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.003592Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.003601Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"caf4a40a-2f17-43b0-84c1-54b7b457523e","amount":"19.9","requestedAt":"2025-07-22T19:01:33.003392452+00:00"}
+proxy     | [2m2025-07-22T19:01:33.003606Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.003620Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.004644Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:33.005526Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:33.005558Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002252    
+proxy     | [2m2025-07-22T19:01:33.052579Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.052596Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.052602Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"58f01574-412b-48e9-a9c4-796f49f43adf","amount":"19.9","requestedAt":"2025-07-22T19:01:33.052452822+00:00"}
+proxy     | [2m2025-07-22T19:01:33.052605Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.052616Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.053628Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:33.054597Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:33.054627Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002212    
+proxy     | [2m2025-07-22T19:01:33.072992Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.073011Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.073018Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"f21ae757-52b0-40b7-91cc-b223515fe585","amount":"19.9","requestedAt":"2025-07-22T19:01:33.072805182+00:00"}
+proxy     | [2m2025-07-22T19:01:33.073021Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.073031Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.073862Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:33.074947Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:33.074969Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002240    
+proxy     | [2m2025-07-22T19:01:33.095530Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.095554Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.095580Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"5ce134ba-a221-430e-bc38-3fd94ea67a23","amount":"19.9","requestedAt":"2025-07-22T19:01:33.095360429+00:00"}
+proxy     | [2m2025-07-22T19:01:33.095587Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.095601Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.096548Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:33.097210Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:33.097234Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001918    
+proxy     | [2m2025-07-22T19:01:33.114609Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.114631Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.114640Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"6abf3236-ce5d-4215-974d-ba1e93991684","amount":"19.9","requestedAt":"2025-07-22T19:01:33.114434270+00:00"}
+proxy     | [2m2025-07-22T19:01:33.114645Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.114659Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.115627Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:33.116428Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:33.116455Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002101    
+proxy     | [2m2025-07-22T19:01:33.182318Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.182343Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.182352Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"d64b142d-2a21-46f5-8ed3-b0d1b5bcac77","amount":"19.9","requestedAt":"2025-07-22T19:01:33.182145917+00:00"}
+proxy     | [2m2025-07-22T19:01:33.182357Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.182371Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.182449Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.182461Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.182466Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"eb3e6d4f-a6ee-44dc-9f2f-6e5ffb3e6e8a","amount":"19.9","requestedAt":"2025-07-22T19:01:33.182148947+00:00"}
+proxy     | [2m2025-07-22T19:01:33.182470Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.182477Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.183563Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+proxy     | [2m2025-07-22T19:01:33.184004Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:33.184756Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:33.184777Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002670    
+core02    | [2m2025-07-22T19:01:33.184674Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:33.184704Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002596    
+proxy     | [2m2025-07-22T19:01:33.202634Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.202656Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.202664Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"6479b98b-bb9b-4a22-8b7a-e4ffef13cb38","amount":"19.9","requestedAt":"2025-07-22T19:01:33.202470107+00:00"}
+proxy     | [2m2025-07-22T19:01:33.202669Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.202683Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.203526Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:33.204242Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:33.204268Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001839    
+proxy     | [2m2025-07-22T19:01:33.223912Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.223948Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.223961Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"674f6dde-d204-4672-bc57-b0d18f30f40e","amount":"19.9","requestedAt":"2025-07-22T19:01:33.223706873+00:00"}
+proxy     | [2m2025-07-22T19:01:33.223967Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.223979Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.224858Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:33.225602Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:33.225631Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002022    
+proxy     | [2m2025-07-22T19:01:33.271873Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.271890Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.271895Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"796f99c4-338d-47f5-837e-d4afd1384dc1","amount":"19.9","requestedAt":"2025-07-22T19:01:33.271708189+00:00"}
+proxy     | [2m2025-07-22T19:01:33.271899Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.271910Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.272648Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:33.273294Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:33.273316Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001643    
+proxy     | [2m2025-07-22T19:01:33.291851Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.291869Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.291879Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"45aa0ffc-33c3-409e-abcf-e3600cf71b83","amount":"19.9","requestedAt":"2025-07-22T19:01:33.291597969+00:00"}
+proxy     | [2m2025-07-22T19:01:33.291886Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.291900Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.292829Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:33.293978Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:33.294007Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002459    
+proxy     | [2m2025-07-22T19:01:33.312543Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.312561Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.312570Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"47173d94-6620-4ad8-9d17-3a70c967b784","amount":"19.9","requestedAt":"2025-07-22T19:01:33.312368256+00:00"}
+proxy     | [2m2025-07-22T19:01:33.312575Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.312587Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.313459Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:33.314229Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:33.314254Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001945    
+proxy     | [2m2025-07-22T19:01:33.334783Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.334814Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.334838Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"ae454b32-2322-4fe3-9896-84662339bf39","amount":"19.9","requestedAt":"2025-07-22T19:01:33.334614188+00:00"}
+proxy     | [2m2025-07-22T19:01:33.334844Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.334856Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.335756Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:33.336444Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:33.336470Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001945    
+proxy     | [2m2025-07-22T19:01:33.380536Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.380553Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.380561Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"9240340f-f9ae-481a-84b0-7eb8b2ea50f9","amount":"19.9","requestedAt":"2025-07-22T19:01:33.380402959+00:00"}
+proxy     | [2m2025-07-22T19:01:33.380566Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.380581Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.381400Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:33.382036Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:33.382059Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001688    
+proxy     | [2m2025-07-22T19:01:33.400684Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.400702Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.400710Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"240548b3-5bb5-46da-abed-7867b42f2326","amount":"19.9","requestedAt":"2025-07-22T19:01:33.400535480+00:00"}
+proxy     | [2m2025-07-22T19:01:33.400716Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.400728Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.401473Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:33.402114Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:33.402137Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001652    
+proxy     | [2m2025-07-22T19:01:33.421379Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.421397Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.421403Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"588fb006-5210-43f8-96a5-8a96663d78ed","amount":"19.9","requestedAt":"2025-07-22T19:01:33.421170008+00:00"}
+proxy     | [2m2025-07-22T19:01:33.421406Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.421416Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.422298Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:33.422932Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:33.422961Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001848    
+proxy     | [2m2025-07-22T19:01:33.441408Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.441428Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.441442Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"0a3956d1-0869-486c-910c-2e12b37ae709","amount":"19.9","requestedAt":"2025-07-22T19:01:33.441211620+00:00"}
+proxy     | [2m2025-07-22T19:01:33.441449Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.441463Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.442407Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:33.443125Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:33.443162Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002034    
+proxy     | [2m2025-07-22T19:01:33.489963Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.489980Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.489989Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"4fc99414-bceb-4e71-a327-0f9922c4d76a","amount":"19.9","requestedAt":"2025-07-22T19:01:33.489823518+00:00"}
+proxy     | [2m2025-07-22T19:01:33.489994Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.490008Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.490960Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:33.491774Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:33.491802Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002037    
+proxy     | [2m2025-07-22T19:01:33.510113Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.510131Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.510137Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"72dadee7-e399-4717-b73e-045363ddabb1","amount":"19.9","requestedAt":"2025-07-22T19:01:33.509968414+00:00"}
+proxy     | [2m2025-07-22T19:01:33.510140Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.510150Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.511069Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:33.511790Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:33.511811Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001882    
+proxy     | [2m2025-07-22T19:01:33.528140Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.528158Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.528169Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"0ebcaff0-99a0-46c3-905a-6555b7446729","amount":"19.9","requestedAt":"2025-07-22T19:01:33.527993203+00:00"}
+proxy     | [2m2025-07-22T19:01:33.528174Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.528188Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.528994Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:33.529833Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:33.529856Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001905    
+proxy     | [2m2025-07-22T19:01:33.530486Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.530502Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.530508Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"ad4e8f84-7e0c-4fdc-890f-8dd7afa66ed1","amount":"19.9","requestedAt":"2025-07-22T19:01:33.530348383+00:00"}
+proxy     | [2m2025-07-22T19:01:33.530512Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.530523Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.531454Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:33.532221Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:33.532250Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001993    
+proxy     | [2m2025-07-22T19:01:33.550513Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.550530Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.550536Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"165e09f9-2d89-4b93-82ea-16632aca5065","amount":"19.9","requestedAt":"2025-07-22T19:01:33.550372673+00:00"}
+proxy     | [2m2025-07-22T19:01:33.550539Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.550549Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.551339Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:33.552050Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:33.552073Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001732    
+proxy     | [2m2025-07-22T19:01:33.572384Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.572400Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.572407Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"53b5c52a-9553-425c-a7a5-c07d335922ee","amount":"19.9","requestedAt":"2025-07-22T19:01:33.572238131+00:00"}
+proxy     | [2m2025-07-22T19:01:33.572410Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.572419Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.573164Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:33.573839Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:33.573863Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001663    
+core01    | [2m2025-07-22T19:01:33.591257Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m124:[0m Checking DLQ for messages: payment_dlq
+core01    | [2m2025-07-22T19:01:33.591433Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m164:[0m No more messages in DLQ
+proxy     | [2m2025-07-22T19:01:33.599132Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.599148Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.599154Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"2a51637c-6671-4075-9dc3-9c47c462557d","amount":"19.9","requestedAt":"2025-07-22T19:01:33.599005807+00:00"}
+proxy     | [2m2025-07-22T19:01:33.599158Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.599167Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.600050Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:33.600338Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m124:[0m Checking DLQ for messages: payment_dlq
+core02    | [2m2025-07-22T19:01:33.600459Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m164:[0m No more messages in DLQ
+core02    | [2m2025-07-22T19:01:33.600868Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:33.600887Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001918    
+proxy     | [2m2025-07-22T19:01:33.619188Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.619207Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.619213Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"06ef1f3f-1ef1-4f58-8a95-f3e4bb38c691","amount":"19.9","requestedAt":"2025-07-22T19:01:33.619011973+00:00"}
+proxy     | [2m2025-07-22T19:01:33.619216Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.619226Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.620057Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:33.620771Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:33.620805Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001863    
+proxy     | [2m2025-07-22T19:01:33.639935Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.639953Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.639959Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"5497a5f0-2f86-4aff-a12a-efd7dd24c5b6","amount":"19.9","requestedAt":"2025-07-22T19:01:33.639786591+00:00"}
+proxy     | [2m2025-07-22T19:01:33.639962Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.639972Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.640666Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:33.641289Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:33.641314Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001609    
+proxy     | [2m2025-07-22T19:01:33.660502Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.660519Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.660539Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"1f35612b-efca-4014-aaf4-e2ce638e820a","amount":"19.9","requestedAt":"2025-07-22T19:01:33.660346277+00:00"}
+proxy     | [2m2025-07-22T19:01:33.660543Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.660553Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.661374Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:33.662079Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:33.662106Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001799    
+proxy     | [2m2025-07-22T19:01:33.683450Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.683470Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.683479Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"1d7e81d0-dc92-451a-b5be-74f439cd48a6","amount":"19.9","requestedAt":"2025-07-22T19:01:33.683258465+00:00"}
+proxy     | [2m2025-07-22T19:01:33.683486Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.683501Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.684432Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:33.685599Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:33.685637Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.002419    
+proxy     | [2m2025-07-22T19:01:33.729373Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.729393Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.729402Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"8437238e-f436-4fac-8b8c-112ce77401d3","amount":"19.9","requestedAt":"2025-07-22T19:01:33.729230151+00:00"}
+proxy     | [2m2025-07-22T19:01:33.729408Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.729420Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.730299Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:33.731079Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:33.731106Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001950    
+proxy     | [2m2025-07-22T19:01:33.734448Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.734466Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.734472Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"33c89768-32cc-4414-b528-ca06303d47a6","amount":"19.9","requestedAt":"2025-07-22T19:01:33.734298373+00:00"}
+proxy     | [2m2025-07-22T19:01:33.734476Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.734486Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.735371Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:33.736050Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:33.736077Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001816    
+proxy     | [2m2025-07-22T19:01:33.750686Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.750707Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.750717Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"2298eaa6-32db-4778-8652-3fd55febd09f","amount":"19.9","requestedAt":"2025-07-22T19:01:33.750527049+00:00"}
+proxy     | [2m2025-07-22T19:01:33.750722Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.750736Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.751509Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core01    | [2m2025-07-22T19:01:33.752171Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core01    | [2m2025-07-22T19:01:33.752208Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001722    
+proxy     | [2m2025-07-22T19:01:33.772555Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.772575Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.772583Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"25223ccb-8f8a-480d-ab8e-77d12195ceda","amount":"19.9","requestedAt":"2025-07-22T19:01:33.772401630+00:00"}
+proxy     | [2m2025-07-22T19:01:33.772588Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-07-22T19:01:33.772600Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-07-22T19:01:33.773509Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-07-22T19:01:33.774284Z[0m [32m INFO[0m [2mcore::store::payment[0m[2m:[0m [2m64:[0m Payment inserted successfully
+core02    | [2m2025-07-22T19:01:33.774308Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.20.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001947    
+proxy     | [2m2025-07-22T19:01:33.791785Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-07-22T19:01:33.791810Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-07-22T19:01:33.791819Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"2f4b558f-909d-4f9f-a8ef-f4e4b527cdbe","amount":"19.9","requestedAt":"2025-07-22T19:01:33.791595745+00:00"}
+proxy     | [2m2025-07-22T19:01:33.791825Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+log truncated at line 1000

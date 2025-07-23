@@ -1,0 +1,8 @@
+{
+    "name": "Guilherme Tiburcio",
+    "social": ["https://www.linkedin.com/in/rafael-pimenta/"],
+    "source-code-repo": "https://github.com/rafaspimenta/rinha-backend-csharp",
+    "langs": ["c#", "dotnet"],
+    "storages": ["postgres"],
+    "load-balancers": ["nginx"]
+  }

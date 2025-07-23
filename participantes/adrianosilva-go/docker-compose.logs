@@ -1,0 +1,1001 @@
+
+ api2 Pulling 
+ api1 Pulling 
+ 9824c27679d3 Already exists 
+ 745a1af2fe11 Pulling fs layer 
+ f820f476580b Pulling fs layer 
+ 9824c27679d3 Already exists 
+ 745a1af2fe11 Pulling fs layer 
+ f820f476580b Pulling fs layer 
+ 745a1af2fe11 Downloading [==================================================>]      93B/93B
+ 745a1af2fe11 Verifying Checksum 
+ 745a1af2fe11 Download complete 
+ 745a1af2fe11 Downloading [==================================================>]      93B/93B
+ 745a1af2fe11 Verifying Checksum 
+ 745a1af2fe11 Download complete 
+ 745a1af2fe11 Extracting [==================================================>]      93B/93B
+ 745a1af2fe11 Extracting [==================================================>]      93B/93B
+ 745a1af2fe11 Extracting [==================================================>]      93B/93B
+ 745a1af2fe11 Extracting [==================================================>]      93B/93B
+ f820f476580b Downloading [>                                                  ]  90.38kB/8.682MB
+ f820f476580b Downloading [>                                                  ]  90.38kB/8.682MB
+ 745a1af2fe11 Pull complete 
+ 745a1af2fe11 Pull complete 
+ f820f476580b Downloading [=======================================>           ]  6.835MB/8.682MB
+ f820f476580b Downloading [=======================================>           ]  6.835MB/8.682MB
+ f820f476580b Verifying Checksum 
+ f820f476580b Download complete 
+ f820f476580b Verifying Checksum 
+ f820f476580b Download complete 
+ f820f476580b Extracting [>                                                  ]   98.3kB/8.682MB
+ f820f476580b Extracting [>                                                  ]   98.3kB/8.682MB
+ f820f476580b Extracting [==============================================>    ]  8.061MB/8.682MB
+ f820f476580b Extracting [==============================================>    ]  8.061MB/8.682MB
+ f820f476580b Extracting [==================================================>]  8.682MB/8.682MB
+ f820f476580b Extracting [==================================================>]  8.682MB/8.682MB
+ f820f476580b Pull complete 
+ f820f476580b Pull complete 
+ api1 Pulled 
+ api2 Pulled 
+ Network payment-proxy_backend  Creating
+ Network payment-proxy_backend  Created
+ Container redis  Creating
+ Container payment-db  Creating
+ Container payment-db  Created
+ Container redis  Created
+ Container api2  Creating
+ Container api1  Creating
+ Container api1  Created
+ Container api2  Created
+ Container nginx-lb  Creating
+ Container nginx-lb  Created
+Attaching to api1, api2, nginx-lb, payment-db, redis
+redis       | Starting Redis Server
+redis       | 1:C 22 Jul 2025 17:14:09.624 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis       | 1:C 22 Jul 2025 17:14:09.624 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis       | 1:C 22 Jul 2025 17:14:09.625 * Redis version=8.0.3, bits=64, commit=00000000, modified=1, pid=1, just started
+redis       | 1:C 22 Jul 2025 17:14:09.625 * Configuration loaded
+redis       | 1:M 22 Jul 2025 17:14:09.625 * monotonic clock: POSIX clock_gettime
+redis       | 1:M 22 Jul 2025 17:14:09.626 * Running mode=standalone, port=6379.
+redis       | 1:M 22 Jul 2025 17:14:09.627 * <bf> RedisBloom version 8.0.1 (Git=unknown)
+redis       | 1:M 22 Jul 2025 17:14:09.627 * <bf> Registering configuration options: [
+redis       | 1:M 22 Jul 2025 17:14:09.627 * <bf> 	{ bf-error-rate       :      0.01 }
+redis       | 1:M 22 Jul 2025 17:14:09.627 * <bf> 	{ bf-initial-size     :       100 }
+redis       | 1:M 22 Jul 2025 17:14:09.627 * <bf> 	{ bf-expansion-factor :         2 }
+redis       | 1:M 22 Jul 2025 17:14:09.627 * <bf> 	{ cf-bucket-size      :         2 }
+redis       | 1:M 22 Jul 2025 17:14:09.627 * <bf> 	{ cf-initial-size     :      1024 }
+redis       | 1:M 22 Jul 2025 17:14:09.627 * <bf> 	{ cf-max-iterations   :        20 }
+redis       | 1:M 22 Jul 2025 17:14:09.627 * <bf> 	{ cf-expansion-factor :         1 }
+redis       | 1:M 22 Jul 2025 17:14:09.627 * <bf> 	{ cf-max-expansions   :        32 }
+redis       | 1:M 22 Jul 2025 17:14:09.627 * <bf> ]
+redis       | 1:M 22 Jul 2025 17:14:09.627 * Module 'bf' loaded from /usr/local/lib/redis/modules//redisbloom.so
+redis       | 1:M 22 Jul 2025 17:14:09.637 * <search> Redis version found by RedisSearch : 8.0.3 - oss
+redis       | 1:M 22 Jul 2025 17:14:09.637 * <search> RediSearch version 8.0.1 (Git=5688fcc)
+redis       | 1:M 22 Jul 2025 17:14:09.637 * <search> Low level api version 1 initialized successfully
+redis       | 1:M 22 Jul 2025 17:14:09.638 * <search> gc: ON, prefix min length: 2, min word length to stem: 4, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, 
+redis       | 1:M 22 Jul 2025 17:14:09.638 * <search> Initialized thread pools!
+redis       | 1:M 22 Jul 2025 17:14:09.638 * <search> Disabled workers threadpool of size 0
+redis       | 1:M 22 Jul 2025 17:14:09.638 * <search> Subscribe to config changes
+redis       | 1:M 22 Jul 2025 17:14:09.638 * <search> Enabled role change notification
+redis       | 1:M 22 Jul 2025 17:14:09.638 * <search> Cluster configuration: AUTO partitions, type: 0, coordinator timeout: 0ms
+redis       | 1:M 22 Jul 2025 17:14:09.638 * <search> Register write commands
+redis       | 1:M 22 Jul 2025 17:14:09.638 * Module 'search' loaded from /usr/local/lib/redis/modules//redisearch.so
+redis       | 1:M 22 Jul 2025 17:14:09.639 * <timeseries> RedisTimeSeries version 80001, git_sha=577bfa8b5909e7ee572f0b651399be8303dc6641
+redis       | 1:M 22 Jul 2025 17:14:09.639 * <timeseries> Redis version found by RedisTimeSeries : 8.0.3 - oss
+redis       | 1:M 22 Jul 2025 17:14:09.639 * <timeseries> Registering configuration options: [
+redis       | 1:M 22 Jul 2025 17:14:09.639 * <timeseries> 	{ ts-compaction-policy   :              }
+redis       | 1:M 22 Jul 2025 17:14:09.639 * <timeseries> 	{ ts-num-threads         :            3 }
+redis       | 1:M 22 Jul 2025 17:14:09.639 * <timeseries> 	{ ts-retention-policy    :            0 }
+redis       | 1:M 22 Jul 2025 17:14:09.639 * <timeseries> 	{ ts-duplicate-policy    :        block }
+redis       | 1:M 22 Jul 2025 17:14:09.639 * <timeseries> 	{ ts-chunk-size-bytes    :         4096 }
+redis       | 1:M 22 Jul 2025 17:14:09.639 * <timeseries> 	{ ts-encoding            :   compressed }
+redis       | 1:M 22 Jul 2025 17:14:09.639 * <timeseries> 	{ ts-ignore-max-time-diff:            0 }
+redis       | 1:M 22 Jul 2025 17:14:09.639 * <timeseries> 	{ ts-ignore-max-val-diff :     0.000000 }
+redis       | 1:M 22 Jul 2025 17:14:09.639 * <timeseries> ]
+redis       | 1:M 22 Jul 2025 17:14:09.639 * <timeseries> Detected redis oss
+redis       | 1:M 22 Jul 2025 17:14:09.639 * Module 'timeseries' loaded from /usr/local/lib/redis/modules//redistimeseries.so
+redis       | 1:M 22 Jul 2025 17:14:09.642 * <ReJSON> Created new data type 'ReJSON-RL'
+redis       | 1:M 22 Jul 2025 17:14:09.643 * <ReJSON> version: 80001 git sha: unknown branch: unknown
+redis       | 1:M 22 Jul 2025 17:14:09.643 * <ReJSON> Exported RedisJSON_V1 API
+redis       | 1:M 22 Jul 2025 17:14:09.643 * <ReJSON> Exported RedisJSON_V2 API
+redis       | 1:M 22 Jul 2025 17:14:09.643 * <ReJSON> Exported RedisJSON_V3 API
+redis       | 1:M 22 Jul 2025 17:14:09.643 * <ReJSON> Exported RedisJSON_V4 API
+redis       | 1:M 22 Jul 2025 17:14:09.643 * <ReJSON> Exported RedisJSON_V5 API
+redis       | 1:M 22 Jul 2025 17:14:09.643 * <ReJSON> Enabled diskless replication
+redis       | 1:M 22 Jul 2025 17:14:09.643 * <ReJSON> Initialized shared string cache, thread safe: false.
+redis       | 1:M 22 Jul 2025 17:14:09.643 * Module 'ReJSON' loaded from /usr/local/lib/redis/modules//rejson.so
+redis       | 1:M 22 Jul 2025 17:14:09.643 * <search> Acquired RedisJSON_V5 API
+redis       | 1:M 22 Jul 2025 17:14:09.643 * Server initialized
+redis       | 1:M 22 Jul 2025 17:14:09.643 * Ready to accept connections tcp
+payment-db  | The files belonging to this database system will be owned by user "postgres".
+payment-db  | This user must also own the server process.
+payment-db  | 
+payment-db  | The database cluster will be initialized with locale "en_US.utf8".
+payment-db  | The default database encoding has accordingly been set to "UTF8".
+payment-db  | The default text search configuration will be set to "english".
+payment-db  | 
+payment-db  | Data page checksums are disabled.
+payment-db  | 
+payment-db  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+payment-db  | creating subdirectories ... ok
+payment-db  | selecting dynamic shared memory implementation ... posix
+payment-db  | selecting default "max_connections" ... 100
+payment-db  | selecting default "shared_buffers" ... 128MB
+payment-db  | selecting default time zone ... UTC
+payment-db  | creating configuration files ... ok
+api1        | 
+api1        |    ____    __
+api1        |   / __/___/ /  ___
+api1        |  / _// __/ _ \/ _ \
+api1        | /___/\__/_//_/\___/ v4.13.4
+api1        | High performance, minimalist Go web framework
+api1        | https://echo.labstack.com
+api1        | ____________________________________O/_______
+api1        |                                     O\
+api1        | ⇨ http server started on [::]:9999
+api1        | [INFO] Cleared stream payment_stream
+api1        | [INFO] Starting Redis Queue with 4 workers
+api2        | 
+api2        |    ____    __
+api2        |   / __/___/ /  ___
+api2        |  / _// __/ _ \/ _ \
+api2        | /___/\__/_//_/\___/ v4.13.4
+api2        | High performance, minimalist Go web framework
+api2        | https://echo.labstack.com
+api2        | ____________________________________O/_______
+api2        |                                     O\
+api2        | ⇨ http server started on [::]:9999
+api2        | [INFO] Cleared stream payment_stream
+api2        | [INFO] Starting Redis Queue with 4 workers
+nginx-lb    | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx-lb    | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx-lb    | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+nginx-lb    | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+nginx-lb    | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+nginx-lb    | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx-lb    | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+nginx-lb    | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx-lb    | /docker-entrypoint.sh: Configuration complete; ready for start up
+payment-db  | running bootstrap script ... ok
+api1        | {"time":"2025-07-22T17:14:11.183648745Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"GET","uri":"/payments-summary","user_agent":"curl/7.88.1","status":500,"error":"","latency":1571832,"latency_human":"1.571832ms","bytes_in":0,"bytes_out":34}
+payment-db  | sh: locale: not found
+payment-db  | 2025-07-22 17:14:11.283 UTC [36] WARNING:  no usable system locales were found
+payment-db  | performing post-bootstrap initialization ... ok
+payment-db  | initdb: warning: enabling "trust" authentication for local connections
+payment-db  | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+payment-db  | syncing data to disk ... ok
+payment-db  | 
+payment-db  | 
+payment-db  | Success. You can now start the database server using:
+payment-db  | 
+payment-db  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+payment-db  | 
+payment-db  | waiting for server to start....2025-07-22 17:14:13.101 UTC [42] LOG:  starting PostgreSQL 17.5 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+payment-db  | 2025-07-22 17:14:13.102 UTC [42] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+payment-db  | 2025-07-22 17:14:13.110 UTC [45] LOG:  database system was shut down at 2025-07-22 17:14:12 UTC
+payment-db  | 2025-07-22 17:14:13.114 UTC [42] LOG:  database system is ready to accept connections
+payment-db  |  done
+payment-db  | server started
+payment-db  | CREATE DATABASE
+payment-db  | 
+payment-db  | 
+payment-db  | /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init.sql
+payment-db  | CREATE TABLE
+payment-db  | CREATE INDEX
+payment-db  | 
+payment-db  | 
+payment-db  | waiting for server to shut down....2025-07-22 17:14:13.408 UTC [42] LOG:  received fast shutdown request
+payment-db  | 2025-07-22 17:14:13.408 UTC [42] LOG:  aborting any active transactions
+payment-db  | 2025-07-22 17:14:13.481 UTC [42] LOG:  background worker "logical replication launcher" (PID 48) exited with exit code 1
+payment-db  | 2025-07-22 17:14:13.482 UTC [43] LOG:  shutting down
+payment-db  | 2025-07-22 17:14:13.482 UTC [43] LOG:  checkpoint starting: shutdown immediate
+payment-db  | 2025-07-22 17:14:13.505 UTC [43] LOG:  checkpoint complete: wrote 927 buffers (22.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.023 s, sync=0.001 s, total=0.024 s; sync files=0, longest=0.000 s, average=0.000 s; distance=4276 kB, estimate=4276 kB; lsn=0/191A358, redo lsn=0/191A358
+payment-db  | 2025-07-22 17:14:13.514 UTC [42] LOG:  database system is shut down
+payment-db  |  done
+payment-db  | server stopped
+payment-db  | 
+payment-db  | PostgreSQL init process complete; ready for start up.
+payment-db  | 
+payment-db  | 2025-07-22 17:14:13.634 UTC [1] LOG:  starting PostgreSQL 17.5 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+payment-db  | 2025-07-22 17:14:13.634 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+payment-db  | 2025-07-22 17:14:13.634 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+payment-db  | 2025-07-22 17:14:13.634 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+payment-db  | 2025-07-22 17:14:13.636 UTC [60] LOG:  database system was shut down at 2025-07-22 17:14:13 UTC
+payment-db  | 2025-07-22 17:14:13.641 UTC [1] LOG:  database system is ready to accept connections
+api1        | [health] 0 UP (1)ms
+api1        | [health] 1 UP (1)ms
+api1        | {"time":"2025-07-22T17:14:16.212487833Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"GET","uri":"/payments-summary","user_agent":"curl/7.88.1","status":200,"error":"","latency":18607404,"latency_human":"18.607404ms","bytes_in":0,"bytes_out":95}
+api2        | [health] 0 UP (1)ms
+api2        | [health] 1 UP (1)ms
+api1        | {"time":"2025-07-22T17:14:22.015243534Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/purge-payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":384379,"latency_human":"384.379µs","bytes_in":0,"bytes_out":30}
+api2        | {"time":"2025-07-22T17:14:22.019952798Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":52304,"latency_human":"52.304µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-1] Processando 1753204462020-0: map[amount:19.9 correlationId:08558ab3-2673-4eca-a58b-5cfda54f9418 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 08558ab3-2673-4eca-a58b-5cfda54f9418: 1753204462020-0
+api1        | {"time":"2025-07-22T17:14:22.0216077Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"GET","uri":"/payments-summary?from=2025-07-22T17:14:12.015Z&to=2025-07-22T17:14:21.915Z","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":1638012,"latency_human":"1.638012ms","bytes_in":0,"bytes_out":95}
+api2        | [INFO] Payment processed successfully: 08558ab3-2673-4eca-a58b-5cfda54f9418 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:22.126423031Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":41865,"latency_human":"41.865µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId e8e520be-b18b-4967-845d-03b77aac4a4f amount 19.9: 1753204462126-0
+api2        | [INFO][Worker-2] Processando 1753204462126-0: map[amount:19.9 correlationId:e8e520be-b18b-4967-845d-03b77aac4a4f paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: e8e520be-b18b-4967-845d-03b77aac4a4f in Gateway:0
+api1        | {"time":"2025-07-22T17:14:22.235873917Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":56680,"latency_human":"56.68µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId f1c5d92b-48ab-4024-be44-fcf41a345c86 amount 19.9: 1753204462236-0
+api2        | [INFO][Worker-3] Processando 1753204462236-0: map[amount:19.9 correlationId:f1c5d92b-48ab-4024-be44-fcf41a345c86 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: f1c5d92b-48ab-4024-be44-fcf41a345c86 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:22.345492485Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":39127,"latency_human":"39.127µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * paymentGatewayType 0 correlationId a13895a7-634e-46f5-8571-83ff189667aa amount 19.9 requestedAt 0001-01-01T00:00:00Z: 1753204462345-0
+api2        | [INFO][Worker-4] Processando 1753204462345-0: map[amount:19.9 correlationId:a13895a7-634e-46f5-8571-83ff189667aa paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: a13895a7-634e-46f5-8571-83ff189667aa in Gateway:0
+api1        | {"time":"2025-07-22T17:14:22.454496076Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":34532,"latency_human":"34.532µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-1] Processando 1753204462454-0: map[amount:19.9 correlationId:b6d78993-8c55-4723-a1ef-62d8c5311cbf paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId b6d78993-8c55-4723-a1ef-62d8c5311cbf amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204462454-0
+api2        | [INFO] Payment processed successfully: b6d78993-8c55-4723-a1ef-62d8c5311cbf in Gateway:0
+api2        | {"time":"2025-07-22T17:14:22.563740085Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":34806,"latency_human":"34.806µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId e0557dbf-5d54-4207-930d-a1ad3d7abe62 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204462564-0
+api1        | [INFO][Worker-4] Processando 1753204462564-0: map[amount:19.9 correlationId:e0557dbf-5d54-4207-930d-a1ad3d7abe62 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: e0557dbf-5d54-4207-930d-a1ad3d7abe62 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:22.672740367Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":34597,"latency_human":"34.597µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 8fd811fa-7ed5-4683-8032-32ce4adf2421 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204462672-0
+api1        | [INFO][Worker-1] Processando 1753204462672-0: map[amount:19.9 correlationId:8fd811fa-7ed5-4683-8032-32ce4adf2421 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 8fd811fa-7ed5-4683-8032-32ce4adf2421 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:22.782996893Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":37993,"latency_human":"37.993µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 8a099717-390d-4e4a-82e7-234f0c2fd5bd: 1753204462783-0
+api1        | [INFO][Worker-2] Processando 1753204462783-0: map[amount:19.9 correlationId:8a099717-390d-4e4a-82e7-234f0c2fd5bd paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 8a099717-390d-4e4a-82e7-234f0c2fd5bd in Gateway:0
+api1        | {"time":"2025-07-22T17:14:22.891375178Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":39162,"latency_human":"39.162µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 312cc5e8-9f56-461f-9046-71eb5baa6e2c amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204462891-0
+api1        | [INFO][Worker-3] Processando 1753204462891-0: map[amount:19.9 correlationId:312cc5e8-9f56-461f-9046-71eb5baa6e2c paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 312cc5e8-9f56-461f-9046-71eb5baa6e2c in Gateway:0
+api2        | {"time":"2025-07-22T17:14:23.001683509Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":42219,"latency_human":"42.219µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 20ada90b-bb3b-4aa5-aab5-0fbac7036123: 1753204463001-0
+api1        | [INFO][Worker-4] Processando 1753204463001-0: map[amount:19.9 correlationId:20ada90b-bb3b-4aa5-aab5-0fbac7036123 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 20ada90b-bb3b-4aa5-aab5-0fbac7036123 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:23.022907993Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":36653,"latency_human":"36.653µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-2] Processando 1753204463023-0: map[amount:19.9 correlationId:ae42a007-55f0-4a94-a612-c4bd461b1225 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId ae42a007-55f0-4a94-a612-c4bd461b1225 amount 19.9: 1753204463023-0
+api2        | [INFO] Payment processed successfully: ae42a007-55f0-4a94-a612-c4bd461b1225 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:23.110510671Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":37274,"latency_human":"37.274µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId b8be59e9-062a-4f3b-b3c9-c44c73814f97: 1753204463110-0
+api2        | [INFO][Worker-3] Processando 1753204463110-0: map[amount:19.9 correlationId:b8be59e9-062a-4f3b-b3c9-c44c73814f97 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: b8be59e9-062a-4f3b-b3c9-c44c73814f97 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:23.127698685Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":34782,"latency_human":"34.782µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-4] Processando 1753204463127-0: map[amount:19.9 correlationId:18bfb090-7b27-40e2-bddd-826359df68b3 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 18bfb090-7b27-40e2-bddd-826359df68b3 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204463127-0
+api2        | [INFO] Payment processed successfully: 18bfb090-7b27-40e2-bddd-826359df68b3 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:23.22011367Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":47089,"latency_human":"47.089µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 2fe26110-a54c-442d-bd7e-7a21e74ff6d4 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204463220-0
+api2        | [INFO][Worker-1] Processando 1753204463220-0: map[amount:19.9 correlationId:2fe26110-a54c-442d-bd7e-7a21e74ff6d4 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 2fe26110-a54c-442d-bd7e-7a21e74ff6d4 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:23.237613234Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":47275,"latency_human":"47.275µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId c716fd13-98c0-48c5-9ac6-e696cf2e2744 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204463237-0
+api2        | [INFO][Worker-2] Processando 1753204463237-0: map[amount:19.9 correlationId:c716fd13-98c0-48c5-9ac6-e696cf2e2744 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: c716fd13-98c0-48c5-9ac6-e696cf2e2744 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:23.328813447Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":35104,"latency_human":"35.104µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-1] Processando 1753204463328-0: map[amount:19.9 correlationId:60740b04-2073-4698-b984-8df11e97efa6 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * paymentGatewayType 0 correlationId 60740b04-2073-4698-b984-8df11e97efa6 amount 19.9 requestedAt 0001-01-01T00:00:00Z: 1753204463328-0
+api1        | [INFO] Payment processed successfully: 60740b04-2073-4698-b984-8df11e97efa6 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:23.347576567Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":36450,"latency_human":"36.45µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 93145c0e-fa76-4050-a974-628a7ac11414 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204463347-0
+api1        | [INFO][Worker-2] Processando 1753204463347-0: map[amount:19.9 correlationId:93145c0e-fa76-4050-a974-628a7ac11414 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 93145c0e-fa76-4050-a974-628a7ac11414 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:23.438913239Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":33047,"latency_human":"33.047µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId fc276e80-a108-47a5-af2b-f82989409e47 amount 19.9: 1753204463439-0
+api1        | [INFO][Worker-3] Processando 1753204463439-0: map[amount:19.9 correlationId:fc276e80-a108-47a5-af2b-f82989409e47 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: fc276e80-a108-47a5-af2b-f82989409e47 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:23.456669512Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":47087,"latency_human":"47.087µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId bda19a2e-51ae-48ac-bc5f-d42b407989a3 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204463457-0
+api1        | [INFO][Worker-4] Processando 1753204463457-0: map[amount:19.9 correlationId:bda19a2e-51ae-48ac-bc5f-d42b407989a3 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: bda19a2e-51ae-48ac-bc5f-d42b407989a3 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:23.547945446Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":27062,"latency_human":"27.062µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 2dfa3142-97f9-4e9a-9142-c808b9a65a0b amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204463548-0
+api1        | [INFO][Worker-1] Processando 1753204463548-0: map[amount:19.9 correlationId:2dfa3142-97f9-4e9a-9142-c808b9a65a0b paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 2dfa3142-97f9-4e9a-9142-c808b9a65a0b in Gateway:0
+api2        | {"time":"2025-07-22T17:14:23.565686889Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":34001,"latency_human":"34.001µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId f34edbf6-41df-425f-af04-6912db5ecdca: 1753204463565-0
+api2        | [INFO][Worker-3] Processando 1753204463565-0: map[amount:19.9 correlationId:f34edbf6-41df-425f-af04-6912db5ecdca paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: f34edbf6-41df-425f-af04-6912db5ecdca in Gateway:0
+api1        | {"time":"2025-07-22T17:14:23.657132061Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":48934,"latency_human":"48.934µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 254668bb-d6b2-488f-a995-d3b50c97bbae amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204463657-0
+api2        | [INFO][Worker-4] Processando 1753204463657-0: map[amount:19.9 correlationId:254668bb-d6b2-488f-a995-d3b50c97bbae paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 254668bb-d6b2-488f-a995-d3b50c97bbae in Gateway:0
+api2        | {"time":"2025-07-22T17:14:23.674560216Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":40243,"latency_human":"40.243µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 2e8fee82-4c66-49fd-8a73-303f9729818b amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204463674-0
+api2        | [INFO][Worker-1] Processando 1753204463674-0: map[amount:19.9 correlationId:2e8fee82-4c66-49fd-8a73-303f9729818b paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 2e8fee82-4c66-49fd-8a73-303f9729818b in Gateway:0
+api1        | {"time":"2025-07-22T17:14:23.765780182Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":33143,"latency_human":"33.143µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 5957e8f6-3b89-4f6b-a189-8403fc477e73 amount 19.9: 1753204463765-0
+api2        | [INFO][Worker-2] Processando 1753204463765-0: map[amount:19.9 correlationId:5957e8f6-3b89-4f6b-a189-8403fc477e73 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 5957e8f6-3b89-4f6b-a189-8403fc477e73 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:23.785154954Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":32795,"latency_human":"32.795µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 1ceada35-d98a-4219-8982-6c95681e2e68 amount 19.9: 1753204463785-0
+api2        | [INFO][Worker-3] Processando 1753204463785-0: map[amount:19.9 correlationId:1ceada35-d98a-4219-8982-6c95681e2e68 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 1ceada35-d98a-4219-8982-6c95681e2e68 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:23.875915138Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":56192,"latency_human":"56.192µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-2] Processando 1753204463876-0: map[amount:19.9 correlationId:739f9a21-b547-48ed-915e-ab6b3874a465 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * paymentGatewayType 0 correlationId 739f9a21-b547-48ed-915e-ab6b3874a465 amount 19.9 requestedAt 0001-01-01T00:00:00Z: 1753204463876-0
+api1        | [INFO] Payment processed successfully: 739f9a21-b547-48ed-915e-ab6b3874a465 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:23.893682989Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":39266,"latency_human":"39.266µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-3] Processando 1753204463893-0: map[amount:19.9 correlationId:8a6f0d5d-974b-44c2-8717-9a899acde6a9 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 8a6f0d5d-974b-44c2-8717-9a899acde6a9: 1753204463893-0
+api1        | [INFO] Payment processed successfully: 8a6f0d5d-974b-44c2-8717-9a899acde6a9 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:23.984660316Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":33098,"latency_human":"33.098µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId a447eac2-0c9a-4923-9f79-199acd4d0fa7 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204463984-0
+api1        | [INFO][Worker-4] Processando 1753204463984-0: map[amount:19.9 correlationId:a447eac2-0c9a-4923-9f79-199acd4d0fa7 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: a447eac2-0c9a-4923-9f79-199acd4d0fa7 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:24.003795132Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":42034,"latency_human":"42.034µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId b531cbd3-f43d-4bef-8b4f-9910948cb5b6 amount 19.9: 1753204464004-0
+api1        | [INFO][Worker-1] Processando 1753204464004-0: map[amount:19.9 correlationId:b531cbd3-f43d-4bef-8b4f-9910948cb5b6 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: b531cbd3-f43d-4bef-8b4f-9910948cb5b6 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:24.024469529Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":34415,"latency_human":"34.415µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 6b73cd0a-77fe-425a-aef6-51892bf26d2c amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464024-0
+api1        | [INFO][Worker-2] Processando 1753204464024-0: map[amount:19.9 correlationId:6b73cd0a-77fe-425a-aef6-51892bf26d2c paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 6b73cd0a-77fe-425a-aef6-51892bf26d2c in Gateway:0
+api2        | {"time":"2025-07-22T17:14:24.094103557Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":40345,"latency_human":"40.345µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-4] Processando 1753204464094-0: map[amount:19.9 correlationId:d05b6a38-592a-4772-bbf6-5094c0dca308 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId d05b6a38-592a-4772-bbf6-5094c0dca308 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464094-0
+api2        | [INFO] Payment processed successfully: d05b6a38-592a-4772-bbf6-5094c0dca308 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:24.112486232Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":36117,"latency_human":"36.117µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 32f7941c-9440-42b2-bdf8-518354b63fe8 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464112-0
+api2        | [INFO][Worker-1] Processando 1753204464112-0: map[amount:19.9 correlationId:32f7941c-9440-42b2-bdf8-518354b63fe8 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 32f7941c-9440-42b2-bdf8-518354b63fe8 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:24.129909618Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":46935,"latency_human":"46.935µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId fceb8b6a-2e73-49c4-bf63-bfa01f1dd7f6 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464130-0
+api2        | [INFO][Worker-2] Processando 1753204464130-0: map[amount:19.9 correlationId:fceb8b6a-2e73-49c4-bf63-bfa01f1dd7f6 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: fceb8b6a-2e73-49c4-bf63-bfa01f1dd7f6 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:24.203181681Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":44082,"latency_human":"44.082µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-3] Processando 1753204464203-0: map[amount:19.9 correlationId:43678a22-4d26-48f8-8d9a-4261b2902a4f paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 43678a22-4d26-48f8-8d9a-4261b2902a4f amount 19.9: 1753204464203-0
+api2        | [INFO] Payment processed successfully: 43678a22-4d26-48f8-8d9a-4261b2902a4f in Gateway:0
+api1        | {"time":"2025-07-22T17:14:24.221371686Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":32824,"latency_human":"32.824µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 18cbc9d4-9dbe-4378-b075-3624b95baa65 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464221-0
+api2        | [INFO][Worker-4] Processando 1753204464221-0: map[amount:19.9 correlationId:18cbc9d4-9dbe-4378-b075-3624b95baa65 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 18cbc9d4-9dbe-4378-b075-3624b95baa65 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:24.239705335Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":72022,"latency_human":"72.022µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-3] Processando 1753204464239-0: map[amount:19.9 correlationId:46063aa6-e64a-4466-afbe-7db495d88a28 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 46063aa6-e64a-4466-afbe-7db495d88a28 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464239-0
+api1        | [INFO] Payment processed successfully: 46063aa6-e64a-4466-afbe-7db495d88a28 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:24.312178773Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":31860,"latency_human":"31.86µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 34e0ce9d-a427-4c2b-a7f1-9a3a362536ff amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464312-0
+api1        | [INFO][Worker-4] Processando 1753204464312-0: map[amount:19.9 correlationId:34e0ce9d-a427-4c2b-a7f1-9a3a362536ff paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 34e0ce9d-a427-4c2b-a7f1-9a3a362536ff in Gateway:0
+api1        | {"time":"2025-07-22T17:14:24.330516092Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":41218,"latency_human":"41.218µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId a686dc3f-33d9-4602-8ea9-983ef0b64c37 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464330-0
+api1        | [INFO][Worker-1] Processando 1753204464330-0: map[amount:19.9 correlationId:a686dc3f-33d9-4602-8ea9-983ef0b64c37 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: a686dc3f-33d9-4602-8ea9-983ef0b64c37 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:24.349154587Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":32963,"latency_human":"32.963µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId adf2bd85-ba68-4138-b95f-409fe36638b3 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464349-0
+api1        | [INFO][Worker-2] Processando 1753204464349-0: map[amount:19.9 correlationId:adf2bd85-ba68-4138-b95f-409fe36638b3 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: adf2bd85-ba68-4138-b95f-409fe36638b3 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:24.422414021Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":40457,"latency_human":"40.457µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-3] Processando 1753204464422-0: map[amount:19.9 correlationId:77f30068-86d8-46c9-b400-e3c97de565ca paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 77f30068-86d8-46c9-b400-e3c97de565ca amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464422-0
+api1        | [INFO] Payment processed successfully: 77f30068-86d8-46c9-b400-e3c97de565ca in Gateway:0
+api1        | {"time":"2025-07-22T17:14:24.440950965Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":57230,"latency_human":"57.23µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-1] Processando 1753204464441-0: map[amount:19.9 correlationId:4ee755b6-fff1-4456-b77a-78e90cd4118c paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 4ee755b6-fff1-4456-b77a-78e90cd4118c amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464441-0
+api2        | [INFO] Payment processed successfully: 4ee755b6-fff1-4456-b77a-78e90cd4118c in Gateway:0
+api2        | {"time":"2025-07-22T17:14:24.458478257Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":46478,"latency_human":"46.478µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId b8357130-05aa-47ff-b0a4-f1ef6fb62524 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464459-0
+api2        | [INFO][Worker-2] Processando 1753204464459-0: map[amount:19.9 correlationId:b8357130-05aa-47ff-b0a4-f1ef6fb62524 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: b8357130-05aa-47ff-b0a4-f1ef6fb62524 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:24.531582578Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":36249,"latency_human":"36.249µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId dc8cc5a8-cfc3-4f39-a12b-1d3902e8bef7 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464531-0
+api2        | [INFO][Worker-3] Processando 1753204464531-0: map[amount:19.9 correlationId:dc8cc5a8-cfc3-4f39-a12b-1d3902e8bef7 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: dc8cc5a8-cfc3-4f39-a12b-1d3902e8bef7 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:24.550088913Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":34464,"latency_human":"34.464µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 5f2ca091-3caa-49f1-bdde-87a67a91df16 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464550-0
+api2        | [INFO][Worker-4] Processando 1753204464550-0: map[amount:19.9 correlationId:5f2ca091-3caa-49f1-bdde-87a67a91df16 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 5f2ca091-3caa-49f1-bdde-87a67a91df16 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:24.567831857Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":34368,"latency_human":"34.368µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId a016cb7b-d4f6-4805-9aaf-577ffdba83f4 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464568-0
+api2        | [INFO][Worker-1] Processando 1753204464568-0: map[amount:19.9 correlationId:a016cb7b-d4f6-4805-9aaf-577ffdba83f4 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: a016cb7b-d4f6-4805-9aaf-577ffdba83f4 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:24.640880531Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":37284,"latency_human":"37.284µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId a90539e6-7310-4650-9d24-1627b9a5f22f amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464641-0
+api1        | [INFO][Worker-4] Processando 1753204464641-0: map[amount:19.9 correlationId:a90539e6-7310-4650-9d24-1627b9a5f22f paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: a90539e6-7310-4650-9d24-1627b9a5f22f in Gateway:0
+api1        | {"time":"2025-07-22T17:14:24.659221186Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":45150,"latency_human":"45.15µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId a42e825c-8869-44fd-a9ad-0b57bd53fe80 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464659-0
+api1        | [INFO][Worker-1] Processando 1753204464659-0: map[amount:19.9 correlationId:a42e825c-8869-44fd-a9ad-0b57bd53fe80 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: a42e825c-8869-44fd-a9ad-0b57bd53fe80 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:24.67635969Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":39423,"latency_human":"39.423µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-2] Processando 1753204464676-0: map[amount:19.9 correlationId:a2e482d6-50bd-4e18-869b-31af82d78325 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId a2e482d6-50bd-4e18-869b-31af82d78325 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464676-0
+api1        | [INFO] Payment processed successfully: a2e482d6-50bd-4e18-869b-31af82d78325 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:24.749585835Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":41261,"latency_human":"41.261µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * paymentGatewayType 0 correlationId 94063332-d2f5-4dea-a7b0-bb2c793de2e7 amount 19.9 requestedAt 0001-01-01T00:00:00Z: 1753204464749-0
+api1        | [INFO][Worker-3] Processando 1753204464749-0: map[amount:19.9 correlationId:94063332-d2f5-4dea-a7b0-bb2c793de2e7 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 94063332-d2f5-4dea-a7b0-bb2c793de2e7 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:24.768168991Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":42722,"latency_human":"42.722µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId ed3335dd-89b0-4c45-aeec-0650b2ffb4fb amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464768-0
+api1        | [INFO][Worker-4] Processando 1753204464768-0: map[amount:19.9 correlationId:ed3335dd-89b0-4c45-aeec-0650b2ffb4fb paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: ed3335dd-89b0-4c45-aeec-0650b2ffb4fb in Gateway:0
+api2        | {"time":"2025-07-22T17:14:24.786376432Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":39195,"latency_human":"39.195µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 6a565a67-2d0c-457d-8a83-6ec45f77beda amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464786-0
+api2        | [INFO][Worker-2] Processando 1753204464786-0: map[amount:19.9 correlationId:6a565a67-2d0c-457d-8a83-6ec45f77beda paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 6a565a67-2d0c-457d-8a83-6ec45f77beda in Gateway:0
+api1        | {"time":"2025-07-22T17:14:24.858723464Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":44050,"latency_human":"44.05µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId b89160a4-e49d-4210-b48e-31d018a26c5a amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464858-0
+api2        | [INFO][Worker-3] Processando 1753204464858-0: map[amount:19.9 correlationId:b89160a4-e49d-4210-b48e-31d018a26c5a paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: b89160a4-e49d-4210-b48e-31d018a26c5a in Gateway:0
+api2        | {"time":"2025-07-22T17:14:24.877997392Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":34335,"latency_human":"34.335µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-4] Processando 1753204464878-0: map[amount:19.9 correlationId:7c4761eb-81e1-4db9-bf4f-d3d891c8e391 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 7c4761eb-81e1-4db9-bf4f-d3d891c8e391 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464878-0
+api2        | [INFO] Payment processed successfully: 7c4761eb-81e1-4db9-bf4f-d3d891c8e391 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:24.895697085Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":34810,"latency_human":"34.81µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 6cc1936c-7652-4277-855a-ea4aa031cd1c amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464895-0
+api2        | [INFO][Worker-1] Processando 1753204464895-0: map[amount:19.9 correlationId:6cc1936c-7652-4277-855a-ea4aa031cd1c paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 6cc1936c-7652-4277-855a-ea4aa031cd1c in Gateway:0
+api1        | {"time":"2025-07-22T17:14:24.968676965Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":41972,"latency_human":"41.972µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-2] Processando 1753204464968-0: map[amount:19.9 correlationId:1e398eaf-6e24-4bd5-964f-2d2f08ed0d17 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 1e398eaf-6e24-4bd5-964f-2d2f08ed0d17 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464968-0
+api2        | [INFO] Payment processed successfully: 1e398eaf-6e24-4bd5-964f-2d2f08ed0d17 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:24.986841235Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":45889,"latency_human":"45.889µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId bd4ec1fc-937b-409a-a000-f152b6d47729 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204464986-0
+api1        | [INFO][Worker-1] Processando 1753204464986-0: map[amount:19.9 correlationId:bd4ec1fc-937b-409a-a000-f152b6d47729 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: bd4ec1fc-937b-409a-a000-f152b6d47729 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:25.005249961Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":42356,"latency_human":"42.356µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 5f00a048-ef46-476a-b68b-21c76d56522c amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204465005-0
+api1        | [INFO][Worker-2] Processando 1753204465005-0: map[amount:19.9 correlationId:5f00a048-ef46-476a-b68b-21c76d56522c paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 5f00a048-ef46-476a-b68b-21c76d56522c in Gateway:0
+api2        | {"time":"2025-07-22T17:14:25.02660115Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":40364,"latency_human":"40.364µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 054a2534-fe76-49a0-8fea-58cd578308ab: 1753204465026-0
+api1        | [INFO][Worker-3] Processando 1753204465026-0: map[amount:19.9 correlationId:054a2534-fe76-49a0-8fea-58cd578308ab paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 054a2534-fe76-49a0-8fea-58cd578308ab in Gateway:0
+api1        | {"time":"2025-07-22T17:14:25.077428796Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":35973,"latency_human":"35.973µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-4] Processando 1753204465077-0: map[amount:19.9 correlationId:8666e0f7-43ea-4dc1-939d-467b62f9964e paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 8666e0f7-43ea-4dc1-939d-467b62f9964e amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204465077-0
+api1        | [INFO] Payment processed successfully: 8666e0f7-43ea-4dc1-939d-467b62f9964e in Gateway:0
+api2        | {"time":"2025-07-22T17:14:25.096146855Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":32960,"latency_human":"32.96µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-1] Processando 1753204465096-0: map[amount:19.9 correlationId:5f34951d-7ee3-4d7d-9188-aad64d859fd3 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 5f34951d-7ee3-4d7d-9188-aad64d859fd3: 1753204465096-0
+api1        | [INFO] Payment processed successfully: 5f34951d-7ee3-4d7d-9188-aad64d859fd3 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:25.114384177Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":35090,"latency_human":"35.09µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId bad994ee-cc87-42b1-a728-29292cf37658 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204465114-0
+api2        | [INFO][Worker-3] Processando 1753204465114-0: map[amount:19.9 correlationId:bad994ee-cc87-42b1-a728-29292cf37658 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: bad994ee-cc87-42b1-a728-29292cf37658 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:25.131764805Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":31611,"latency_human":"31.611µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 7adec132-d82e-45e1-90e7-fee62a92a468 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204465131-0
+api2        | [INFO][Worker-4] Processando 1753204465131-0: map[amount:19.9 correlationId:7adec132-d82e-45e1-90e7-fee62a92a468 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 7adec132-d82e-45e1-90e7-fee62a92a468 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:25.187010843Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":45110,"latency_human":"45.11µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId fb71cffe-99bb-4279-9e8d-932bee329b04 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204465187-0
+api2        | [INFO][Worker-1] Processando 1753204465187-0: map[amount:19.9 correlationId:fb71cffe-99bb-4279-9e8d-932bee329b04 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: fb71cffe-99bb-4279-9e8d-932bee329b04 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:25.204957678Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":42899,"latency_human":"42.899µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-2] Processando 1753204465205-0: map[amount:19.9 correlationId:988ee53b-f0ec-468b-a6a5-e586d603e7a5 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 988ee53b-f0ec-468b-a6a5-e586d603e7a5: 1753204465205-0
+api2        | [INFO] Payment processed successfully: 988ee53b-f0ec-468b-a6a5-e586d603e7a5 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:25.223587168Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":40776,"latency_human":"40.776µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-3] Processando 1753204465223-0: map[amount:19.9 correlationId:8f7cf09d-b337-409a-a952-f1f66cff7ac3 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 8f7cf09d-b337-409a-a952-f1f66cff7ac3 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204465223-0
+api2        | [INFO] Payment processed successfully: 8f7cf09d-b337-409a-a952-f1f66cff7ac3 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:25.242089978Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":36477,"latency_human":"36.477µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-2] Processando 1753204465242-0: map[amount:19.9 correlationId:9e025bc9-18a4-42f8-aeb8-525930c6d25c paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 9e025bc9-18a4-42f8-aeb8-525930c6d25c: 1753204465242-0
+api1        | [INFO] Payment processed successfully: 9e025bc9-18a4-42f8-aeb8-525930c6d25c in Gateway:0
+api1        | [health] 0 UP (1)ms
+api1        | {"time":"2025-07-22T17:14:25.296572909Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":50033,"latency_human":"50.033µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * paymentGatewayType 0 correlationId f168bd9e-8ea9-4947-acde-4151629ee6ce amount 19.9 requestedAt 0001-01-01T00:00:00Z: 1753204465296-0
+api1        | [INFO][Worker-3] Processando 1753204465296-0: map[amount:19.9 correlationId:f168bd9e-8ea9-4947-acde-4151629ee6ce paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: f168bd9e-8ea9-4947-acde-4151629ee6ce in Gateway:0
+api2        | {"time":"2025-07-22T17:14:25.314036059Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":39467,"latency_human":"39.467µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId f2dc230d-e705-42cf-ab72-6608e440a434 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204465314-0
+api1        | [INFO][Worker-4] Processando 1753204465314-0: map[amount:19.9 correlationId:f2dc230d-e705-42cf-ab72-6608e440a434 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: f2dc230d-e705-42cf-ab72-6608e440a434 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:25.332608116Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":40535,"latency_human":"40.535µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-1] Processando 1753204465332-0: map[amount:19.9 correlationId:0d02ca1c-dc09-4356-a97a-7185355315e7 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 0d02ca1c-dc09-4356-a97a-7185355315e7 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204465332-0
+api1        | [INFO] Payment processed successfully: 0d02ca1c-dc09-4356-a97a-7185355315e7 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:25.35031381Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":52527,"latency_human":"52.527µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId ba00f5f8-ef96-4030-86b0-807c523dcebf amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204465350-0
+api1        | [INFO][Worker-2] Processando 1753204465350-0: map[amount:19.9 correlationId:ba00f5f8-ef96-4030-86b0-807c523dcebf paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: ba00f5f8-ef96-4030-86b0-807c523dcebf in Gateway:0
+api1        | {"time":"2025-07-22T17:14:25.40550781Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":33603,"latency_human":"33.603µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-4] Processando 1753204465405-0: map[amount:19.9 correlationId:86cca647-81b7-4998-a5d7-f72748c1f0f6 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 86cca647-81b7-4998-a5d7-f72748c1f0f6 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204465405-0
+api2        | [INFO] Payment processed successfully: 86cca647-81b7-4998-a5d7-f72748c1f0f6 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:25.424880959Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":44689,"latency_human":"44.689µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId ac7b8254-5023-45c9-8430-08807e6076f3: 1753204465425-0
+api2        | [INFO][Worker-1] Processando 1753204465425-0: map[amount:19.9 correlationId:ac7b8254-5023-45c9-8430-08807e6076f3 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: ac7b8254-5023-45c9-8430-08807e6076f3 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:25.443231487Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":45901,"latency_human":"45.901µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 82009984-c861-4d4c-8b9d-7aa5c9048401 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204465443-0
+api2        | [INFO][Worker-2] Processando 1753204465443-0: map[amount:19.9 correlationId:82009984-c861-4d4c-8b9d-7aa5c9048401 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 82009984-c861-4d4c-8b9d-7aa5c9048401 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:25.460724776Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":35673,"latency_human":"35.673µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId b75be0bf-36fd-47d0-97ca-221c5cc731e0 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204465460-0
+api2        | [INFO][Worker-3] Processando 1753204465460-0: map[amount:19.9 correlationId:b75be0bf-36fd-47d0-97ca-221c5cc731e0 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: b75be0bf-36fd-47d0-97ca-221c5cc731e0 in Gateway:0
+api1        | [health] 1 UP (1)ms
+api1        | {"time":"2025-07-22T17:14:25.514706952Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":36660,"latency_human":"36.66µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-4] Processando 1753204465514-0: map[amount:19.9 correlationId:0c1b5fc4-97f0-4498-8c5d-caee06b2aeda paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 0c1b5fc4-97f0-4498-8c5d-caee06b2aeda amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204465514-0
+api2        | [INFO] Payment processed successfully: 0c1b5fc4-97f0-4498-8c5d-caee06b2aeda in Gateway:0
+api2        | {"time":"2025-07-22T17:14:25.533150692Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":33872,"latency_human":"33.872µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-3] Processando 1753204465533-0: map[amount:19.9 correlationId:dd3e6264-d5a3-4ce6-aef8-5ff9b1607bc7 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId dd3e6264-d5a3-4ce6-aef8-5ff9b1607bc7 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204465533-0
+api1        | [INFO] Payment processed successfully: dd3e6264-d5a3-4ce6-aef8-5ff9b1607bc7 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:25.551855502Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":32059,"latency_human":"32.059µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-4] Processando 1753204465551-0: map[amount:19.9 correlationId:3ab52426-710f-4d15-b892-1f5a5482a041 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 3ab52426-710f-4d15-b892-1f5a5482a041: 1753204465551-0
+api1        | [INFO] Payment processed successfully: 3ab52426-710f-4d15-b892-1f5a5482a041 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:25.570123845Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":31585,"latency_human":"31.585µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 7e23cad2-b29b-4f12-abb4-d1c764f250d5: 1753204465570-0
+api1        | [INFO][Worker-1] Processando 1753204465570-0: map[amount:19.9 correlationId:7e23cad2-b29b-4f12-abb4-d1c764f250d5 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 7e23cad2-b29b-4f12-abb4-d1c764f250d5 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:25.624299056Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":38850,"latency_human":"38.85µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-2] Processando 1753204465624-0: map[amount:19.9 correlationId:c5d3b5e3-3d99-4fb5-a35c-d6b1c09b0fcc paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * paymentGatewayType 0 correlationId c5d3b5e3-3d99-4fb5-a35c-d6b1c09b0fcc amount 19.9 requestedAt 0001-01-01T00:00:00Z: 1753204465624-0
+api1        | [INFO] Payment processed successfully: c5d3b5e3-3d99-4fb5-a35c-d6b1c09b0fcc in Gateway:0
+api1        | {"time":"2025-07-22T17:14:25.642710798Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":68989,"latency_human":"68.989µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 81393256-e518-444c-b19b-06b4d6436d70: 1753204465642-0
+api1        | [INFO][Worker-3] Processando 1753204465642-0: map[amount:19.9 correlationId:81393256-e518-444c-b19b-06b4d6436d70 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 81393256-e518-444c-b19b-06b4d6436d70 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:25.662252329Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":40709,"latency_human":"40.709µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * paymentGatewayType 0 correlationId 57429467-fee9-4f25-bdf1-ff6559fa6d11 amount 19.9 requestedAt 0001-01-01T00:00:00Z: 1753204465662-0
+api2        | [INFO][Worker-1] Processando 1753204465662-0: map[amount:19.9 correlationId:57429467-fee9-4f25-bdf1-ff6559fa6d11 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 57429467-fee9-4f25-bdf1-ff6559fa6d11 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:25.67870382Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":33779,"latency_human":"33.779µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-2] Processando 1753204465678-0: map[amount:19.9 correlationId:45c88d04-0944-43d2-b864-c43b778064e2 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * paymentGatewayType 0 correlationId 45c88d04-0944-43d2-b864-c43b778064e2 amount 19.9 requestedAt 0001-01-01T00:00:00Z: 1753204465678-0
+api2        | [INFO] Payment processed successfully: 45c88d04-0944-43d2-b864-c43b778064e2 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:25.733823564Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":76593,"latency_human":"76.593µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId c82c7d81-07a3-42f9-b113-22245546f364 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204465733-0
+api2        | [INFO][Worker-3] Processando 1753204465733-0: map[amount:19.9 correlationId:c82c7d81-07a3-42f9-b113-22245546f364 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: c82c7d81-07a3-42f9-b113-22245546f364 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:25.751353709Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":41268,"latency_human":"41.268µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 5e4514be-5c9c-49e3-aaa8-8f16157e717e: 1753204465751-0
+api2        | [INFO][Worker-4] Processando 1753204465751-0: map[amount:19.9 correlationId:5e4514be-5c9c-49e3-aaa8-8f16157e717e paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 5e4514be-5c9c-49e3-aaa8-8f16157e717e in Gateway:0
+api1        | {"time":"2025-07-22T17:14:25.769706951Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":45110,"latency_human":"45.11µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 8d1402f1-e935-4b7d-8a6e-201a5f1e278d amount 19.9: 1753204465769-0
+api2        | [INFO][Worker-1] Processando 1753204465769-0: map[amount:19.9 correlationId:8d1402f1-e935-4b7d-8a6e-201a5f1e278d paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 8d1402f1-e935-4b7d-8a6e-201a5f1e278d in Gateway:0
+api2        | {"time":"2025-07-22T17:14:25.788167818Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":43177,"latency_human":"43.177µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * paymentGatewayType 0 correlationId 63f99722-3de1-42fa-8fd7-951a3efce666 amount 19.9 requestedAt 0001-01-01T00:00:00Z: 1753204465788-0
+api1        | [INFO][Worker-4] Processando 1753204465788-0: map[amount:19.9 correlationId:63f99722-3de1-42fa-8fd7-951a3efce666 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 63f99722-3de1-42fa-8fd7-951a3efce666 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:25.842478907Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":46159,"latency_human":"46.159µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId ad3fcee4-dc00-4aee-9231-413dc5324dc4 amount 19.9: 1753204465842-0
+api1        | [INFO][Worker-1] Processando 1753204465842-0: map[amount:19.9 correlationId:ad3fcee4-dc00-4aee-9231-413dc5324dc4 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: ad3fcee4-dc00-4aee-9231-413dc5324dc4 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:25.860871957Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":31221,"latency_human":"31.221µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * paymentGatewayType 0 correlationId 1606de38-ac5c-428a-bf73-b7dc85cfe759 amount 19.9 requestedAt 0001-01-01T00:00:00Z: 1753204465861-0
+api1        | [INFO][Worker-2] Processando 1753204465861-0: map[amount:19.9 correlationId:1606de38-ac5c-428a-bf73-b7dc85cfe759 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 1606de38-ac5c-428a-bf73-b7dc85cfe759 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:25.880389651Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":43230,"latency_human":"43.23µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 62acbf3e-5066-427e-90ac-1479d4aa3531 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204465880-0
+api1        | [INFO][Worker-3] Processando 1753204465880-0: map[amount:19.9 correlationId:62acbf3e-5066-427e-90ac-1479d4aa3531 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 62acbf3e-5066-427e-90ac-1479d4aa3531 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:25.89734475Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":44762,"latency_human":"44.762µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId ddfbd0aa-2949-4e9c-8d8d-7c3c65948f5a amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204465897-0
+api1        | [INFO][Worker-4] Processando 1753204465897-0: map[amount:19.9 correlationId:ddfbd0aa-2949-4e9c-8d8d-7c3c65948f5a paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: ddfbd0aa-2949-4e9c-8d8d-7c3c65948f5a in Gateway:0
+api1        | {"time":"2025-07-22T17:14:25.952671077Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":35277,"latency_human":"35.277µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 6fca4bae-d4f0-40ff-838a-ab1f63c0d446 amount 19.9: 1753204465953-0
+api2        | [INFO][Worker-2] Processando 1753204465953-0: map[amount:19.9 correlationId:6fca4bae-d4f0-40ff-838a-ab1f63c0d446 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 6fca4bae-d4f0-40ff-838a-ab1f63c0d446 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:25.970962658Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":36661,"latency_human":"36.661µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-3] Processando 1753204465971-0: map[amount:19.9 correlationId:0ba8f05c-be80-4607-8d79-f2355e6f5110 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 0ba8f05c-be80-4607-8d79-f2355e6f5110 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204465971-0
+api2        | [INFO] Payment processed successfully: 0ba8f05c-be80-4607-8d79-f2355e6f5110 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:25.9883413Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":36404,"latency_human":"36.404µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 22b7a735-c9cd-4027-894b-5456650476dd amount 19.9: 1753204465988-0
+api2        | [INFO][Worker-4] Processando 1753204465988-0: map[amount:19.9 correlationId:22b7a735-c9cd-4027-894b-5456650476dd paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 22b7a735-c9cd-4027-894b-5456650476dd in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.006975394Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":36130,"latency_human":"36.13µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-1] Processando 1753204466007-0: map[amount:19.9 correlationId:24d713d4-1f74-446a-a1fe-822fe09a3de6 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 24d713d4-1f74-446a-a1fe-822fe09a3de6 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466007-0
+api2        | [INFO] Payment processed successfully: 24d713d4-1f74-446a-a1fe-822fe09a3de6 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.028722771Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":44793,"latency_human":"44.793µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 44af97b2-ad53-40fa-a893-d346a6095360 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466028-0
+api2        | [INFO][Worker-2] Processando 1753204466028-0: map[amount:19.9 correlationId:44af97b2-ad53-40fa-a893-d346a6095360 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 44af97b2-ad53-40fa-a893-d346a6095360 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.061432755Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":34964,"latency_human":"34.964µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-1] Processando 1753204466061-0: map[amount:19.9 correlationId:9fb376cc-2173-4168-a68a-6e20851f5bf5 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 9fb376cc-2173-4168-a68a-6e20851f5bf5 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466061-0
+api1        | [INFO] Payment processed successfully: 9fb376cc-2173-4168-a68a-6e20851f5bf5 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.079725797Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":33240,"latency_human":"33.24µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId ec137155-3102-4631-b70c-df18fa09507a amount 19.9: 1753204466079-0
+api1        | [INFO][Worker-2] Processando 1753204466079-0: map[amount:19.9 correlationId:ec137155-3102-4631-b70c-df18fa09507a paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: ec137155-3102-4631-b70c-df18fa09507a in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.09814433Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":32205,"latency_human":"32.205µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 79d23aeb-e134-4107-8857-814a9a7e843c amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466098-0
+api1        | [INFO][Worker-3] Processando 1753204466098-0: map[amount:19.9 correlationId:79d23aeb-e134-4107-8857-814a9a7e843c paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 79d23aeb-e134-4107-8857-814a9a7e843c in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.11645418Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":79599,"latency_human":"79.599µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-4] Processando 1753204466116-0: map[amount:19.9 correlationId:2b6dfc73-5a3e-4ef9-a0c5-f6446f590a53 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 2b6dfc73-5a3e-4ef9-a0c5-f6446f590a53 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466116-0
+api1        | [INFO] Payment processed successfully: 2b6dfc73-5a3e-4ef9-a0c5-f6446f590a53 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.133673013Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":47235,"latency_human":"47.235µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId ed91ac7f-734f-4d72-9803-fa9e8b4360cd amount 19.9: 1753204466133-0
+api1        | [INFO][Worker-1] Processando 1753204466133-0: map[amount:19.9 correlationId:ed91ac7f-734f-4d72-9803-fa9e8b4360cd paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: ed91ac7f-734f-4d72-9803-fa9e8b4360cd in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.170548914Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":31939,"latency_human":"31.939µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-3] Processando 1753204466170-0: map[amount:19.9 correlationId:9845f886-bb77-447d-b2a4-af95ee31bf44 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 9845f886-bb77-447d-b2a4-af95ee31bf44 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466170-0
+api2        | [INFO] Payment processed successfully: 9845f886-bb77-447d-b2a4-af95ee31bf44 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.188840116Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":39808,"latency_human":"39.808µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId d3841263-603a-4205-ad79-99d1c927cf20 amount 19.9: 1753204466189-0
+api2        | [INFO][Worker-4] Processando 1753204466189-0: map[amount:19.9 correlationId:d3841263-603a-4205-ad79-99d1c927cf20 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: d3841263-603a-4205-ad79-99d1c927cf20 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.206257952Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":34421,"latency_human":"34.421µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId f905e167-a3f7-4561-9ad9-e0cd7639c1f9 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466206-0
+api2        | [INFO][Worker-1] Processando 1753204466206-0: map[amount:19.9 correlationId:f905e167-a3f7-4561-9ad9-e0cd7639c1f9 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: f905e167-a3f7-4561-9ad9-e0cd7639c1f9 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.2256595Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":45213,"latency_human":"45.213µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 467586e4-b3c1-479a-997d-6321ad89026b amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466225-0
+api2        | [INFO][Worker-2] Processando 1753204466225-0: map[amount:19.9 correlationId:467586e4-b3c1-479a-997d-6321ad89026b paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 467586e4-b3c1-479a-997d-6321ad89026b in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.244326057Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":52036,"latency_human":"52.036µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 2dbce829-d7de-4e8e-8acf-cd8639e21ab4 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466244-0
+api2        | [INFO][Worker-3] Processando 1753204466244-0: map[amount:19.9 correlationId:2dbce829-d7de-4e8e-8acf-cd8639e21ab4 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 2dbce829-d7de-4e8e-8acf-cd8639e21ab4 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.28004597Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":37264,"latency_human":"37.264µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 97ea6730-c238-4e21-bd4f-09b429a19553 amount 19.9: 1753204466280-0
+api1        | [INFO][Worker-2] Processando 1753204466280-0: map[amount:19.9 correlationId:97ea6730-c238-4e21-bd4f-09b429a19553 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 97ea6730-c238-4e21-bd4f-09b429a19553 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.298570002Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":34339,"latency_human":"34.339µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-3] Processando 1753204466298-0: map[amount:19.9 correlationId:13b0d02d-7304-4ac4-b739-0de073ad4f41 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 13b0d02d-7304-4ac4-b739-0de073ad4f41 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466298-0
+api1        | [INFO] Payment processed successfully: 13b0d02d-7304-4ac4-b739-0de073ad4f41 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.315735408Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":37030,"latency_human":"37.03µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-4] Processando 1753204466315-0: map[amount:19.9 correlationId:28d5bd36-aed2-4a1e-82f7-2660a71ad70b paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 28d5bd36-aed2-4a1e-82f7-2660a71ad70b: 1753204466315-0
+api1        | [INFO] Payment processed successfully: 28d5bd36-aed2-4a1e-82f7-2660a71ad70b in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.334905862Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":31014,"latency_human":"31.014µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId ce8c9398-b20e-4bb7-8b9c-91c068f3c3f5 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466335-0
+api1        | [INFO][Worker-1] Processando 1753204466335-0: map[amount:19.9 correlationId:ce8c9398-b20e-4bb7-8b9c-91c068f3c3f5 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: ce8c9398-b20e-4bb7-8b9c-91c068f3c3f5 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.352600442Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":36114,"latency_human":"36.114µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId f48aec85-384b-4469-a832-9914abfbe6a7 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466352-0
+api1        | [INFO][Worker-2] Processando 1753204466352-0: map[amount:19.9 correlationId:f48aec85-384b-4469-a832-9914abfbe6a7 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: f48aec85-384b-4469-a832-9914abfbe6a7 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.3891489Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":32263,"latency_human":"32.263µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 9f27ed18-07aa-434c-943a-9a14eb8549b8 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466389-0
+api2        | [INFO][Worker-4] Processando 1753204466389-0: map[amount:19.9 correlationId:9f27ed18-07aa-434c-943a-9a14eb8549b8 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 9f27ed18-07aa-434c-943a-9a14eb8549b8 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.40766099Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":33378,"latency_human":"33.378µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-1] Processando 1753204466407-0: map[amount:19.9 correlationId:e4eccdbf-3a10-416a-b6ef-89b71a8243be paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * paymentGatewayType 0 correlationId e4eccdbf-3a10-416a-b6ef-89b71a8243be amount 19.9 requestedAt 0001-01-01T00:00:00Z: 1753204466407-0
+api2        | [INFO] Payment processed successfully: e4eccdbf-3a10-416a-b6ef-89b71a8243be in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.426979134Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":32106,"latency_human":"32.106µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-2] Processando 1753204466427-0: map[amount:19.9 correlationId:625a2b59-2dbb-4709-a8d9-18c64d154c02 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 625a2b59-2dbb-4709-a8d9-18c64d154c02 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466427-0
+api2        | [INFO] Payment processed successfully: 625a2b59-2dbb-4709-a8d9-18c64d154c02 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.445521829Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":36824,"latency_human":"36.824µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId eaf779d4-d55d-4759-bc15-3a595858e202: 1753204466445-0
+api2        | [INFO][Worker-3] Processando 1753204466445-0: map[amount:19.9 correlationId:eaf779d4-d55d-4759-bc15-3a595858e202 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: eaf779d4-d55d-4759-bc15-3a595858e202 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.462831713Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":36767,"latency_human":"36.767µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 50412b73-c93e-4860-95c2-7d49e17517b7 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466462-0
+api2        | [INFO][Worker-4] Processando 1753204466462-0: map[amount:19.9 correlationId:50412b73-c93e-4860-95c2-7d49e17517b7 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 50412b73-c93e-4860-95c2-7d49e17517b7 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.498776172Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":51835,"latency_human":"51.835µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-3] Processando 1753204466498-0: map[amount:19.9 correlationId:ca118f01-9151-4cb3-be8a-13104288b8e9 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId ca118f01-9151-4cb3-be8a-13104288b8e9: 1753204466498-0
+api1        | [INFO] Payment processed successfully: ca118f01-9151-4cb3-be8a-13104288b8e9 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.516094191Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":32436,"latency_human":"32.436µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 52395a80-7dcc-41fe-b51a-99771339b1cd amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466516-0
+api1        | [INFO][Worker-4] Processando 1753204466516-0: map[amount:19.9 correlationId:52395a80-7dcc-41fe-b51a-99771339b1cd paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 52395a80-7dcc-41fe-b51a-99771339b1cd in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.535434322Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":32936,"latency_human":"32.936µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-1] Processando 1753204466535-0: map[amount:19.9 correlationId:800bfc02-ff0e-48d1-a364-2f7239b2f9fc paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 800bfc02-ff0e-48d1-a364-2f7239b2f9fc amount 19.9: 1753204466535-0
+api1        | [INFO] Payment processed successfully: 800bfc02-ff0e-48d1-a364-2f7239b2f9fc in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.554412097Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":33680,"latency_human":"33.68µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 4712f720-e0b8-439c-8cf3-4118d4c82f83 amount 19.9: 1753204466554-0
+api1        | [INFO][Worker-2] Processando 1753204466554-0: map[amount:19.9 correlationId:4712f720-e0b8-439c-8cf3-4118d4c82f83 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 4712f720-e0b8-439c-8cf3-4118d4c82f83 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.571759096Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":37902,"latency_human":"37.902µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId ed1f9ea1-bc4a-4176-83e0-f78e57859267 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466571-0
+api1        | [INFO][Worker-3] Processando 1753204466571-0: map[amount:19.9 correlationId:ed1f9ea1-bc4a-4176-83e0-f78e57859267 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: ed1f9ea1-bc4a-4176-83e0-f78e57859267 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.607542224Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":36638,"latency_human":"36.638µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-1] Processando 1753204466607-0: map[amount:19.9 correlationId:be5e4e51-263b-4b90-a65c-434e1522481b paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId be5e4e51-263b-4b90-a65c-434e1522481b: 1753204466607-0
+api2        | [INFO] Payment processed successfully: be5e4e51-263b-4b90-a65c-434e1522481b in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.625785317Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":53067,"latency_human":"53.067µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 43158a68-bccc-4ca8-a2cd-04420d72f018 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466625-0
+api2        | [INFO][Worker-2] Processando 1753204466625-0: map[amount:19.9 correlationId:43158a68-bccc-4ca8-a2cd-04420d72f018 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 43158a68-bccc-4ca8-a2cd-04420d72f018 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.644260568Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":34809,"latency_human":"34.809µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId a75a1877-4a92-447c-a101-03abffa1afd7 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466644-0
+api2        | [INFO][Worker-3] Processando 1753204466644-0: map[amount:19.9 correlationId:a75a1877-4a92-447c-a101-03abffa1afd7 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: a75a1877-4a92-447c-a101-03abffa1afd7 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.663620072Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":35564,"latency_human":"35.564µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-4] Processando 1753204466663-0: map[amount:19.9 correlationId:7f5cf395-8de6-44ab-bf25-bc0c54704371 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 7f5cf395-8de6-44ab-bf25-bc0c54704371 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466663-0
+api2        | [INFO] Payment processed successfully: 7f5cf395-8de6-44ab-bf25-bc0c54704371 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.679951536Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":31407,"latency_human":"31.407µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId de2d0d59-a6c9-4702-a58f-5e27007b349c amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466680-0
+api2        | [INFO][Worker-1] Processando 1753204466680-0: map[amount:19.9 correlationId:de2d0d59-a6c9-4702-a58f-5e27007b349c paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: de2d0d59-a6c9-4702-a58f-5e27007b349c in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.717148061Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":37278,"latency_human":"37.278µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 07091825-8069-4d73-b2cb-d51145b00c0c amount 19.9: 1753204466717-0
+api1        | [INFO][Worker-4] Processando 1753204466717-0: map[amount:19.9 correlationId:07091825-8069-4d73-b2cb-d51145b00c0c paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 07091825-8069-4d73-b2cb-d51145b00c0c in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.735357135Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":87928,"latency_human":"87.928µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 7c920ef6-bcd9-4d94-aa56-30df776b2df2 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466735-0
+api1        | [INFO][Worker-1] Processando 1753204466735-0: map[amount:19.9 correlationId:7c920ef6-bcd9-4d94-aa56-30df776b2df2 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 7c920ef6-bcd9-4d94-aa56-30df776b2df2 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.752849316Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":40007,"latency_human":"40.007µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 84b4af97-10e8-433a-9738-9f17bd87946f amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466752-0
+api1        | [INFO][Worker-2] Processando 1753204466752-0: map[amount:19.9 correlationId:84b4af97-10e8-433a-9738-9f17bd87946f paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 84b4af97-10e8-433a-9738-9f17bd87946f in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.771200405Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":33527,"latency_human":"33.527µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 8f311de8-c166-4378-b4d4-eb7caee15d71: 1753204466771-0
+api1        | [INFO][Worker-3] Processando 1753204466771-0: map[amount:19.9 correlationId:8f311de8-c166-4378-b4d4-eb7caee15d71 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 8f311de8-c166-4378-b4d4-eb7caee15d71 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.790386646Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":35972,"latency_human":"35.972µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-4] Processando 1753204466790-0: map[amount:19.9 correlationId:749eda66-4b7e-4905-b259-852369c7b17d paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 749eda66-4b7e-4905-b259-852369c7b17d amount 19.9: 1753204466790-0
+api1        | [INFO] Payment processed successfully: 749eda66-4b7e-4905-b259-852369c7b17d in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.826105463Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":32134,"latency_human":"32.134µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 25d5a6c9-efb8-415c-93ef-024e07030a45 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466826-0
+api2        | [INFO][Worker-2] Processando 1753204466826-0: map[amount:19.9 correlationId:25d5a6c9-efb8-415c-93ef-024e07030a45 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 25d5a6c9-efb8-415c-93ef-024e07030a45 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.844630884Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":36978,"latency_human":"36.978µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId cc42e744-e975-45bb-a2e1-a0022073a10d amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466844-0
+api2        | [INFO][Worker-3] Processando 1753204466844-0: map[amount:19.9 correlationId:cc42e744-e975-45bb-a2e1-a0022073a10d paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: cc42e744-e975-45bb-a2e1-a0022073a10d in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.862774192Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":34651,"latency_human":"34.651µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-4] Processando 1753204466862-0: map[amount:19.9 correlationId:e5f5dcf8-60cb-4d89-9ab3-3a75ff59f70c paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * paymentGatewayType 0 correlationId e5f5dcf8-60cb-4d89-9ab3-3a75ff59f70c amount 19.9 requestedAt 0001-01-01T00:00:00Z: 1753204466862-0
+api2        | [INFO] Payment processed successfully: e5f5dcf8-60cb-4d89-9ab3-3a75ff59f70c in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.881859166Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":32034,"latency_human":"32.034µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 0eacf66a-3b69-48e0-b438-cf5eb06e91eb amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466881-0
+api2        | [INFO][Worker-1] Processando 1753204466881-0: map[amount:19.9 correlationId:0eacf66a-3b69-48e0-b438-cf5eb06e91eb paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 0eacf66a-3b69-48e0-b438-cf5eb06e91eb in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.899542237Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":52838,"latency_human":"52.838µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * paymentGatewayType 0 correlationId a0b4cf17-4be9-4da6-b03b-3698108e5023 amount 19.9 requestedAt 0001-01-01T00:00:00Z: 1753204466899-0
+api2        | [INFO][Worker-2] Processando 1753204466899-0: map[amount:19.9 correlationId:a0b4cf17-4be9-4da6-b03b-3698108e5023 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: a0b4cf17-4be9-4da6-b03b-3698108e5023 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.935438682Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":40740,"latency_human":"40.74µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId a04ace36-5ef3-4de6-9719-feb604e5c88a amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466935-0
+api1        | [INFO][Worker-1] Processando 1753204466935-0: map[amount:19.9 correlationId:a04ace36-5ef3-4de6-9719-feb604e5c88a paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: a04ace36-5ef3-4de6-9719-feb604e5c88a in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.954041874Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":36918,"latency_human":"36.918µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 33fa76e5-b45b-46a7-b4d1-ee8f75f26b47 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466954-0
+api1        | [INFO][Worker-2] Processando 1753204466954-0: map[amount:19.9 correlationId:33fa76e5-b45b-46a7-b4d1-ee8f75f26b47 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 33fa76e5-b45b-46a7-b4d1-ee8f75f26b47 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:26.97345733Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":31307,"latency_human":"31.307µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 6996532f-8c76-4989-9fea-f25378aeb930 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466973-0
+api1        | [INFO][Worker-3] Processando 1753204466973-0: map[amount:19.9 correlationId:6996532f-8c76-4989-9fea-f25378aeb930 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 6996532f-8c76-4989-9fea-f25378aeb930 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:26.989682505Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":32266,"latency_human":"32.266µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-4] Processando 1753204466989-0: map[amount:19.9 correlationId:206799a2-87bc-4c73-bba7-5d4db2400960 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 206799a2-87bc-4c73-bba7-5d4db2400960 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204466989-0
+api1        | [INFO] Payment processed successfully: 206799a2-87bc-4c73-bba7-5d4db2400960 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.00918353Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":53349,"latency_human":"53.349µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-1] Processando 1753204467009-0: map[amount:19.9 correlationId:9811ed80-8da4-4d36-bd67-c9b3fdf3c907 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 9811ed80-8da4-4d36-bd67-c9b3fdf3c907: 1753204467009-0
+api1        | [INFO] Payment processed successfully: 9811ed80-8da4-4d36-bd67-c9b3fdf3c907 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.03043505Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":37804,"latency_human":"37.804µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 949b40ab-5682-4664-92a3-3c4fd37bad43 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467030-0
+api2        | [INFO][Worker-3] Processando 1753204467030-0: map[amount:19.9 correlationId:949b40ab-5682-4664-92a3-3c4fd37bad43 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 949b40ab-5682-4664-92a3-3c4fd37bad43 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.044437778Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":40185,"latency_human":"40.185µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId a36ae031-a488-4a4e-b4c3-031d6f203fcc amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467044-0
+api2        | [INFO][Worker-4] Processando 1753204467044-0: map[amount:19.9 correlationId:a36ae031-a488-4a4e-b4c3-031d6f203fcc paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: a36ae031-a488-4a4e-b4c3-031d6f203fcc in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.063633986Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":33150,"latency_human":"33.15µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 67fa723c-b5fd-40da-8a97-12b52486484e amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467063-0
+api2        | [INFO][Worker-1] Processando 1753204467063-0: map[amount:19.9 correlationId:67fa723c-b5fd-40da-8a97-12b52486484e paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 67fa723c-b5fd-40da-8a97-12b52486484e in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.081929088Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":39448,"latency_human":"39.448µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * paymentGatewayType 0 correlationId be2f0639-9998-4d33-a85c-70e74482c369 amount 19.9 requestedAt 0001-01-01T00:00:00Z: 1753204467082-0
+api2        | [INFO][Worker-2] Processando 1753204467082-0: map[amount:19.9 correlationId:be2f0639-9998-4d33-a85c-70e74482c369 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: be2f0639-9998-4d33-a85c-70e74482c369 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.099618369Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":33811,"latency_human":"33.811µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 65070fe6-ceef-4fb0-8373-f5408ae6d2e3 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467099-0
+api2        | [INFO][Worker-3] Processando 1753204467099-0: map[amount:19.9 correlationId:65070fe6-ceef-4fb0-8373-f5408ae6d2e3 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 65070fe6-ceef-4fb0-8373-f5408ae6d2e3 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.118082267Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":42488,"latency_human":"42.488µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 6bac0077-af47-4f3a-a630-89e661e67ecf amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467118-0
+api1        | [INFO][Worker-2] Processando 1753204467118-0: map[amount:19.9 correlationId:6bac0077-af47-4f3a-a630-89e661e67ecf paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 6bac0077-af47-4f3a-a630-89e661e67ecf in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.135404729Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":34937,"latency_human":"34.937µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-3] Processando 1753204467135-0: map[amount:19.9 correlationId:4d53145e-2457-459c-8c39-85e053fd0315 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 4d53145e-2457-459c-8c39-85e053fd0315 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467135-0
+api1        | [INFO] Payment processed successfully: 4d53145e-2457-459c-8c39-85e053fd0315 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.154261211Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":35030,"latency_human":"35.03µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * paymentGatewayType 0 correlationId 511248da-f0a5-409a-9301-7897826f0150 amount 19.9 requestedAt 0001-01-01T00:00:00Z: 1753204467154-0
+api1        | [INFO][Worker-4] Processando 1753204467154-0: map[amount:19.9 correlationId:511248da-f0a5-409a-9301-7897826f0150 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 511248da-f0a5-409a-9301-7897826f0150 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.172441556Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":39972,"latency_human":"39.972µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * paymentGatewayType 0 correlationId db236417-3257-4d76-b30d-24357d158930 amount 19.9 requestedAt 0001-01-01T00:00:00Z: 1753204467172-0
+api1        | [INFO][Worker-1] Processando 1753204467172-0: map[amount:19.9 correlationId:db236417-3257-4d76-b30d-24357d158930 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: db236417-3257-4d76-b30d-24357d158930 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.190791078Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":42554,"latency_human":"42.554µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 3d4908cc-fb21-4907-8732-fc6801dbe66c: 1753204467190-0
+api1        | [INFO][Worker-2] Processando 1753204467190-0: map[amount:19.9 correlationId:3d4908cc-fb21-4907-8732-fc6801dbe66c paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 3d4908cc-fb21-4907-8732-fc6801dbe66c in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.208560826Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":41672,"latency_human":"41.672µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 147cbf70-f1c5-419c-8738-f79d0c2249bc amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467208-0
+api2        | [INFO][Worker-4] Processando 1753204467208-0: map[amount:19.9 correlationId:147cbf70-f1c5-419c-8738-f79d0c2249bc paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 147cbf70-f1c5-419c-8738-f79d0c2249bc in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.226985403Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":40853,"latency_human":"40.853µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-1] Processando 1753204467227-0: map[amount:19.9 correlationId:7c9a72d5-54da-4d36-82d8-c50234544177 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 7c9a72d5-54da-4d36-82d8-c50234544177 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467227-0
+api2        | [INFO] Payment processed successfully: 7c9a72d5-54da-4d36-82d8-c50234544177 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.246584452Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":42588,"latency_human":"42.588µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId aaeeed10-4c99-46a1-ae29-4dec6f0a05b7 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467246-0
+api2        | [INFO][Worker-2] Processando 1753204467246-0: map[amount:19.9 correlationId:aaeeed10-4c99-46a1-ae29-4dec6f0a05b7 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: aaeeed10-4c99-46a1-ae29-4dec6f0a05b7 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.278506963Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":54456,"latency_human":"54.456µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId f422a978-33bb-4611-a5b3-d16ab2bd87c1 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467278-0
+api2        | [INFO][Worker-3] Processando 1753204467278-0: map[amount:19.9 correlationId:f422a978-33bb-4611-a5b3-d16ab2bd87c1 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: f422a978-33bb-4611-a5b3-d16ab2bd87c1 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.299119262Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":33124,"latency_human":"33.124µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId a32d0d80-0a5e-40ef-bd76-6d70e67bdbb3 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467299-0
+api2        | [INFO][Worker-4] Processando 1753204467299-0: map[amount:19.9 correlationId:a32d0d80-0a5e-40ef-bd76-6d70e67bdbb3 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | {"time":"2025-07-22T17:14:27.300077672Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":42341,"latency_human":"42.341µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId b0b37869-c428-4a08-83b0-5d6f07141e56: 1753204467300-0
+api1        | [INFO][Worker-3] Processando 1753204467300-0: map[amount:19.9 correlationId:b0b37869-c428-4a08-83b0-5d6f07141e56 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: a32d0d80-0a5e-40ef-bd76-6d70e67bdbb3 in Gateway:0
+api1        | [INFO] Payment processed successfully: b0b37869-c428-4a08-83b0-5d6f07141e56 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.317533562Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":33210,"latency_human":"33.21µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId b3964bda-841e-4ff0-8c40-90d74075198b amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467317-0
+api1        | [INFO][Worker-4] Processando 1753204467317-0: map[amount:19.9 correlationId:b3964bda-841e-4ff0-8c40-90d74075198b paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: b3964bda-841e-4ff0-8c40-90d74075198b in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.336752026Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":32209,"latency_human":"32.209µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 035811f3-9f10-419b-9a0e-bf20f56e99ba amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467336-0
+api1        | [INFO][Worker-1] Processando 1753204467336-0: map[amount:19.9 correlationId:035811f3-9f10-419b-9a0e-bf20f56e99ba paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 035811f3-9f10-419b-9a0e-bf20f56e99ba in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.354248637Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":38579,"latency_human":"38.579µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 9507fa12-a52b-4c71-ba85-c67372b3b11b amount 19.9: 1753204467354-0
+api1        | [INFO][Worker-2] Processando 1753204467354-0: map[amount:19.9 correlationId:9507fa12-a52b-4c71-ba85-c67372b3b11b paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 9507fa12-a52b-4c71-ba85-c67372b3b11b in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.372933513Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":42359,"latency_human":"42.359µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * paymentGatewayType 0 correlationId 2764b836-e5d7-478d-8a1d-faa4c17d1923 amount 19.9 requestedAt 0001-01-01T00:00:00Z: 1753204467373-0
+api1        | [INFO][Worker-3] Processando 1753204467373-0: map[amount:19.9 correlationId:2764b836-e5d7-478d-8a1d-faa4c17d1923 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 2764b836-e5d7-478d-8a1d-faa4c17d1923 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.391544786Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":45888,"latency_human":"45.888µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId d06858f6-a652-43a5-ad93-1714e5f55511 amount 19.9: 1753204467391-0
+api2        | [INFO][Worker-1] Processando 1753204467391-0: map[amount:19.9 correlationId:d06858f6-a652-43a5-ad93-1714e5f55511 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: d06858f6-a652-43a5-ad93-1714e5f55511 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.409902136Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":32524,"latency_human":"32.524µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId bc4d6d3e-4696-4084-931b-39b4e473166c: 1753204467410-0
+api2        | [INFO][Worker-2] Processando 1753204467410-0: map[amount:19.9 correlationId:bc4d6d3e-4696-4084-931b-39b4e473166c paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: bc4d6d3e-4696-4084-931b-39b4e473166c in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.4281892Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":36735,"latency_human":"36.735µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 12ead864-e558-48e5-9e44-1de0d6c23d33 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467428-0
+api2        | [INFO][Worker-3] Processando 1753204467428-0: map[amount:19.9 correlationId:12ead864-e558-48e5-9e44-1de0d6c23d33 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 12ead864-e558-48e5-9e44-1de0d6c23d33 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.447682677Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":34976,"latency_human":"34.976µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 9add8035-2a1d-4e75-9327-886501e7ecf5 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467447-0
+api2        | [INFO][Worker-4] Processando 1753204467447-0: map[amount:19.9 correlationId:9add8035-2a1d-4e75-9327-886501e7ecf5 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 9add8035-2a1d-4e75-9327-886501e7ecf5 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.464933548Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":40897,"latency_human":"40.897µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-1] Processando 1753204467465-0: map[amount:19.9 correlationId:dfe8f7a2-3235-4ba4-9764-33a8e1477232 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * paymentGatewayType 0 correlationId dfe8f7a2-3235-4ba4-9764-33a8e1477232 amount 19.9 requestedAt 0001-01-01T00:00:00Z: 1753204467465-0
+api2        | [INFO] Payment processed successfully: dfe8f7a2-3235-4ba4-9764-33a8e1477232 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.481501598Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":35944,"latency_human":"35.944µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-4] Processando 1753204467481-0: map[amount:19.9 correlationId:388e6d71-d72d-483a-a0dc-124cd73f08c1 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 388e6d71-d72d-483a-a0dc-124cd73f08c1: 1753204467481-0
+api1        | [INFO] Payment processed successfully: 388e6d71-d72d-483a-a0dc-124cd73f08c1 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.501112482Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":33195,"latency_human":"33.195µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 3eb6cba1-a6d4-4d95-908e-9688a1ff570c amount 19.9: 1753204467501-0
+api1        | [INFO][Worker-1] Processando 1753204467501-0: map[amount:19.9 correlationId:3eb6cba1-a6d4-4d95-908e-9688a1ff570c paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 3eb6cba1-a6d4-4d95-908e-9688a1ff570c in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.51751641Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":35326,"latency_human":"35.326µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-2] Processando 1753204467517-0: map[amount:19.9 correlationId:fd46423e-e11f-412f-bfd9-18e16013e3c3 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId fd46423e-e11f-412f-bfd9-18e16013e3c3 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467517-0
+api1        | [INFO] Payment processed successfully: fd46423e-e11f-412f-bfd9-18e16013e3c3 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.536829531Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":38188,"latency_human":"38.188µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * paymentGatewayType 0 correlationId 0d293354-f860-45e7-ae24-82e8eeef3dbf amount 19.9 requestedAt 0001-01-01T00:00:00Z: 1753204467536-0
+api1        | [INFO][Worker-3] Processando 1753204467536-0: map[amount:19.9 correlationId:0d293354-f860-45e7-ae24-82e8eeef3dbf paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 0d293354-f860-45e7-ae24-82e8eeef3dbf in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.556248941Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":53768,"latency_human":"53.768µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 8eebf9c0-e0c3-4981-b6fd-54629afaf852 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467556-0
+api1        | [INFO][Worker-4] Processando 1753204467556-0: map[amount:19.9 correlationId:8eebf9c0-e0c3-4981-b6fd-54629afaf852 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 8eebf9c0-e0c3-4981-b6fd-54629afaf852 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.573595916Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":34989,"latency_human":"34.989µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO][Worker-2] Processando 1753204467573-0: map[amount:19.9 correlationId:633f8a72-7bec-4f08-b0db-d6f1d748d545 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 633f8a72-7bec-4f08-b0db-d6f1d748d545: 1753204467573-0
+api2        | [INFO] Payment processed successfully: 633f8a72-7bec-4f08-b0db-d6f1d748d545 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.59123745Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":56237,"latency_human":"56.237µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId fe121348-3997-4745-a95f-e5a9b5151ae0 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467591-0
+api2        | [INFO][Worker-3] Processando 1753204467591-0: map[amount:19.9 correlationId:fe121348-3997-4745-a95f-e5a9b5151ae0 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: fe121348-3997-4745-a95f-e5a9b5151ae0 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.609544532Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":35492,"latency_human":"35.492µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 113e027b-9711-4bbf-8260-e747286dbfbb amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467609-0
+api2        | [INFO][Worker-4] Processando 1753204467609-0: map[amount:19.9 correlationId:113e027b-9711-4bbf-8260-e747286dbfbb paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 113e027b-9711-4bbf-8260-e747286dbfbb in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.627811659Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":31774,"latency_human":"31.774µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * paymentGatewayType 0 correlationId 8855dc8d-ab63-4f54-9e9b-6af7a36f594c amount 19.9 requestedAt 0001-01-01T00:00:00Z: 1753204467627-0
+api2        | [INFO][Worker-1] Processando 1753204467627-0: map[amount:19.9 correlationId:8855dc8d-ab63-4f54-9e9b-6af7a36f594c paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 8855dc8d-ab63-4f54-9e9b-6af7a36f594c in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.646235003Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":31985,"latency_human":"31.985µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 2c4c63d7-4568-4f50-b2e0-b9e794321d9e amount 19.9: 1753204467646-0
+api2        | [INFO][Worker-2] Processando 1753204467646-0: map[amount:19.9 correlationId:2c4c63d7-4568-4f50-b2e0-b9e794321d9e paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 2c4c63d7-4568-4f50-b2e0-b9e794321d9e in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.665444844Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":33251,"latency_human":"33.251µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId e09c9d07-2fd2-448e-b46d-835c382f9bc6 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467665-0
+api1        | [INFO][Worker-1] Processando 1753204467665-0: map[amount:19.9 correlationId:e09c9d07-2fd2-448e-b46d-835c382f9bc6 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: e09c9d07-2fd2-448e-b46d-835c382f9bc6 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.681825699Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":87070,"latency_human":"87.07µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 372cb030-8686-43a6-b495-e47e8d102446 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467682-0
+api1        | [INFO][Worker-2] Processando 1753204467682-0: map[amount:19.9 correlationId:372cb030-8686-43a6-b495-e47e8d102446 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 372cb030-8686-43a6-b495-e47e8d102446 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.700699552Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":33140,"latency_human":"33.14µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId f52b7394-5102-4148-a5d5-7d7a96305df4 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467700-0
+api1        | [INFO][Worker-3] Processando 1753204467700-0: map[amount:19.9 correlationId:f52b7394-5102-4148-a5d5-7d7a96305df4 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: f52b7394-5102-4148-a5d5-7d7a96305df4 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.71908483Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":32837,"latency_human":"32.837µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-4] Processando 1753204467719-0: map[amount:19.9 correlationId:b22321e4-cddc-48b8-9238-57d523d953af paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId b22321e4-cddc-48b8-9238-57d523d953af amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467719-0
+api1        | [INFO] Payment processed successfully: b22321e4-cddc-48b8-9238-57d523d953af in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.737369421Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":32412,"latency_human":"32.412µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * paymentGatewayType 0 correlationId 2c01c3f5-4664-4484-a23d-be323fce6291 amount 19.9 requestedAt 0001-01-01T00:00:00Z: 1753204467737-0
+api1        | [INFO][Worker-1] Processando 1753204467737-0: map[amount:19.9 correlationId:2c01c3f5-4664-4484-a23d-be323fce6291 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 2c01c3f5-4664-4484-a23d-be323fce6291 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.754762503Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":34396,"latency_human":"34.396µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId e97d8f88-60f6-4903-8394-3f741725b219 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467754-0
+api2        | [INFO][Worker-3] Processando 1753204467754-0: map[amount:19.9 correlationId:e97d8f88-60f6-4903-8394-3f741725b219 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: e97d8f88-60f6-4903-8394-3f741725b219 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.773038252Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":44740,"latency_human":"44.74µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId cd1abe58-6cbd-4691-9e6f-4ca82c8d7baf amount 19.9: 1753204467773-0
+api2        | [INFO][Worker-4] Processando 1753204467773-0: map[amount:19.9 correlationId:cd1abe58-6cbd-4691-9e6f-4ca82c8d7baf paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: cd1abe58-6cbd-4691-9e6f-4ca82c8d7baf in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.792501209Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":38943,"latency_human":"38.943µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 8115c24e-d297-4f29-b10e-4c7dd02c4699 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467792-0
+api2        | [INFO][Worker-1] Processando 1753204467792-0: map[amount:19.9 correlationId:8115c24e-d297-4f29-b10e-4c7dd02c4699 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 8115c24e-d297-4f29-b10e-4c7dd02c4699 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.81018476Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":31924,"latency_human":"31.924µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 1364a513-043a-43a4-bf4d-94cb11a82024 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467810-0
+api2        | [INFO][Worker-2] Processando 1753204467810-0: map[amount:19.9 correlationId:1364a513-043a-43a4-bf4d-94cb11a82024 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 1364a513-043a-43a4-bf4d-94cb11a82024 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.827641174Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":40638,"latency_human":"40.638µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 0b1d1b74-ac82-49ad-8251-e0237288b7b6 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467827-0
+api2        | [INFO][Worker-3] Processando 1753204467827-0: map[amount:19.9 correlationId:0b1d1b74-ac82-49ad-8251-e0237288b7b6 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 0b1d1b74-ac82-49ad-8251-e0237288b7b6 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.846239429Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":50027,"latency_human":"50.027µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO][Worker-2] Processando 1753204467846-0: map[amount:19.9 correlationId:f9839656-77aa-4204-ae67-c8c932aecfa4 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId f9839656-77aa-4204-ae67-c8c932aecfa4 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467846-0
+api1        | [INFO] Payment processed successfully: f9839656-77aa-4204-ae67-c8c932aecfa4 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.864732917Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":46891,"latency_human":"46.891µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 68726c75-5271-4d26-983e-3efb1edb11a5: 1753204467864-0
+api1        | [INFO][Worker-3] Processando 1753204467864-0: map[amount:19.9 correlationId:68726c75-5271-4d26-983e-3efb1edb11a5 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 68726c75-5271-4d26-983e-3efb1edb11a5 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.883099661Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":38585,"latency_human":"38.585µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId a26d58a7-9c6d-4bae-8a90-04288cfdea23 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467883-0
+api1        | [INFO][Worker-4] Processando 1753204467883-0: map[amount:19.9 correlationId:a26d58a7-9c6d-4bae-8a90-04288cfdea23 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: a26d58a7-9c6d-4bae-8a90-04288cfdea23 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.901759451Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":33070,"latency_human":"33.07µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId ee30e455-e2c7-475b-b244-0c5e8ad61784: 1753204467901-0
+api1        | [INFO][Worker-1] Processando 1753204467901-0: map[amount:19.9 correlationId:ee30e455-e2c7-475b-b244-0c5e8ad61784 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: ee30e455-e2c7-475b-b244-0c5e8ad61784 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.919408177Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":41917,"latency_human":"41.917µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 785f89a2-74d2-42e0-ac93-9a009b0c7718 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467919-0
+api1        | [INFO][Worker-2] Processando 1753204467919-0: map[amount:19.9 correlationId:785f89a2-74d2-42e0-ac93-9a009b0c7718 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 785f89a2-74d2-42e0-ac93-9a009b0c7718 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.937833463Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":49347,"latency_human":"49.347µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * correlationId 1816256c-a030-4159-b24c-1c4f8336c7c5 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467938-0
+api2        | [INFO][Worker-4] Processando 1753204467938-0: map[amount:19.9 correlationId:1816256c-a030-4159-b24c-1c4f8336c7c5 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 1816256c-a030-4159-b24c-1c4f8336c7c5 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.956205892Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":31116,"latency_human":"31.116µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 820537f3-2dbf-41ef-97be-df4ae4837df5 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204467956-0
+api2        | [INFO][Worker-1] Processando 1753204467956-0: map[amount:19.9 correlationId:820537f3-2dbf-41ef-97be-df4ae4837df5 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 820537f3-2dbf-41ef-97be-df4ae4837df5 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:27.975279606Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":35066,"latency_human":"35.066µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 0a977730-a2f7-4d8d-9c03-3a34a561aa24 amount 19.9: 1753204467975-0
+api2        | [INFO][Worker-2] Processando 1753204467975-0: map[amount:19.9 correlationId:0a977730-a2f7-4d8d-9c03-3a34a561aa24 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 0a977730-a2f7-4d8d-9c03-3a34a561aa24 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:27.991736433Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":41335,"latency_human":"41.335µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0 correlationId 1e30767c-00c2-456a-bf63-c867baee2016 amount 19.9: 1753204467991-0
+api2        | [INFO][Worker-3] Processando 1753204467991-0: map[amount:19.9 correlationId:1e30767c-00c2-456a-bf63-c867baee2016 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: 1e30767c-00c2-456a-bf63-c867baee2016 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:28.011008927Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":39978,"latency_human":"39.978µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId b5cd0c02-5660-4d53-b188-d816d76adbd4 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204468011-0
+api2        | [INFO][Worker-4] Processando 1753204468011-0: map[amount:19.9 correlationId:b5cd0c02-5660-4d53-b188-d816d76adbd4 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api2        | [INFO] Payment processed successfully: b5cd0c02-5660-4d53-b188-d816d76adbd4 in Gateway:0
+api1        | {"time":"2025-07-22T17:14:28.02852931Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":29008,"latency_human":"29.008µs","bytes_in":70,"bytes_out":0}
+api1        | [INFO] Enqueued payment: xadd payment_stream * paymentGatewayType 0 correlationId 1efce771-bdc2-4b2e-bcfe-36b34269b343 amount 19.9 requestedAt 0001-01-01T00:00:00Z: 1753204468028-0
+api1        | [INFO][Worker-3] Processando 1753204468028-0: map[amount:19.9 correlationId:1efce771-bdc2-4b2e-bcfe-36b34269b343 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+api1        | [INFO] Payment processed successfully: 1efce771-bdc2-4b2e-bcfe-36b34269b343 in Gateway:0
+api2        | {"time":"2025-07-22T17:14:28.031901512Z","id":"","remote_ip":"172.20.0.1","host":"localhost","method":"POST","uri":"/payments","user_agent":"Grafana k6/1.1.0","status":200,"error":"","latency":37652,"latency_human":"37.652µs","bytes_in":70,"bytes_out":0}
+api2        | [INFO] Enqueued payment: xadd payment_stream * correlationId 19bc5d3b-24b7-4d55-9a88-d18f7de74912 amount 19.9 requestedAt 0001-01-01T00:00:00Z paymentGatewayType 0: 1753204468032-0
+api1        | [INFO][Worker-4] Processando 1753204468032-0: map[amount:19.9 correlationId:19bc5d3b-24b7-4d55-9a88-d18f7de74912 paymentGatewayType:0 requestedAt:0001-01-01T00:00:00Z]
+log truncated at line 1000

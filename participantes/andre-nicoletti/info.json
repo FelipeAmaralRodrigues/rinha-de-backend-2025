@@ -1,0 +1,13 @@
+{
+  "name": "André Nicoletti",
+  "social": [
+    "https://www.linkedin.com/in/andre-nicoletti-dev/",
+    "https://github.com/andregnicoletti"
+  ],
+  "source-code-repo": "https://github.com/andregnicoletti/rinha-router-mvc",
+  "langs": ["java"],
+  "storages": ["postgresql"],
+  "messaging": [],
+  "load-balancers": ["nginx"],
+  "other-technologies": ["spring boot", "docker-compose"]
+}

@@ -1,0 +1,1001 @@
+
+ Network rinha  Creating
+ Network rinha  Created
+ Container postgres_db  Creating
+ Container redis-cache  Creating
+ Container postgres_db  Created
+ Container redis-cache  Created
+ Container leonardotomas-cs-rinhabackend02-1  Creating
+ Container leonardotomas-cs-rinhabackend01-1  Creating
+ Container leonardotomas-cs-rinhabackend01-1  Created
+ Container leonardotomas-cs-rinhabackend02-1  Created
+ Container leonardotomas-cs-nginx-1  Creating
+ Container leonardotomas-cs-nginx-1  Created
+Attaching to nginx-1, rinhabackend01-1, rinhabackend02-1, postgres_db, redis-cache
+postgres_db       | The files belonging to this database system will be owned by user "postgres".
+postgres_db       | This user must also own the server process.
+postgres_db       | 
+postgres_db       | The database cluster will be initialized with locale "en_US.utf8".
+postgres_db       | The default database encoding has accordingly been set to "UTF8".
+postgres_db       | The default text search configuration will be set to "english".
+postgres_db       | 
+postgres_db       | Data page checksums are disabled.
+postgres_db       | 
+postgres_db       | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+postgres_db       | creating subdirectories ... ok
+postgres_db       | selecting dynamic shared memory implementation ... posix
+redis-cache       | 1:C 22 Jul 2025 17:31:49.784 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis-cache       | 1:C 22 Jul 2025 17:31:49.784 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-cache       | 1:C 22 Jul 2025 17:31:49.784 * Redis version=7.2.10, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-cache       | 1:C 22 Jul 2025 17:31:49.784 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+redis-cache       | 1:M 22 Jul 2025 17:31:49.785 * monotonic clock: POSIX clock_gettime
+redis-cache       | 1:M 22 Jul 2025 17:31:49.785 * Running mode=standalone, port=6379.
+redis-cache       | 1:M 22 Jul 2025 17:31:49.786 * Server initialized
+redis-cache       | 1:M 22 Jul 2025 17:31:49.786 * Ready to accept connections tcp
+postgres_db       | selecting default "max_connections" ... 100
+postgres_db       | selecting default "shared_buffers" ... 128MB
+postgres_db       | selecting default time zone ... UTC
+postgres_db       | creating configuration files ... ok
+postgres_db       | running bootstrap script ... ok
+nginx-1           | Waiting for backends to be ready...
+rinhabackend01-1  | warn: Microsoft.AspNetCore.Hosting.Diagnostics[15]
+rinhabackend01-1  |       Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:80'.
+rinhabackend02-1  | warn: Microsoft.AspNetCore.Hosting.Diagnostics[15]
+rinhabackend02-1  |       Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:80'.
+rinhabackend01-1  | info: Microsoft.Hosting.Lifetime[14]
+rinhabackend01-1  |       Now listening on: http://[::]:80
+rinhabackend01-1  | info: Microsoft.Hosting.Lifetime[0]
+rinhabackend01-1  |       Application started. Press Ctrl+C to shut down.
+rinhabackend01-1  | info: Microsoft.Hosting.Lifetime[0]
+rinhabackend01-1  |       Hosting environment: Production
+rinhabackend01-1  | info: Microsoft.Hosting.Lifetime[0]
+rinhabackend01-1  |       Content root path: /app
+rinhabackend02-1  | info: Microsoft.Hosting.Lifetime[14]
+rinhabackend02-1  |       Now listening on: http://[::]:80
+rinhabackend02-1  | info: Microsoft.Hosting.Lifetime[0]
+rinhabackend02-1  |       Application started. Press Ctrl+C to shut down.
+rinhabackend02-1  | info: Microsoft.Hosting.Lifetime[0]
+rinhabackend02-1  |       Hosting environment: Production
+rinhabackend02-1  | info: Microsoft.Hosting.Lifetime[0]
+rinhabackend02-1  |       Content root path: /app
+postgres_db       | sh: locale: not found
+postgres_db       | 2025-07-22 17:31:51.997 UTC [35] WARNING:  no usable system locales were found
+postgres_db       | performing post-bootstrap initialization ... ok
+postgres_db       | syncing data to disk ... ok
+postgres_db       | 
+postgres_db       | 
+postgres_db       | Success. You can now start the database server using:
+postgres_db       | 
+postgres_db       |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+postgres_db       | 
+postgres_db       | initdb: warning: enabling "trust" authentication for local connections
+postgres_db       | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+postgres_db       | waiting for server to start....2025-07-22 17:31:54.609 UTC [41] LOG:  starting PostgreSQL 17.5 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+postgres_db       | 2025-07-22 17:31:54.616 UTC [41] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres_db       | 2025-07-22 17:31:54.637 UTC [44] LOG:  database system was shut down at 2025-07-22 17:31:54 UTC
+postgres_db       | 2025-07-22 17:31:54.649 UTC [41] LOG:  database system is ready to accept connections
+postgres_db       |  done
+postgres_db       | server started
+postgres_db       | CREATE DATABASE
+postgres_db       | 
+postgres_db       | 
+postgres_db       | /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init.sql
+postgres_db       | CREATE TABLE
+postgres_db       | CREATE INDEX
+postgres_db       | 
+postgres_db       | 
+postgres_db       | waiting for server to shut down....2025-07-22 17:31:55.018 UTC [41] LOG:  received fast shutdown request
+postgres_db       | 2025-07-22 17:31:55.026 UTC [41] LOG:  aborting any active transactions
+postgres_db       | 2025-07-22 17:31:55.084 UTC [41] LOG:  background worker "logical replication launcher" (PID 47) exited with exit code 1
+postgres_db       | 2025-07-22 17:31:55.084 UTC [42] LOG:  shutting down
+postgres_db       | 2025-07-22 17:31:55.091 UTC [42] LOG:  checkpoint starting: shutdown immediate
+postgres_db       | 2025-07-22 17:31:55.249 UTC [42] LOG:  checkpoint complete: wrote 927 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.075 s, sync=0.055 s, total=0.165 s; sync files=306, longest=0.014 s, average=0.001 s; distance=4276 kB, estimate=4276 kB; lsn=0/191A500, redo lsn=0/191A500
+postgres_db       | 2025-07-22 17:31:55.257 UTC [41] LOG:  database system is shut down
+postgres_db       |  done
+postgres_db       | server stopped
+postgres_db       | 
+postgres_db       | PostgreSQL init process complete; ready for start up.
+postgres_db       | 
+postgres_db       | 2025-07-22 17:31:55.356 UTC [1] LOG:  starting PostgreSQL 17.5 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+postgres_db       | 2025-07-22 17:31:55.356 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres_db       | 2025-07-22 17:31:55.356 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres_db       | 2025-07-22 17:31:55.394 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres_db       | 2025-07-22 17:31:55.408 UTC [59] LOG:  database system was shut down at 2025-07-22 17:31:55 UTC
+postgres_db       | 2025-07-22 17:31:55.420 UTC [1] LOG:  database system is ready to accept connections
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 47.6305ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 64.9061ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 8.3801ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 8.5797ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.9359ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 2.0824ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 322.804ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 389.7013ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.6964ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.8304ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.5275ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 2.0613ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.4851ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.5756ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.7774ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.8899ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.7135ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.8617ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 2.1224ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 2.2706ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.4207ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.5191ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.3235ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.4046ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.5472ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.653ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 2.3775ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 2.5387ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.5236ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.6403ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.7318ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.8596ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.6497ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.8011ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.3586ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.4521ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.1677ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.2552ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.2837ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.4009ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.5487ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.6835ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.5026ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.6196ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.0626ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.1623ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.1455ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.2706ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.1531ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.2399ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.4321ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.5601ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.2842ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.4007ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.3892ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.567ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.1963ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.2812ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.4873ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.612ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.1644ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.3859ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.311ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.4353ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.3053ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.3988ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.4005ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.6161ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.4193ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.5634ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.4912ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.6239ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.3438ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.4703ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.0843ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.1767ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.1047ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.2035ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.3242ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.4325ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.2262ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.3513ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.1793ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.2857ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.1429ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.239ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.0933ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.1922ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.5557ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.6774ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.259ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.3757ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.2763ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.3762ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.0944ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.2114ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.1496ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.2633ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.22ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.3758ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.1781ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.2759ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.5632ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.7149ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.3838ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.5046ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.0797ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.1915ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 2.8946ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 3.0543ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 0.8683ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 0.9661ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.0481ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.1629ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 3.0109ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 3.1296ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 2.0704ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 2.229ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 0.9943ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.0857ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 0.9826ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.0896ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 0.9276ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.0403ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.1512ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.2476ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.0687ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.1967ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.1849ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.2844ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.1385ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.2844ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 0.9784ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.0716ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 0.8701ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 0.9651ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.0529ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.1482ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.4451ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.5363ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 0.8792ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 0.9674ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 0.9989ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.1176ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 2.7623ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 2.8632ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.2339ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.3761ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 2.0158ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 2.1257ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 0.9256ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.059ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.2969ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.401ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.2704ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.3968ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.738ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 2.2631ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.0388ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.154ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.4739ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.6016ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.9481ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 2.0884ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.7089ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.8544ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.3331ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.4698ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.2419ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.4014ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.5204ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.7096ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.0983ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.2128ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.0762ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.2663ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 0.8483ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 0.9472ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 0.8131ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 0.8941ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.123ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.2304ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 0.9975ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.1477ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.2031ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.329ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.4027ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.5303ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.1692ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.2718ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.0295ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.1584ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 3.7469ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 4.161ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 2.44ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 2.5828ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.4012ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.646ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 0.9384ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.0404ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.6738ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.7961ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.3228ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.4996ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.1153ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.2137ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 0.8429ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 0.926ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 0.9892ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.0855ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 0.9996ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.1158ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.1052ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.2085ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 0.9062ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 0.9838ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.0915ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.229ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend02-1  |       Received HTTP response headers after 1.6556ms - 200
+rinhabackend02-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend02-1  |       End processing HTTP request after 1.7954ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 1.0875ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 1.1836ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+rinhabackend01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+rinhabackend01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+rinhabackend01-1  |       Received HTTP response headers after 0.8759ms - 200
+rinhabackend01-1  | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+rinhabackend01-1  |       End processing HTTP request after 0.9772ms - 200
+log truncated at line 1000

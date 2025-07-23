@@ -1,0 +1,9 @@
+{
+    "name": "Antonio Victor Carvalho",
+    "social": ["https://x.com/antooniodev"],
+    "source-code-repo": "https://github.com/antooniodev/rinha-backend-2025",
+    "langs": ["node"],
+    "storages": ["redis"],
+    "messaging": ["redis", "node-native"],
+    "load-balancers": ["nginx"]
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Wilian Simões Alexandre",
+    "social": ["https://www.linkedin.com/in/wilian-simoes/"],
+    "source-code-repo": "https://github.com/wilian-simoes/rinha-de-backend-2025-dotnet9",
+    "langs": ["C#", ".NET", "DotNET"],
+    "storages": ["redis"],
+    "messaging": ["redis"],
+    "load-balancers": ["nginx"]
+}

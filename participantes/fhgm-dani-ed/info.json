@@ -1,0 +1,10 @@
+{
+    "name": "Fer | Dani | Ed",
+    "social": [],
+    "source-code-repo": "https://github.com/ernegreiros/RinhaBackend2025/tree/fhgm",
+    "langs": ["C#"],
+    "storages": ["postgresql"],
+    "messaging": [".NET Channels"],
+    "load-balancers": ["nginx"],
+    "other-technologies": [] 
+}

@@ -1,0 +1,99 @@
+
+ go-backend-2 Pulling 
+ go-backend-1 Pulling 
+ 01d036902a3c Already exists 
+ afa2b6c5e925 Pulling fs layer 
+ c8b89628d1a5 Pulling fs layer 
+ 01d036902a3c Already exists 
+ afa2b6c5e925 Pulling fs layer 
+ c8b89628d1a5 Pulling fs layer 
+ afa2b6c5e925 Download complete 
+ afa2b6c5e925 Download complete 
+ afa2b6c5e925 Extracting [==================================================>]      93B/93B
+ afa2b6c5e925 Extracting [==================================================>]      93B/93B
+ afa2b6c5e925 Extracting [==================================================>]      93B/93B
+ afa2b6c5e925 Extracting [==================================================>]      93B/93B
+ afa2b6c5e925 Pull complete 
+ afa2b6c5e925 Pull complete 
+ c8b89628d1a5 Downloading [>                                                  ]  94.47kB/9.116MB
+ c8b89628d1a5 Downloading [>                                                  ]  94.47kB/9.116MB
+ c8b89628d1a5 Downloading [==>                                                ]  376.8kB/9.116MB
+ c8b89628d1a5 Downloading [==>                                                ]  376.8kB/9.116MB
+ c8b89628d1a5 Downloading [=====>                                             ]  970.8kB/9.116MB
+ c8b89628d1a5 Downloading [=====>                                             ]  970.8kB/9.116MB
+ c8b89628d1a5 Downloading [===========>                                       ]  2.146MB/9.116MB
+ c8b89628d1a5 Downloading [===========>                                       ]  2.146MB/9.116MB
+ c8b89628d1a5 Downloading [=========================>                         ]  4.686MB/9.116MB
+ c8b89628d1a5 Downloading [=========================>                         ]  4.686MB/9.116MB
+ c8b89628d1a5 Verifying Checksum 
+ c8b89628d1a5 Download complete 
+ c8b89628d1a5 Verifying Checksum 
+ c8b89628d1a5 Download complete 
+ c8b89628d1a5 Extracting [>                                                  ]   98.3kB/9.116MB
+ c8b89628d1a5 Extracting [>                                                  ]   98.3kB/9.116MB
+ c8b89628d1a5 Extracting [========================>                          ]  4.522MB/9.116MB
+ c8b89628d1a5 Extracting [========================>                          ]  4.522MB/9.116MB
+ c8b89628d1a5 Extracting [==================================================>]  9.116MB/9.116MB
+ c8b89628d1a5 Extracting [==================================================>]  9.116MB/9.116MB
+ c8b89628d1a5 Pull complete 
+ c8b89628d1a5 Pull complete 
+ go-backend-1 Pulled 
+ go-backend-2 Pulled 
+ Network davidalecrim1-go-1_app  Creating
+ Network davidalecrim1-go-1_app  Created
+ Container redis-db  Creating
+ Container redis-db  Created
+ Container go-backend-1  Creating
+ Container go-backend-2  Creating
+ Container go-backend-2  Created
+ Container go-backend-1  Created
+ Container load-balancer-nginx  Creating
+ Container load-balancer-nginx  Created
+Attaching to go-backend-1, go-backend-2, load-balancer-nginx, redis-db
+redis-db             | 1:C 22 Jul 2025 20:44:04.623 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis-db             | 1:C 22 Jul 2025 20:44:04.624 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-db             | 1:C 22 Jul 2025 20:44:04.624 * Redis version=7.2.10, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-db             | 1:C 22 Jul 2025 20:44:04.624 * Configuration loaded
+redis-db             | 1:M 22 Jul 2025 20:44:04.624 * monotonic clock: POSIX clock_gettime
+redis-db             | 1:M 22 Jul 2025 20:44:04.624 * Running mode=standalone, port=6379.
+redis-db             | 1:M 22 Jul 2025 20:44:04.625 * Server initialized
+redis-db             | 1:M 22 Jul 2025 20:44:04.625 * Ready to accept connections tcp
+go-backend-2         | 
+go-backend-2         |  ┌───────────────────────────────────────────────────┐ 
+go-backend-2         |  │               High Performance API                │ 
+go-backend-2         |  │                   Fiber v2.52.8                   │ 
+go-backend-2         |  │                http://127.0.0.1:80                │ 
+go-backend-2         |  │        (bound on host 0.0.0.0 and port 80)        │ 
+go-backend-2         |  │                                                   │ 
+go-backend-2         |  │ Handlers ............. 4  Processes ........... 1 │ 
+go-backend-2         |  │ Prefork ....... Disabled  PID ................. 1 │ 
+go-backend-2         |  └───────────────────────────────────────────────────┘ 
+go-backend-2         | 
+go-backend-1         | 
+go-backend-1         |  ┌───────────────────────────────────────────────────┐ 
+go-backend-1         |  │               High Performance API                │ 
+go-backend-1         |  │                   Fiber v2.52.8                   │ 
+go-backend-1         |  │                http://127.0.0.1:80                │ 
+go-backend-1         |  │        (bound on host 0.0.0.0 and port 80)        │ 
+go-backend-1         |  │                                                   │ 
+go-backend-1         |  │ Handlers ............. 4  Processes ........... 1 │ 
+go-backend-1         |  │ Prefork ....... Disabled  PID ................. 1 │ 
+go-backend-1         |  └───────────────────────────────────────────────────┘ 
+go-backend-1         | 
+load-balancer-nginx  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+load-balancer-nginx  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+load-balancer-nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+load-balancer-nginx  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+load-balancer-nginx  | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+load-balancer-nginx  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+load-balancer-nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+load-balancer-nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+load-balancer-nginx  | /docker-entrypoint.sh: Configuration complete; ready for start up
+[Kload-balancer-nginx exited with code 0
+[Kgo-backend-1 exited with code 2
+[Kgo-backend-2 exited with code 2
+redis-db             | 1:signal-handler (1753217117) Received SIGTERM scheduling shutdown...
+redis-db             | 1:M 22 Jul 2025 20:45:18.023 * User requested shutdown...
+redis-db             | 1:M 22 Jul 2025 20:45:18.023 # Redis is now ready to exit, bye bye...
+[Kredis-db exited with code 0
+log truncated at line 1000

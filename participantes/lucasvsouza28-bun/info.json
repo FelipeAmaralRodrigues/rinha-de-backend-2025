@@ -1,0 +1,13 @@
+{
+  "name": "Lucas Souza",
+  "social": [
+    "https://www.linkedin.com/in/lucas-vicente-de-souza-a420946b",
+    "https://github.com/lucasvsouza28"
+  ],
+  "source-code-repo": "https://github.com/lucasvsouza28/rinha-2025-bun",
+  "langs": ["typescript", "bun"],
+  "messaging": ["redis", "bull"],
+  "storages": ["redis"],
+  "load-balancers": ["nginx"],
+  "other-technologies": ["elysia"]
+}

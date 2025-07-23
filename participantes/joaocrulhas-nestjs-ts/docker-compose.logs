@@ -1,0 +1,1001 @@
+
+ app2 Pulling 
+ app1 Pulling 
+ mongodb Pulling 
+ c19952135643 Already exists 
+ 7bbf972c6c2f Already exists 
+ 900e2c02f17f Already exists 
+ abe9c1abe6f3 Already exists 
+ cac89e5b7511 Already exists 
+ f8f194370228 Already exists 
+ 5a8e24d78487 Already exists 
+ 81f4df4cd09a Already exists 
+ 6c3db915284f Already exists 
+ daa58ed8587c Already exists 
+ 1cc4aca76cb9 Pulling fs layer 
+ 4d4157db01fe Pulling fs layer 
+ 2984471369e8 Pulling fs layer 
+ aed6a502f875 Pulling fs layer 
+ aed6a502f875 Waiting 
+ c19952135643 Already exists 
+ 7bbf972c6c2f Already exists 
+ 900e2c02f17f Already exists 
+ abe9c1abe6f3 Already exists 
+ cac89e5b7511 Already exists 
+ f8f194370228 Already exists 
+ 5a8e24d78487 Already exists 
+ 1d387567261e Already exists 
+ 81f4df4cd09a Already exists 
+ 6c3db915284f Already exists 
+ 54941d981128 Pulling fs layer 
+ 1838722644ac Pulling fs layer 
+ 3cbdcf86fa68 Pulling fs layer 
+ 1c6dfe3c1b38 Pulling fs layer 
+ fbf883d5e0f5 Pulling fs layer 
+ f6386e1419f0 Pulling fs layer 
+ 7289da631452 Pulling fs layer 
+ a6c51a62f4ec Pulling fs layer 
+ 4f4fb700ef54 Pulling fs layer 
+ 6164994c4f4f Pulling fs layer 
+ 3cbdcf86fa68 Waiting 
+ 1c6dfe3c1b38 Waiting 
+ fbf883d5e0f5 Waiting 
+ f6386e1419f0 Waiting 
+ 7289da631452 Waiting 
+ a6c51a62f4ec Waiting 
+ 4f4fb700ef54 Waiting 
+ 6164994c4f4f Waiting 
+ 54941d981128 Waiting 
+ 1838722644ac Waiting 
+ daa58ed8587c Already exists 
+ 1cc4aca76cb9 Pulling fs layer 
+ 4d4157db01fe Pulling fs layer 
+ 2984471369e8 Pulling fs layer 
+ aed6a502f875 Pulling fs layer 
+ aed6a502f875 Waiting 
+ 1cc4aca76cb9 Downloading [=>                                                 ]  2.376kB/103.1kB
+ 1cc4aca76cb9 Downloading [=>                                                 ]  2.376kB/103.1kB
+ 1cc4aca76cb9 Downloading [==================================================>]  103.1kB/103.1kB
+ 1cc4aca76cb9 Verifying Checksum 
+ 4d4157db01fe Downloading [================================================>  ]  1.009kB/1.042kB
+ 1cc4aca76cb9 Download complete 
+ 4d4157db01fe Downloading [==================================================>]  1.042kB/1.042kB
+ 1cc4aca76cb9 Downloading [==================================================>]  103.1kB/103.1kB
+ 1cc4aca76cb9 Verifying Checksum 
+ 1cc4aca76cb9 Download complete 
+ 4d4157db01fe Downloading [================================================>  ]  1.009kB/1.042kB
+ 4d4157db01fe Downloading [==================================================>]  1.042kB/1.042kB
+ 4d4157db01fe Verifying Checksum 
+ 4d4157db01fe Download complete 
+ 4d4157db01fe Download complete 
+ 1cc4aca76cb9 Extracting [===============>                                   ]  32.77kB/103.1kB
+ 1cc4aca76cb9 Extracting [===============>                                   ]  32.77kB/103.1kB
+ 1cc4aca76cb9 Extracting [==================================================>]  103.1kB/103.1kB
+ 1cc4aca76cb9 Extracting [==================================================>]  103.1kB/103.1kB
+ 1cc4aca76cb9 Pull complete 
+ 1cc4aca76cb9 Pull complete 
+ 4d4157db01fe Extracting [==================================================>]  1.042kB/1.042kB
+ 4d4157db01fe Extracting [==================================================>]  1.042kB/1.042kB
+ 4d4157db01fe Extracting [==================================================>]  1.042kB/1.042kB
+ 4d4157db01fe Extracting [==================================================>]  1.042kB/1.042kB
+ 4d4157db01fe Pull complete 
+ 4d4157db01fe Pull complete 
+ 54941d981128 Downloading [>                                                  ]  49.99kB/4.996MB
+ 2984471369e8 Downloading [>                                                  ]  528.4kB/112.2MB
+ 2984471369e8 Downloading [>                                                  ]  528.4kB/112.2MB
+ 54941d981128 Verifying Checksum 
+ 54941d981128 Download complete 
+ 54941d981128 Extracting [>                                                  ]  65.54kB/4.996MB
+ 2984471369e8 Downloading [>                                                  ]  2.138MB/112.2MB
+ 2984471369e8 Downloading [>                                                  ]  2.138MB/112.2MB
+ 54941d981128 Extracting [============================>                      ]  2.884MB/4.996MB
+ 2984471369e8 Downloading [==>                                                ]  4.805MB/112.2MB
+ 2984471369e8 Downloading [==>                                                ]  4.805MB/112.2MB
+ 54941d981128 Extracting [==================================================>]  4.996MB/4.996MB
+ 2984471369e8 Downloading [===>                                               ]  7.492MB/112.2MB
+ 2984471369e8 Downloading [===>                                               ]  7.492MB/112.2MB
+ 54941d981128 Pull complete 
+ 1838722644ac Downloading [================================>                  ]     935B/1.431kB
+ 1838722644ac Downloading [==================================================>]  1.431kB/1.431kB
+ 1838722644ac Verifying Checksum 
+ 1838722644ac Download complete 
+ 1838722644ac Extracting [==================================================>]  1.431kB/1.431kB
+ 1838722644ac Extracting [==================================================>]  1.431kB/1.431kB
+ 2984471369e8 Downloading [=====>                                             ]  11.23MB/112.2MB
+ 2984471369e8 Downloading [=====>                                             ]  11.23MB/112.2MB
+ 1838722644ac Pull complete 
+ 2984471369e8 Downloading [======>                                            ]  14.43MB/112.2MB
+ 2984471369e8 Downloading [======>                                            ]  14.43MB/112.2MB
+ 2984471369e8 Downloading [========>                                          ]  18.69MB/112.2MB
+ 2984471369e8 Downloading [========>                                          ]  18.69MB/112.2MB
+ 2984471369e8 Downloading [=========>                                         ]  20.83MB/112.2MB
+ 2984471369e8 Downloading [=========>                                         ]  20.83MB/112.2MB
+ 3cbdcf86fa68 Downloading [==================================================>]     254B/254B
+ 3cbdcf86fa68 Verifying Checksum 
+ 3cbdcf86fa68 Download complete 
+ 3cbdcf86fa68 Extracting [==================================================>]     254B/254B
+ 3cbdcf86fa68 Extracting [==================================================>]     254B/254B
+ aed6a502f875 Downloading [>                                                  ]  8.214kB/693.7kB
+ aed6a502f875 Downloading [>                                                  ]  8.214kB/693.7kB
+ 3cbdcf86fa68 Pull complete 
+ aed6a502f875 Downloading [==================================================>]  693.7kB/693.7kB
+ aed6a502f875 Download complete 
+ aed6a502f875 Download complete 
+ 2984471369e8 Downloading [==========>                                        ]  24.01MB/112.2MB
+ 2984471369e8 Downloading [==========>                                        ]  24.01MB/112.2MB
+ 2984471369e8 Downloading [============>                                      ]  27.73MB/112.2MB
+ 2984471369e8 Downloading [============>                                      ]  27.73MB/112.2MB
+ 2984471369e8 Downloading [=============>                                     ]  30.91MB/112.2MB
+ 2984471369e8 Downloading [=============>                                     ]  30.91MB/112.2MB
+ 1c6dfe3c1b38 Downloading [>                                                  ]  527.8kB/166.4MB
+ 2984471369e8 Downloading [===============>                                   ]  34.11MB/112.2MB
+ 2984471369e8 Downloading [===============>                                   ]  34.11MB/112.2MB
+ 1c6dfe3c1b38 Downloading [===>                                               ]  10.15MB/166.4MB
+ 2984471369e8 Downloading [================>                                  ]  36.76MB/112.2MB
+ 2984471369e8 Downloading [================>                                  ]  36.76MB/112.2MB
+ 1c6dfe3c1b38 Downloading [=====>                                             ]  18.19MB/166.4MB
+ 2984471369e8 Downloading [=================>                                 ]  38.88MB/112.2MB
+ 2984471369e8 Downloading [=================>                                 ]  38.88MB/112.2MB
+ 1c6dfe3c1b38 Downloading [========>                                          ]  27.31MB/166.4MB
+ 2984471369e8 Downloading [==================>                                ]  41.56MB/112.2MB
+ 2984471369e8 Downloading [==================>                                ]  41.56MB/112.2MB
+ 1c6dfe3c1b38 Downloading [===========>                                       ]  38.55MB/166.4MB
+ 2984471369e8 Downloading [===================>                               ]  43.18MB/112.2MB
+ 2984471369e8 Downloading [===================>                               ]  43.18MB/112.2MB
+ fbf883d5e0f5 Downloading [>                                                  ]  82.15kB/7.866MB
+ 1c6dfe3c1b38 Downloading [==============>                                    ]  47.13MB/166.4MB
+ fbf883d5e0f5 Downloading [=================>                                 ]  2.747MB/7.866MB
+ 1c6dfe3c1b38 Downloading [===============>                                   ]  51.94MB/166.4MB
+ 2984471369e8 Downloading [===================>                               ]  44.78MB/112.2MB
+ 2984471369e8 Downloading [===================>                               ]  44.78MB/112.2MB
+ fbf883d5e0f5 Verifying Checksum 
+ fbf883d5e0f5 Download complete 
+ 1c6dfe3c1b38 Downloading [=================>                                 ]  59.46MB/166.4MB
+ 2984471369e8 Downloading [=====================>                             ]  49.06MB/112.2MB
+ 2984471369e8 Downloading [=====================>                             ]  49.06MB/112.2MB
+ 1c6dfe3c1b38 Downloading [===================>                               ]  66.46MB/166.4MB
+ 2984471369e8 Downloading [=======================>                           ]  52.26MB/112.2MB
+ 2984471369e8 Downloading [=======================>                           ]  52.26MB/112.2MB
+ 1c6dfe3c1b38 Downloading [=======================>                           ]  78.76MB/166.4MB
+ 2984471369e8 Downloading [=======================>                           ]  53.84MB/112.2MB
+ 2984471369e8 Downloading [=======================>                           ]  53.84MB/112.2MB
+ 1c6dfe3c1b38 Downloading [==========================>                        ]  87.87MB/166.4MB
+ 2984471369e8 Downloading [=========================>                         ]  56.52MB/112.2MB
+ 2984471369e8 Downloading [=========================>                         ]  56.52MB/112.2MB
+ 1c6dfe3c1b38 Downloading [============================>                      ]  94.81MB/166.4MB
+ f6386e1419f0 Downloading [>                                                  ]  531.9kB/262.2MB
+ 2984471369e8 Downloading [===========================>                       ]  60.81MB/112.2MB
+ 2984471369e8 Downloading [===========================>                       ]  60.81MB/112.2MB
+ 1c6dfe3c1b38 Downloading [==============================>                    ]  102.3MB/166.4MB
+ 2984471369e8 Downloading [============================>                      ]  62.94MB/112.2MB
+ 2984471369e8 Downloading [============================>                      ]  62.94MB/112.2MB
+ f6386e1419f0 Downloading [>                                                  ]  3.203MB/262.2MB
+ 1c6dfe3c1b38 Downloading [================================>                  ]  108.8MB/166.4MB
+ 2984471369e8 Downloading [=============================>                     ]  65.63MB/112.2MB
+ 2984471369e8 Downloading [=============================>                     ]  65.63MB/112.2MB
+ f6386e1419f0 Downloading [=>                                                 ]  6.441MB/262.2MB
+ 1c6dfe3c1b38 Downloading [==================================>                ]  114.7MB/166.4MB
+ f6386e1419f0 Downloading [=>                                                 ]  10.22MB/262.2MB
+ 2984471369e8 Downloading [==============================>                    ]  68.84MB/112.2MB
+ 2984471369e8 Downloading [==============================>                    ]  68.84MB/112.2MB
+ 1c6dfe3c1b38 Downloading [====================================>              ]  122.7MB/166.4MB
+ f6386e1419f0 Downloading [==>                                                ]  14.48MB/262.2MB
+ 1c6dfe3c1b38 Downloading [======================================>            ]    128MB/166.4MB
+ 2984471369e8 Downloading [===============================>                   ]  70.46MB/112.2MB
+ 2984471369e8 Downloading [===============================>                   ]  70.46MB/112.2MB
+ f6386e1419f0 Downloading [===>                                               ]  17.71MB/262.2MB
+ 1c6dfe3c1b38 Downloading [========================================>          ]    135MB/166.4MB
+ f6386e1419f0 Downloading [====>                                              ]  23.07MB/262.2MB
+ 2984471369e8 Downloading [================================>                  ]  73.67MB/112.2MB
+ 2984471369e8 Downloading [================================>                  ]  73.67MB/112.2MB
+ 1c6dfe3c1b38 Downloading [==========================================>        ]  139.8MB/166.4MB
+ 2984471369e8 Downloading [==================================>                ]  76.36MB/112.2MB
+ 2984471369e8 Downloading [==================================>                ]  76.36MB/112.2MB
+ f6386e1419f0 Downloading [=====>                                             ]  26.28MB/262.2MB
+ 1c6dfe3c1b38 Downloading [===========================================>       ]  146.2MB/166.4MB
+ 2984471369e8 Downloading [===================================>               ]  79.06MB/112.2MB
+ 2984471369e8 Downloading [===================================>               ]  79.06MB/112.2MB
+ 1c6dfe3c1b38 Downloading [=============================================>     ]  151.6MB/166.4MB
+ f6386e1419f0 Downloading [======>                                            ]  31.66MB/262.2MB
+ 1c6dfe3c1b38 Downloading [===============================================>   ]  156.4MB/166.4MB
+ f6386e1419f0 Downloading [=======>                                           ]  37.03MB/262.2MB
+ 2984471369e8 Downloading [====================================>              ]  81.21MB/112.2MB
+ 2984471369e8 Downloading [====================================>              ]  81.21MB/112.2MB
+ 1c6dfe3c1b38 Downloading [================================================>  ]  160.7MB/166.4MB
+ f6386e1419f0 Downloading [=======>                                           ]  41.33MB/262.2MB
+ 2984471369e8 Downloading [=====================================>             ]  83.88MB/112.2MB
+ 2984471369e8 Downloading [=====================================>             ]  83.88MB/112.2MB
+ 1c6dfe3c1b38 Verifying Checksum 
+ 1c6dfe3c1b38 Download complete 
+ f6386e1419f0 Downloading [========>                                          ]  46.15MB/262.2MB
+ 2984471369e8 Downloading [======================================>            ]  87.11MB/112.2MB
+ 2984471369e8 Downloading [======================================>            ]  87.11MB/112.2MB
+ f6386e1419f0 Downloading [==========>                                        ]  53.11MB/262.2MB
+ 2984471369e8 Downloading [=======================================>           ]  89.78MB/112.2MB
+ 2984471369e8 Downloading [=======================================>           ]  89.78MB/112.2MB
+ 1c6dfe3c1b38 Extracting [>                                                  ]  557.1kB/166.4MB
+ f6386e1419f0 Downloading [===========>                                       ]  61.66MB/262.2MB
+ 2984471369e8 Downloading [=========================================>         ]  92.48MB/112.2MB
+ 2984471369e8 Downloading [=========================================>         ]  92.48MB/112.2MB
+ 1c6dfe3c1b38 Extracting [=>                                                 ]  3.342MB/166.4MB
+ f6386e1419f0 Downloading [=============>                                     ]  71.32MB/262.2MB
+ 2984471369e8 Downloading [=========================================>         ]  94.09MB/112.2MB
+ 2984471369e8 Downloading [=========================================>         ]  94.09MB/112.2MB
+ 1c6dfe3c1b38 Extracting [=>                                                 ]  6.128MB/166.4MB
+ 7289da631452 Downloading [=======>                                           ]     935B/5.861kB
+ 7289da631452 Downloading [==================================================>]  5.861kB/5.861kB
+ 7289da631452 Verifying Checksum 
+ 7289da631452 Download complete 
+ f6386e1419f0 Downloading [===============>                                   ]  79.87MB/262.2MB
+ 2984471369e8 Downloading [===========================================>       ]  96.76MB/112.2MB
+ 2984471369e8 Downloading [===========================================>       ]  96.76MB/112.2MB
+ 1c6dfe3c1b38 Extracting [==>                                                ]   9.47MB/166.4MB
+ f6386e1419f0 Downloading [=================>                                 ]  90.57MB/262.2MB
+ 2984471369e8 Downloading [============================================>      ]  99.44MB/112.2MB
+ 2984471369e8 Downloading [============================================>      ]  99.44MB/112.2MB
+ 1c6dfe3c1b38 Extracting [===>                                               ]  12.81MB/166.4MB
+ f6386e1419f0 Downloading [==================>                                ]  98.58MB/262.2MB
+ 2984471369e8 Downloading [=============================================>     ]  102.6MB/112.2MB
+ 2984471369e8 Downloading [=============================================>     ]  102.6MB/112.2MB
+ 1c6dfe3c1b38 Extracting [=====>                                             ]  17.27MB/166.4MB
+ f6386e1419f0 Downloading [====================>                              ]  109.3MB/262.2MB
+ 2984471369e8 Downloading [==============================================>    ]  105.3MB/112.2MB
+ 2984471369e8 Downloading [==============================================>    ]  105.3MB/112.2MB
+ f6386e1419f0 Downloading [======================>                            ]  116.3MB/262.2MB
+ 1c6dfe3c1b38 Extracting [======>                                            ]  20.61MB/166.4MB
+ 2984471369e8 Downloading [================================================>  ]    108MB/112.2MB
+ 2984471369e8 Downloading [================================================>  ]    108MB/112.2MB
+ f6386e1419f0 Downloading [========================>                          ]  126.4MB/262.2MB
+ 2984471369e8 Downloading [=================================================> ]  110.1MB/112.2MB
+ 2984471369e8 Downloading [=================================================> ]  110.1MB/112.2MB
+ f6386e1419f0 Downloading [=========================>                         ]  136.1MB/262.2MB
+ 1c6dfe3c1b38 Extracting [======>                                            ]  21.17MB/166.4MB
+ 2984471369e8 Verifying Checksum 
+ 2984471369e8 Download complete 
+ 2984471369e8 Verifying Checksum 
+ 2984471369e8 Download complete 
+ f6386e1419f0 Downloading [===========================>                       ]  146.3MB/262.2MB
+ 1c6dfe3c1b38 Extracting [======>                                            ]  21.73MB/166.4MB
+ f6386e1419f0 Downloading [==============================>                    ]  158.1MB/262.2MB
+ 1c6dfe3c1b38 Extracting [======>                                            ]  22.28MB/166.4MB
+ f6386e1419f0 Downloading [================================>                  ]  168.3MB/262.2MB
+ f6386e1419f0 Downloading [==================================>                ]  180.1MB/262.2MB
+ 4f4fb700ef54 Downloading [==================================================>]      32B/32B
+ 4f4fb700ef54 Verifying Checksum 
+ 4f4fb700ef54 Download complete 
+ 2984471369e8 Extracting [>                                                  ]  557.1kB/112.2MB
+ 2984471369e8 Extracting [>                                                  ]  557.1kB/112.2MB
+ 1c6dfe3c1b38 Extracting [======>                                            ]  22.84MB/166.4MB
+ f6386e1419f0 Downloading [====================================>              ]  191.8MB/262.2MB
+ f6386e1419f0 Downloading [=====================================>             ]  196.6MB/262.2MB
+ 1c6dfe3c1b38 Extracting [=======>                                           ]   23.4MB/166.4MB
+ f6386e1419f0 Downloading [=======================================>           ]  205.2MB/262.2MB
+ a6c51a62f4ec Downloading [==================================================>]     856B/856B
+ a6c51a62f4ec Verifying Checksum 
+ a6c51a62f4ec Download complete 
+ f6386e1419f0 Downloading [========================================>          ]  213.8MB/262.2MB
+ 6164994c4f4f Downloading [==================================================>]     139B/139B
+ 6164994c4f4f Verifying Checksum 
+ 6164994c4f4f Download complete 
+ f6386e1419f0 Downloading [==========================================>        ]    225MB/262.2MB
+ f6386e1419f0 Downloading [============================================>      ]  234.6MB/262.2MB
+ 1c6dfe3c1b38 Extracting [=======>                                           ]  23.95MB/166.4MB
+ f6386e1419f0 Downloading [==============================================>    ]  243.2MB/262.2MB
+ 1c6dfe3c1b38 Extracting [=======>                                           ]  24.51MB/166.4MB
+ f6386e1419f0 Downloading [================================================>  ]  253.4MB/262.2MB
+ f6386e1419f0 Verifying Checksum 
+ f6386e1419f0 Download complete 
+ 1c6dfe3c1b38 Extracting [=======>                                           ]  26.18MB/166.4MB
+ 2984471369e8 Extracting [>                                                  ]  1.114MB/112.2MB
+ 2984471369e8 Extracting [>                                                  ]  1.114MB/112.2MB
+ 1c6dfe3c1b38 Extracting [=========>                                         ]  32.31MB/166.4MB
+ 1c6dfe3c1b38 Extracting [===========>                                       ]  36.77MB/166.4MB
+ 2984471369e8 Extracting [>                                                  ]  1.671MB/112.2MB
+ 2984471369e8 Extracting [>                                                  ]  1.671MB/112.2MB
+ 1c6dfe3c1b38 Extracting [============>                                      ]  40.67MB/166.4MB
+ 1c6dfe3c1b38 Extracting [=============>                                     ]  46.24MB/166.4MB
+ 2984471369e8 Extracting [>                                                  ]  2.228MB/112.2MB
+ 2984471369e8 Extracting [>                                                  ]  2.228MB/112.2MB
+ 1c6dfe3c1b38 Extracting [==============>                                    ]  49.58MB/166.4MB
+ 2984471369e8 Extracting [=>                                                 ]  2.785MB/112.2MB
+ 2984471369e8 Extracting [=>                                                 ]  2.785MB/112.2MB
+ 1c6dfe3c1b38 Extracting [===============>                                   ]  52.92MB/166.4MB
+ 1c6dfe3c1b38 Extracting [================>                                  ]  54.59MB/166.4MB
+ 2984471369e8 Extracting [=>                                                 ]  3.342MB/112.2MB
+ 2984471369e8 Extracting [=>                                                 ]  3.342MB/112.2MB
+ 1c6dfe3c1b38 Extracting [=================>                                 ]  59.05MB/166.4MB
+ 1c6dfe3c1b38 Extracting [==================>                                ]  62.95MB/166.4MB
+ 1c6dfe3c1b38 Extracting [===================>                               ]  66.29MB/166.4MB
+ 1c6dfe3c1b38 Extracting [====================>                              ]  67.96MB/166.4MB
+ 2984471369e8 Extracting [=>                                                 ]  3.899MB/112.2MB
+ 2984471369e8 Extracting [=>                                                 ]  3.899MB/112.2MB
+ 1c6dfe3c1b38 Extracting [====================>                              ]  69.07MB/166.4MB
+ 1c6dfe3c1b38 Extracting [=====================>                             ]  70.19MB/166.4MB
+ 1c6dfe3c1b38 Extracting [=====================>                             ]   71.3MB/166.4MB
+ 2984471369e8 Extracting [==>                                                ]  5.014MB/112.2MB
+ 2984471369e8 Extracting [==>                                                ]  5.014MB/112.2MB
+ 1c6dfe3c1b38 Extracting [=====================>                             ]  72.97MB/166.4MB
+ 1c6dfe3c1b38 Extracting [======================>                            ]  73.53MB/166.4MB
+ 1c6dfe3c1b38 Extracting [======================>                            ]  75.76MB/166.4MB
+ 2984471369e8 Extracting [==>                                                ]  5.571MB/112.2MB
+ 2984471369e8 Extracting [==>                                                ]  5.571MB/112.2MB
+ 1c6dfe3c1b38 Extracting [=======================>                           ]  78.54MB/166.4MB
+ 1c6dfe3c1b38 Extracting [========================>                          ]  80.77MB/166.4MB
+ 2984471369e8 Extracting [==>                                                ]  6.128MB/112.2MB
+ 2984471369e8 Extracting [==>                                                ]  6.128MB/112.2MB
+ 1c6dfe3c1b38 Extracting [========================>                          ]  81.89MB/166.4MB
+ 2984471369e8 Extracting [==>                                                ]  6.685MB/112.2MB
+ 2984471369e8 Extracting [==>                                                ]  6.685MB/112.2MB
+ 1c6dfe3c1b38 Extracting [=========================>                         ]  83.56MB/166.4MB
+ 2984471369e8 Extracting [===>                                               ]  7.242MB/112.2MB
+ 2984471369e8 Extracting [===>                                               ]  7.242MB/112.2MB
+ 1c6dfe3c1b38 Extracting [=========================>                         ]  84.67MB/166.4MB
+ 1c6dfe3c1b38 Extracting [==========================>                        ]   86.9MB/166.4MB
+ 2984471369e8 Extracting [===>                                               ]  7.799MB/112.2MB
+ 2984471369e8 Extracting [===>                                               ]  7.799MB/112.2MB
+ 1c6dfe3c1b38 Extracting [===========================>                       ]  91.91MB/166.4MB
+ 2984471369e8 Extracting [===>                                               ]  8.913MB/112.2MB
+ 2984471369e8 Extracting [===>                                               ]  8.913MB/112.2MB
+ 1c6dfe3c1b38 Extracting [=============================>                     ]   98.6MB/166.4MB
+ 1c6dfe3c1b38 Extracting [===============================>                   ]  103.6MB/166.4MB
+ 1c6dfe3c1b38 Extracting [================================>                  ]  108.1MB/166.4MB
+ 2984471369e8 Extracting [====>                                              ]   9.47MB/112.2MB
+ 2984471369e8 Extracting [====>                                              ]   9.47MB/112.2MB
+ 1c6dfe3c1b38 Extracting [================================>                  ]  108.6MB/166.4MB
+ 2984471369e8 Extracting [====>                                              ]  10.03MB/112.2MB
+ 2984471369e8 Extracting [====>                                              ]  10.03MB/112.2MB
+ 1c6dfe3c1b38 Extracting [=================================>                 ]  110.3MB/166.4MB
+ 1c6dfe3c1b38 Extracting [=================================>                 ]  113.1MB/166.4MB
+ 2984471369e8 Extracting [====>                                              ]  11.14MB/112.2MB
+ 2984471369e8 Extracting [====>                                              ]  11.14MB/112.2MB
+ 1c6dfe3c1b38 Extracting [==================================>                ]  113.6MB/166.4MB
+ 2984471369e8 Extracting [=====>                                             ]   11.7MB/112.2MB
+ 2984471369e8 Extracting [=====>                                             ]   11.7MB/112.2MB
+ 1c6dfe3c1b38 Extracting [==================================>                ]  115.9MB/166.4MB
+ 2984471369e8 Extracting [=====>                                             ]  12.81MB/112.2MB
+ 2984471369e8 Extracting [=====>                                             ]  12.81MB/112.2MB
+ 1c6dfe3c1b38 Extracting [===================================>               ]  117.5MB/166.4MB
+ 1c6dfe3c1b38 Extracting [===================================>               ]  119.2MB/166.4MB
+ 2984471369e8 Extracting [======>                                            ]  13.93MB/112.2MB
+ 2984471369e8 Extracting [======>                                            ]  13.93MB/112.2MB
+ 1c6dfe3c1b38 Extracting [====================================>              ]  120.3MB/166.4MB
+ 2984471369e8 Extracting [======>                                            ]  14.48MB/112.2MB
+ 2984471369e8 Extracting [======>                                            ]  14.48MB/112.2MB
+ 1c6dfe3c1b38 Extracting [====================================>              ]  120.9MB/166.4MB
+ 1c6dfe3c1b38 Extracting [======================================>            ]  129.2MB/166.4MB
+ 1c6dfe3c1b38 Extracting [=========================================>         ]  138.7MB/166.4MB
+ 1c6dfe3c1b38 Extracting [============================================>      ]  148.7MB/166.4MB
+ 1c6dfe3c1b38 Extracting [===============================================>   ]  158.2MB/166.4MB
+ 2984471369e8 Extracting [======>                                            ]  15.04MB/112.2MB
+ 2984471369e8 Extracting [======>                                            ]  15.04MB/112.2MB
+ 2984471369e8 Extracting [======>                                            ]   15.6MB/112.2MB
+ 2984471369e8 Extracting [======>                                            ]   15.6MB/112.2MB
+ 1c6dfe3c1b38 Extracting [==================================================>]  166.4MB/166.4MB
+ 2984471369e8 Extracting [========>                                          ]  20.05MB/112.2MB
+ 2984471369e8 Extracting [========>                                          ]  20.05MB/112.2MB
+ 2984471369e8 Extracting [=========>                                         ]  20.61MB/112.2MB
+ 2984471369e8 Extracting [=========>                                         ]  20.61MB/112.2MB
+ 2984471369e8 Extracting [=========>                                         ]  21.73MB/112.2MB
+ 2984471369e8 Extracting [=========>                                         ]  21.73MB/112.2MB
+ 2984471369e8 Extracting [=========>                                         ]  22.28MB/112.2MB
+ 2984471369e8 Extracting [=========>                                         ]  22.28MB/112.2MB
+ 2984471369e8 Extracting [==========>                                        ]   23.4MB/112.2MB
+ 2984471369e8 Extracting [==========>                                        ]   23.4MB/112.2MB
+ 2984471369e8 Extracting [===========>                                       ]  25.07MB/112.2MB
+ 2984471369e8 Extracting [===========>                                       ]  25.07MB/112.2MB
+ 2984471369e8 Extracting [============>                                      ]  27.85MB/112.2MB
+ 2984471369e8 Extracting [============>                                      ]  27.85MB/112.2MB
+ 2984471369e8 Extracting [============>                                      ]  28.41MB/112.2MB
+ 2984471369e8 Extracting [============>                                      ]  28.41MB/112.2MB
+ 2984471369e8 Extracting [==============>                                    ]  31.75MB/112.2MB
+ 2984471369e8 Extracting [==============>                                    ]  31.75MB/112.2MB
+ 2984471369e8 Extracting [=================>                                 ]  38.99MB/112.2MB
+ 2984471369e8 Extracting [=================>                                 ]  38.99MB/112.2MB
+ 2984471369e8 Extracting [==================>                                ]  42.34MB/112.2MB
+ 2984471369e8 Extracting [==================>                                ]  42.34MB/112.2MB
+ 2984471369e8 Extracting [===================>                               ]  42.89MB/112.2MB
+ 2984471369e8 Extracting [===================>                               ]  42.89MB/112.2MB
+ 2984471369e8 Extracting [====================>                              ]  46.24MB/112.2MB
+ 2984471369e8 Extracting [====================>                              ]  46.24MB/112.2MB
+ 2984471369e8 Extracting [=====================>                             ]  49.02MB/112.2MB
+ 2984471369e8 Extracting [=====================>                             ]  49.02MB/112.2MB
+ 2984471369e8 Extracting [=======================>                           ]  51.81MB/112.2MB
+ 2984471369e8 Extracting [=======================>                           ]  51.81MB/112.2MB
+ 2984471369e8 Extracting [========================>                          ]  55.71MB/112.2MB
+ 2984471369e8 Extracting [========================>                          ]  55.71MB/112.2MB
+ 1c6dfe3c1b38 Pull complete 
+ fbf883d5e0f5 Extracting [>                                                  ]   98.3kB/7.866MB
+ 2984471369e8 Extracting [==========================>                        ]  59.05MB/112.2MB
+ 2984471369e8 Extracting [==========================>                        ]  59.05MB/112.2MB
+ fbf883d5e0f5 Extracting [=======================>                           ]  3.736MB/7.866MB
+ 2984471369e8 Extracting [===========================>                       ]  61.83MB/112.2MB
+ 2984471369e8 Extracting [===========================>                       ]  61.83MB/112.2MB
+ fbf883d5e0f5 Extracting [=================================>                 ]   5.21MB/7.866MB
+ 2984471369e8 Extracting [=============================>                     ]  65.73MB/112.2MB
+ 2984471369e8 Extracting [=============================>                     ]  65.73MB/112.2MB
+ fbf883d5e0f5 Extracting [=======================================>           ]  6.291MB/7.866MB
+ 2984471369e8 Extracting [==============================>                    ]  68.52MB/112.2MB
+ 2984471369e8 Extracting [==============================>                    ]  68.52MB/112.2MB
+ fbf883d5e0f5 Extracting [==================================================>]  7.866MB/7.866MB
+ fbf883d5e0f5 Pull complete 
+ 2984471369e8 Extracting [================================>                  ]  72.97MB/112.2MB
+ 2984471369e8 Extracting [================================>                  ]  72.97MB/112.2MB
+ f6386e1419f0 Extracting [>                                                  ]  557.1kB/262.2MB
+ 2984471369e8 Extracting [==================================>                ]  76.32MB/112.2MB
+ 2984471369e8 Extracting [==================================>                ]  76.32MB/112.2MB
+ f6386e1419f0 Extracting [=>                                                 ]  8.356MB/262.2MB
+ 2984471369e8 Extracting [===================================>               ]   79.1MB/112.2MB
+ 2984471369e8 Extracting [===================================>               ]   79.1MB/112.2MB
+ f6386e1419f0 Extracting [=>                                                 ]  10.03MB/262.2MB
+ 2984471369e8 Extracting [====================================>              ]  81.89MB/112.2MB
+ 2984471369e8 Extracting [====================================>              ]  81.89MB/112.2MB
+ f6386e1419f0 Extracting [==>                                                ]   11.7MB/262.2MB
+ 2984471369e8 Extracting [======================================>            ]  85.79MB/112.2MB
+ 2984471369e8 Extracting [======================================>            ]  85.79MB/112.2MB
+ f6386e1419f0 Extracting [===>                                               ]  18.38MB/262.2MB
+ 2984471369e8 Extracting [========================================>          ]  91.91MB/112.2MB
+ 2984471369e8 Extracting [========================================>          ]  91.91MB/112.2MB
+ f6386e1419f0 Extracting [====>                                              ]  24.51MB/262.2MB
+ 2984471369e8 Extracting [==========================================>        ]  95.26MB/112.2MB
+ 2984471369e8 Extracting [==========================================>        ]  95.26MB/112.2MB
+ f6386e1419f0 Extracting [=====>                                             ]   31.2MB/262.2MB
+ 2984471369e8 Extracting [===========================================>       ]  97.48MB/112.2MB
+ 2984471369e8 Extracting [===========================================>       ]  97.48MB/112.2MB
+ f6386e1419f0 Extracting [=======>                                           ]  38.99MB/262.2MB
+ 2984471369e8 Extracting [============================================>      ]  99.71MB/112.2MB
+ 2984471369e8 Extracting [============================================>      ]  99.71MB/112.2MB
+ f6386e1419f0 Extracting [========>                                          ]  46.24MB/262.2MB
+ 2984471369e8 Extracting [=============================================>     ]  101.9MB/112.2MB
+ 2984471369e8 Extracting [=============================================>     ]  101.9MB/112.2MB
+ f6386e1419f0 Extracting [=========>                                         ]  51.81MB/262.2MB
+ 2984471369e8 Extracting [===============================================>   ]  105.8MB/112.2MB
+ 2984471369e8 Extracting [===============================================>   ]  105.8MB/112.2MB
+ f6386e1419f0 Extracting [===========>                                       ]  57.93MB/262.2MB
+ 2984471369e8 Extracting [===============================================>   ]  107.5MB/112.2MB
+ f6386e1419f0 Extracting [===========>                                       ]  61.83MB/262.2MB
+ 2984471369e8 Extracting [===============================================>   ]  107.5MB/112.2MB
+ 2984471369e8 Extracting [================================================>  ]  109.7MB/112.2MB
+ 2984471369e8 Extracting [================================================>  ]  109.7MB/112.2MB
+ f6386e1419f0 Extracting [============>                                      ]  62.95MB/262.2MB
+ f6386e1419f0 Extracting [============>                                      ]  64.06MB/262.2MB
+ f6386e1419f0 Extracting [============>                                      ]  65.18MB/262.2MB
+ f6386e1419f0 Extracting [=============>                                     ]  70.75MB/262.2MB
+ f6386e1419f0 Extracting [==============>                                    ]  78.54MB/262.2MB
+ 2984471369e8 Extracting [=================================================> ]  111.4MB/112.2MB
+ 2984471369e8 Extracting [=================================================> ]  111.4MB/112.2MB
+ f6386e1419f0 Extracting [================>                                  ]   86.9MB/262.2MB
+ 2984471369e8 Extracting [==================================================>]  112.2MB/112.2MB
+ 2984471369e8 Extracting [==================================================>]  112.2MB/112.2MB
+ f6386e1419f0 Extracting [==================>                                ]  95.81MB/262.2MB
+ f6386e1419f0 Extracting [===================>                               ]  103.6MB/262.2MB
+ f6386e1419f0 Extracting [=====================>                             ]    112MB/262.2MB
+ f6386e1419f0 Extracting [=====================>                             ]  114.8MB/262.2MB
+ f6386e1419f0 Extracting [======================>                            ]  118.7MB/262.2MB
+ f6386e1419f0 Extracting [========================>                          ]  125.9MB/262.2MB
+ f6386e1419f0 Extracting [=========================>                         ]  131.5MB/262.2MB
+ f6386e1419f0 Extracting [==========================>                        ]  139.3MB/262.2MB
+ f6386e1419f0 Extracting [============================>                      ]  147.6MB/262.2MB
+ f6386e1419f0 Extracting [============================>                      ]  152.1MB/262.2MB
+ 2984471369e8 Pull complete 
+ 2984471369e8 Pull complete 
+ f6386e1419f0 Extracting [=============================>                     ]  154.3MB/262.2MB
+ f6386e1419f0 Extracting [=============================>                     ]  156.5MB/262.2MB
+ f6386e1419f0 Extracting [===============================>                   ]  163.8MB/262.2MB
+ f6386e1419f0 Extracting [================================>                  ]  170.5MB/262.2MB
+ f6386e1419f0 Extracting [=================================>                 ]  174.9MB/262.2MB
+ f6386e1419f0 Extracting [==================================>                ]  180.5MB/262.2MB
+ f6386e1419f0 Extracting [===================================>               ]  183.8MB/262.2MB
+ aed6a502f875 Extracting [==>                                                ]  32.77kB/693.7kB
+ aed6a502f875 Extracting [==>                                                ]  32.77kB/693.7kB
+ f6386e1419f0 Extracting [====================================>              ]  190.5MB/262.2MB
+ f6386e1419f0 Extracting [====================================>              ]  193.3MB/262.2MB
+ f6386e1419f0 Extracting [======================================>            ]  200.5MB/262.2MB
+ f6386e1419f0 Extracting [=======================================>           ]  206.7MB/262.2MB
+ f6386e1419f0 Extracting [========================================>          ]  213.9MB/262.2MB
+ f6386e1419f0 Extracting [=========================================>         ]  219.5MB/262.2MB
+ f6386e1419f0 Extracting [===========================================>       ]  228.4MB/262.2MB
+ f6386e1419f0 Extracting [=============================================>     ]  237.3MB/262.2MB
+ f6386e1419f0 Extracting [==============================================>    ]  245.1MB/262.2MB
+ f6386e1419f0 Extracting [================================================>  ]  252.9MB/262.2MB
+ f6386e1419f0 Extracting [=================================================> ]  257.9MB/262.2MB
+ f6386e1419f0 Extracting [=================================================> ]    259MB/262.2MB
+ aed6a502f875 Extracting [==============>                                    ]  196.6kB/693.7kB
+ aed6a502f875 Extracting [==============>                                    ]  196.6kB/693.7kB
+ f6386e1419f0 Extracting [=================================================> ]  260.7MB/262.2MB
+ aed6a502f875 Extracting [=================================================> ]  688.1kB/693.7kB
+ aed6a502f875 Extracting [=================================================> ]  688.1kB/693.7kB
+ aed6a502f875 Extracting [==================================================>]  693.7kB/693.7kB
+ aed6a502f875 Extracting [==================================================>]  693.7kB/693.7kB
+ f6386e1419f0 Extracting [=================================================> ]  261.3MB/262.2MB
+ f6386e1419f0 Extracting [=================================================> ]  261.8MB/262.2MB
+ f6386e1419f0 Extracting [==================================================>]  262.2MB/262.2MB
+ aed6a502f875 Pull complete 
+ aed6a502f875 Pull complete 
+ f6386e1419f0 Pull complete 
+ 7289da631452 Extracting [==================================================>]  5.861kB/5.861kB
+ 7289da631452 Extracting [==================================================>]  5.861kB/5.861kB
+ app1 Pulled 
+ app2 Pulled 
+ 7289da631452 Pull complete 
+ a6c51a62f4ec Extracting [==================================================>]     856B/856B
+ a6c51a62f4ec Extracting [==================================================>]     856B/856B
+ a6c51a62f4ec Pull complete 
+ 4f4fb700ef54 Extracting [==================================================>]      32B/32B
+ 4f4fb700ef54 Extracting [==================================================>]      32B/32B
+ 4f4fb700ef54 Pull complete 
+ 6164994c4f4f Extracting [==================================================>]     139B/139B
+ 6164994c4f4f Extracting [==================================================>]     139B/139B
+ 6164994c4f4f Pull complete 
+ mongodb Pulled 
+ Network joaocrulhas-nestjs-ts_backend  Creating
+ Network joaocrulhas-nestjs-ts_backend  Created
+ Volume "joaocrulhas-nestjs-ts_rinha-store"  Creating
+ Volume "joaocrulhas-nestjs-ts_rinha-store"  Created
+ Volume "joaocrulhas-nestjs-ts_redis_data"  Creating
+ Volume "joaocrulhas-nestjs-ts_redis_data"  Created
+ Container redis  Creating
+ Container mongodb  Creating
+ Container redis  Created
+ Container app2  Creating
+ Container app1  Creating
+ Container mongodb  Created
+ Container app2  Created
+ Container app1  Created
+ Container nginx-load-balancer  Creating
+ Container nginx-load-balancer  Created
+Attaching to app1, app2, mongodb, nginx-load-balancer, redis
+mongodb              | Warning: File MONGO_INITDB_ROOT_USERNAME_FILE is deprecated. Use MONGODB_INITDB_ROOT_USERNAME_FILE instead.
+mongodb              | Warning: File MONGO_INITDB_ROOT_PASSWORD_FILE is deprecated. Use MONGODB_INITDB_ROOT_PASSWORD_FILE instead.
+mongodb              | {"t":{"$date":"2025-07-21T11:05:24.462+00:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"main","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:24.463+00:00"},"s":"I",  "c":"CONTROL",  "id":5945603, "ctx":"main","msg":"Multi threading initialized"}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:24.464+00:00"},"s":"I",  "c":"NETWORK",  "id":4648601, "ctx":"main","msg":"Implicit TCP FastOpen unavailable. If TCP FastOpen is required, set at least one of the related parameters","attr":{"relatedParameters":["tcpFastOpenServer","tcpFastOpenClient","tcpFastOpenQueueSize"]}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:24.464+00:00"},"s":"I",  "c":"NETWORK",  "id":4915701, "ctx":"main","msg":"Initialized wire specification","attr":{"spec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":25},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":25},"outgoing":{"minWireVersion":6,"maxWireVersion":25},"isInternalClient":true}}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:24.465+00:00"},"s":"I",  "c":"TENANT_M", "id":7091600, "ctx":"main","msg":"Starting TenantMigrationAccessBlockerRegistry"}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:24.466+00:00"},"s":"I",  "c":"CONTROL",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":7,"port":27017,"dbPath":"/data/db","architecture":"64-bit","host":"3c867efa4c90"}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:24.466+00:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"8.0.11","gitVersion":"bed99f699da6cb2b74262aa6d473446c41476643","openSSLVersion":"OpenSSL 3.0.2 15 Mar 2022","modules":[],"allocator":"tcmalloc-google","environment":{"distmod":"ubuntu2204","distarch":"x86_64","target_arch":"x86_64"}}}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:24.466+00:00"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"Ubuntu","version":"22.04"}}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:24.466+00:00"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{"net":{"bindIp":"*"}}}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:24.467+00:00"},"s":"I",  "c":"STORAGE",  "id":22297,   "ctx":"initandlisten","msg":"Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem","tags":["startupWarnings"]}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:24.467+00:00"},"s":"I",  "c":"STORAGE",  "id":22315,   "ctx":"initandlisten","msg":"Opening WiredTiger","attr":{"config":"create,cache_size=3399M,session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,remove=true,path=journal,compressor=snappy),builtin_extension_config=(zstd=(compression_level=6)),file_manager=(close_idle_time=600,close_scan_interval=10,close_handle_minimum=2000),statistics_log=(wait=0),json_output=(error,message),verbose=[recovery_progress:1,checkpoint_progress:1,compact_progress:1,backup:0,checkpoint:0,compact:0,evict:0,history_store:0,recovery:0,rts:0,salvage:0,tiered:0,timestamp:0,transaction:0,verify:0,log:0],prefetch=(available=true,default=false),"}}
+redis                | Starting Redis Server
+redis                | 1:C 21 Jul 2025 11:05:24.588 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis                | 1:C 21 Jul 2025 11:05:24.588 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis                | 1:C 21 Jul 2025 11:05:24.588 * Redis version=8.0.3, bits=64, commit=00000000, modified=1, pid=1, just started
+redis                | 1:C 21 Jul 2025 11:05:24.588 * Configuration loaded
+redis                | 1:M 21 Jul 2025 11:05:24.589 * monotonic clock: POSIX clock_gettime
+redis                | 1:M 21 Jul 2025 11:05:24.589 * Running mode=standalone, port=6379.
+redis                | 1:M 21 Jul 2025 11:05:24.591 * <bf> RedisBloom version 8.0.1 (Git=unknown)
+redis                | 1:M 21 Jul 2025 11:05:24.591 * <bf> Registering configuration options: [
+redis                | 1:M 21 Jul 2025 11:05:24.591 * <bf> 	{ bf-error-rate       :      0.01 }
+redis                | 1:M 21 Jul 2025 11:05:24.591 * <bf> 	{ bf-initial-size     :       100 }
+redis                | 1:M 21 Jul 2025 11:05:24.591 * <bf> 	{ bf-expansion-factor :         2 }
+redis                | 1:M 21 Jul 2025 11:05:24.591 * <bf> 	{ cf-bucket-size      :         2 }
+redis                | 1:M 21 Jul 2025 11:05:24.591 * <bf> 	{ cf-initial-size     :      1024 }
+redis                | 1:M 21 Jul 2025 11:05:24.591 * <bf> 	{ cf-max-iterations   :        20 }
+redis                | 1:M 21 Jul 2025 11:05:24.591 * <bf> 	{ cf-expansion-factor :         1 }
+redis                | 1:M 21 Jul 2025 11:05:24.591 * <bf> 	{ cf-max-expansions   :        32 }
+redis                | 1:M 21 Jul 2025 11:05:24.591 * <bf> ]
+redis                | 1:M 21 Jul 2025 11:05:24.591 * Module 'bf' loaded from /usr/local/lib/redis/modules//redisbloom.so
+redis                | 1:M 21 Jul 2025 11:05:24.681 * <search> Redis version found by RedisSearch : 8.0.3 - oss
+redis                | 1:M 21 Jul 2025 11:05:24.681 * <search> RediSearch version 8.0.1 (Git=5688fcc)
+redis                | 1:M 21 Jul 2025 11:05:24.681 * <search> Low level api version 1 initialized successfully
+redis                | 1:M 21 Jul 2025 11:05:24.681 * <search> gc: ON, prefix min length: 2, min word length to stem: 4, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, 
+redis                | 1:M 21 Jul 2025 11:05:24.682 * <search> Initialized thread pools!
+redis                | 1:M 21 Jul 2025 11:05:24.682 * <search> Disabled workers threadpool of size 0
+redis                | 1:M 21 Jul 2025 11:05:24.682 * <search> Subscribe to config changes
+redis                | 1:M 21 Jul 2025 11:05:24.682 * <search> Enabled role change notification
+redis                | 1:M 21 Jul 2025 11:05:24.683 * <search> Cluster configuration: AUTO partitions, type: 0, coordinator timeout: 0ms
+redis                | 1:M 21 Jul 2025 11:05:24.683 * <search> Register write commands
+redis                | 1:M 21 Jul 2025 11:05:24.683 * Module 'search' loaded from /usr/local/lib/redis/modules//redisearch.so
+redis                | 1:M 21 Jul 2025 11:05:24.684 * <timeseries> RedisTimeSeries version 80001, git_sha=577bfa8b5909e7ee572f0b651399be8303dc6641
+redis                | 1:M 21 Jul 2025 11:05:24.684 * <timeseries> Redis version found by RedisTimeSeries : 8.0.3 - oss
+redis                | 1:M 21 Jul 2025 11:05:24.684 * <timeseries> Registering configuration options: [
+redis                | 1:M 21 Jul 2025 11:05:24.684 * <timeseries> 	{ ts-compaction-policy   :              }
+redis                | 1:M 21 Jul 2025 11:05:24.684 * <timeseries> 	{ ts-num-threads         :            3 }
+redis                | 1:M 21 Jul 2025 11:05:24.684 * <timeseries> 	{ ts-retention-policy    :            0 }
+redis                | 1:M 21 Jul 2025 11:05:24.684 * <timeseries> 	{ ts-duplicate-policy    :        block }
+redis                | 1:M 21 Jul 2025 11:05:24.684 * <timeseries> 	{ ts-chunk-size-bytes    :         4096 }
+redis                | 1:M 21 Jul 2025 11:05:24.684 * <timeseries> 	{ ts-encoding            :   compressed }
+redis                | 1:M 21 Jul 2025 11:05:24.684 * <timeseries> 	{ ts-ignore-max-time-diff:            0 }
+redis                | 1:M 21 Jul 2025 11:05:24.684 * <timeseries> 	{ ts-ignore-max-val-diff :     0.000000 }
+redis                | 1:M 21 Jul 2025 11:05:24.684 * <timeseries> ]
+redis                | 1:M 21 Jul 2025 11:05:24.684 * <timeseries> Detected redis oss
+redis                | 1:M 21 Jul 2025 11:05:24.684 * Module 'timeseries' loaded from /usr/local/lib/redis/modules//redistimeseries.so
+redis                | 1:M 21 Jul 2025 11:05:24.687 * <ReJSON> Created new data type 'ReJSON-RL'
+redis                | 1:M 21 Jul 2025 11:05:24.688 * <ReJSON> version: 80001 git sha: unknown branch: unknown
+redis                | 1:M 21 Jul 2025 11:05:24.688 * <ReJSON> Exported RedisJSON_V1 API
+redis                | 1:M 21 Jul 2025 11:05:24.688 * <ReJSON> Exported RedisJSON_V2 API
+redis                | 1:M 21 Jul 2025 11:05:24.688 * <ReJSON> Exported RedisJSON_V3 API
+redis                | 1:M 21 Jul 2025 11:05:24.688 * <ReJSON> Exported RedisJSON_V4 API
+redis                | 1:M 21 Jul 2025 11:05:24.688 * <ReJSON> Exported RedisJSON_V5 API
+redis                | 1:M 21 Jul 2025 11:05:24.688 * <ReJSON> Enabled diskless replication
+redis                | 1:M 21 Jul 2025 11:05:24.688 * <ReJSON> Initialized shared string cache, thread safe: false.
+redis                | 1:M 21 Jul 2025 11:05:24.688 * Module 'ReJSON' loaded from /usr/local/lib/redis/modules//rejson.so
+redis                | 1:M 21 Jul 2025 11:05:24.688 * <search> Acquired RedisJSON_V5 API
+redis                | 1:M 21 Jul 2025 11:05:24.688 * Server initialized
+redis                | 1:M 21 Jul 2025 11:05:24.688 * Ready to accept connections tcp
+mongodb              | {"t":{"$date":"2025-07-21T11:05:24.945+00:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1753095924,"ts_usec":945845,"thread":"7:0x7f48fd630240","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":34,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"recovery log replay has successfully finished and ran for 0 milliseconds"}}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:24.945+00:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1753095924,"ts_usec":945935,"thread":"7:0x7f48fd630240","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":34,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"Set global recovery timestamp: (0, 0)"}}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:24.945+00:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1753095924,"ts_usec":945969,"thread":"7:0x7f48fd630240","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":34,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"Set global oldest timestamp: (0, 0)"}}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:24.946+00:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1753095924,"ts_usec":946025,"thread":"7:0x7f48fd630240","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":34,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"recovery was completed successfully and took 0ms, including 0ms for the log replay, 0ms for the rollback to stable, and 0ms for the checkpoint."}}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:24.974+00:00"},"s":"I",  "c":"STORAGE",  "id":4795906, "ctx":"initandlisten","msg":"WiredTiger opened","attr":{"durationMillis":507}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:24.974+00:00"},"s":"I",  "c":"RECOVERY", "id":23987,   "ctx":"initandlisten","msg":"WiredTiger recoveryTimestamp","attr":{"recoveryTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.031+00:00"},"s":"I",  "c":"STORAGE",  "id":9529901, "ctx":"initandlisten","msg":"Initializing durable catalog","attr":{"numRecords":0}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.031+00:00"},"s":"I",  "c":"STORAGE",  "id":9529902, "ctx":"initandlisten","msg":"Retrieving all idents from storage engine"}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.032+00:00"},"s":"I",  "c":"STORAGE",  "id":9529903, "ctx":"initandlisten","msg":"Initializing all collections in durable catalog","attr":{"numEntries":0}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.053+00:00"},"s":"W",  "c":"CONTROL",  "id":22120,   "ctx":"initandlisten","msg":"Access control is not enabled for the database. Read and write access to data and configuration is unrestricted","tags":["startupWarnings"]}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.053+00:00"},"s":"W",  "c":"CONTROL",  "id":9068900, "ctx":"initandlisten","msg":"For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile","attr":{"allocator":"tcmalloc-google","sysfsFile":"/sys/kernel/mm/transparent_hugepage/defrag","currentValue":"madvise","desiredValue":"defer+madvise"},"tags":["startupWarnings"]}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.053+00:00"},"s":"W",  "c":"CONTROL",  "id":8640302, "ctx":"initandlisten","msg":"We suggest setting the contents of sysfsFile to 0.","attr":{"sysfsFile":"/sys/kernel/mm/transparent_hugepage/khugepaged/max_ptes_none","currentValue":511},"tags":["startupWarnings"]}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.053+00:00"},"s":"W",  "c":"CONTROL",  "id":8718500, "ctx":"initandlisten","msg":"Your system has glibc support for rseq built in, which is not yet supported by tcmalloc-google and has critical performance implications. Please set the environment variable GLIBC_TUNABLES=glibc.pthread.rseq=0","tags":["startupWarnings"]}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.053+00:00"},"s":"W",  "c":"NETWORK",  "id":5123300, "ctx":"initandlisten","msg":"vm.max_map_count is too low","attr":{"currentValue":65530,"recommendedMinimum":1677720,"maxConns":838860},"tags":["startupWarnings"]}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.053+00:00"},"s":"W",  "c":"CONTROL",  "id":8386700, "ctx":"initandlisten","msg":"We suggest setting swappiness to 0 or 1, as swapping can cause performance problems.","attr":{"sysfsFile":"/proc/sys/vm/swappiness","currentValue":60},"tags":["startupWarnings"]}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.053+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"initandlisten","msg":"createCollection","attr":{"namespace":"admin.system.version","uuidDisposition":"provided","uuid":{"uuid":{"$uuid":"37a1b10b-db84-45ac-a3f2-581ba76836bc"}},"options":{"uuid":{"$uuid":"37a1b10b-db84-45ac-a3f2-581ba76836bc"}}}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.091+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"initandlisten","msg":"Index build: done building","attr":{"buildUUID":null,"collectionUUID":{"uuid":{"$uuid":"37a1b10b-db84-45ac-a3f2-581ba76836bc"}},"namespace":"admin.system.version","index":"_id_","ident":"index-1-17670882528470361080","collectionIdent":"collection-0-17670882528470361080","commitTimestamp":null}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.091+00:00"},"s":"I",  "c":"REPL",     "id":20459,   "ctx":"initandlisten","msg":"Setting featureCompatibilityVersion","attr":{"newVersion":"8.0"}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.091+00:00"},"s":"I",  "c":"REPL",     "id":5853300, "ctx":"initandlisten","msg":"current featureCompatibilityVersion value","attr":{"featureCompatibilityVersion":"8.0","context":"setFCV"}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.091+00:00"},"s":"I",  "c":"NETWORK",  "id":4915702, "ctx":"initandlisten","msg":"Updated wire specification","attr":{"oldSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":25},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":25},"outgoing":{"minWireVersion":6,"maxWireVersion":25},"isInternalClient":true},"newSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":25},"incomingInternalClient":{"minWireVersion":25,"maxWireVersion":25},"outgoing":{"minWireVersion":25,"maxWireVersion":25},"isInternalClient":true}}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.091+00:00"},"s":"I",  "c":"NETWORK",  "id":4915702, "ctx":"initandlisten","msg":"Updated wire specification","attr":{"oldSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":25},"incomingInternalClient":{"minWireVersion":25,"maxWireVersion":25},"outgoing":{"minWireVersion":25,"maxWireVersion":25},"isInternalClient":true},"newSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":25},"incomingInternalClient":{"minWireVersion":25,"maxWireVersion":25},"outgoing":{"minWireVersion":25,"maxWireVersion":25},"isInternalClient":true}}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.091+00:00"},"s":"I",  "c":"REPL",     "id":5853300, "ctx":"initandlisten","msg":"current featureCompatibilityVersion value","attr":{"featureCompatibilityVersion":"8.0","context":"startup"}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.091+00:00"},"s":"I",  "c":"STORAGE",  "id":5071100, "ctx":"initandlisten","msg":"Clearing temp directory"}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.091+00:00"},"s":"I",  "c":"CONTROL",  "id":6608200, "ctx":"initandlisten","msg":"Initializing cluster server parameters from disk"}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.091+00:00"},"s":"I",  "c":"CONTROL",  "id":20536,   "ctx":"initandlisten","msg":"Flow Control is enabled on this deployment"}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.091+00:00"},"s":"I",  "c":"FTDC",     "id":20625,   "ctx":"initandlisten","msg":"Initializing full-time diagnostic data capture","attr":{"dataDirectory":"/data/db/diagnostic.data"}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.092+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"initandlisten","msg":"createCollection","attr":{"namespace":"local.startup_log","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"5dd8657e-5be9-40ef-b70d-0b1e0631b942"}},"options":{"capped":true,"size":10485760}}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.133+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"initandlisten","msg":"Index build: done building","attr":{"buildUUID":null,"collectionUUID":{"uuid":{"$uuid":"5dd8657e-5be9-40ef-b70d-0b1e0631b942"}},"namespace":"local.startup_log","index":"_id_","ident":"index-3-17670882528470361080","collectionIdent":"collection-2-17670882528470361080","commitTimestamp":null}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.133+00:00"},"s":"I",  "c":"REPL",     "id":6015317, "ctx":"initandlisten","msg":"Setting new configuration state","attr":{"newState":"ConfigReplicationDisabled","oldState":"ConfigPreStart"}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.133+00:00"},"s":"I",  "c":"STORAGE",  "id":22262,   "ctx":"initandlisten","msg":"Timestamp monitor starting"}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.133+00:00"},"s":"I",  "c":"STORAGE",  "id":7333401, "ctx":"initandlisten","msg":"Starting the DiskSpaceMonitor"}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.134+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"/tmp/mongodb-27017.sock"}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.135+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"0.0.0.0:27017"}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.135+00:00"},"s":"I",  "c":"NETWORK",  "id":23016,   "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.135+00:00"},"s":"I",  "c":"CONTROL",  "id":8423403, "ctx":"initandlisten","msg":"mongod startup complete","attr":{"Summary of time elapsed":{"Startup from clean shutdown?":true,"Statistics":{"Set up periodic runner":"0 ms","Set up online certificate status protocol manager":"0 ms","Transport layer setup":"0 ms","Run initial syncer crash recovery":"0 ms","Create storage engine lock file in the data directory":"0 ms","Get metadata describing storage engine":"0 ms","Create storage engine":"566 ms","Write current PID to file":"0 ms","Write a new metadata for storage engine":"21 ms","Initialize FCV before rebuilding indexes":"0 ms","Drop abandoned idents and get back indexes that need to be rebuilt or builds that need to be restarted":"0 ms","Rebuild indexes for collections":"0 ms","Load cluster parameters from disk for a standalone":"0 ms","Build user and roles graph":"0 ms","Set up the background thread pool responsible for waiting for opTimes to be majority committed":"0 ms","Start up the replication coordinator":"0 ms","Ensure the change stream collections on startup contain consistent data":"0 ms","Write startup options to the audit log":"0 ms","Start transport layer":"1 ms","_initAndListen total elapsed time":"669 ms"}}}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.135+00:00"},"s":"I",  "c":"CONTROL",  "id":20712,   "ctx":"LogicalSessionCacheReap","msg":"Sessions collection is not set up; waiting until next sessions reap interval","attr":{"error":"NamespaceNotFound: config.system.sessions does not exist"}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.136+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"LogicalSessionCacheRefresh","msg":"createCollection","attr":{"namespace":"config.system.sessions","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"4b62c47a-5b47-4bfd-bf9c-ea57d2b84494"}},"options":{}}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.199+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"LogicalSessionCacheRefresh","msg":"Index build: done building","attr":{"buildUUID":null,"collectionUUID":{"uuid":{"$uuid":"4b62c47a-5b47-4bfd-bf9c-ea57d2b84494"}},"namespace":"config.system.sessions","index":"_id_","ident":"index-5-17670882528470361080","collectionIdent":"collection-4-17670882528470361080","commitTimestamp":null}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:25.199+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"LogicalSessionCacheRefresh","msg":"Index build: done building","attr":{"buildUUID":null,"collectionUUID":{"uuid":{"$uuid":"4b62c47a-5b47-4bfd-bf9c-ea57d2b84494"}},"namespace":"config.system.sessions","index":"lsidTTLIndex","ident":"index-6-17670882528470361080","collectionIdent":"collection-4-17670882528470361080","commitTimestamp":null}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:26.005+00:00"},"s":"W",  "c":"CONTROL",  "id":636300,  "ctx":"ftdc","msg":"Use of deprecated server parameter name","attr":{"deprecatedName":"internalQueryCacheSize","canonicalName":"internalQueryCacheMaxEntriesPerCollection"}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:26.005+00:00"},"s":"W",  "c":"CONTROL",  "id":636300,  "ctx":"ftdc","msg":"Use of deprecated server parameter name","attr":{"deprecatedName":"oplogSamplingLogIntervalSeconds","canonicalName":"collectionSamplingLogIntervalSeconds"}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:26.005+00:00"},"s":"W",  "c":"NETWORK",  "id":23803,   "ctx":"ftdc","msg":"Use of deprecated server parameter 'sslMode', please use 'tlsMode' instead."}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:26.005+00:00"},"s":"W",  "c":"CONTROL",  "id":636300,  "ctx":"ftdc","msg":"Use of deprecated server parameter name","attr":{"deprecatedName":"wiredTigerConcurrentReadTransactions","canonicalName":"storageEngineConcurrentReadTransactions"}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:26.005+00:00"},"s":"W",  "c":"CONTROL",  "id":636300,  "ctx":"ftdc","msg":"Use of deprecated server parameter name","attr":{"deprecatedName":"wiredTigerConcurrentWriteTransactions","canonicalName":"storageEngineConcurrentWriteTransactions"}}
+app2                 | 
+app2                 | > rinha-backend-2025@0.0.1 start:prod
+app2                 | > node dist/main
+app2                 | 
+app1                 | 
+app1                 | > rinha-backend-2025@0.0.1 start:prod
+app1                 | > node dist/main
+app1                 | 
+nginx-load-balancer  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx-load-balancer  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx-load-balancer  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+nginx-load-balancer  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+nginx-load-balancer  | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+nginx-load-balancer  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx-load-balancer  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+nginx-load-balancer  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx-load-balancer  | /docker-entrypoint.sh: Configuration complete; ready for start up
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +57ms[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBullModule dependencies initialized[39m[38;5;3m +0ms[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPaymentHealthCheckModule dependencies initialized[39m[38;5;3m +0ms[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHttpModule dependencies initialized[39m[38;5;3m +0ms[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDiscoveryModule dependencies initialized[39m[38;5;3m +0ms[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +2ms[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mScheduleModule dependencies initialized[39m[38;5;3m +1ms[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBullModule dependencies initialized[39m[38;5;3m +0ms[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +16ms[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBullModule dependencies initialized[39m[38;5;3m +0ms[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPaymentHealthCheckModule dependencies initialized[39m[38;5;3m +0ms[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHttpModule dependencies initialized[39m[38;5;3m +1ms[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDiscoveryModule dependencies initialized[39m[38;5;3m +0ms[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +3ms[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mScheduleModule dependencies initialized[39m[38;5;3m +1ms[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBullModule dependencies initialized[39m[38;5;3m +0ms[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBullModule dependencies initialized[39m[38;5;3m +211ms[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBullModule dependencies initialized[39m[38;5;3m +222ms[39m
+app2                 | (node:19) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+app2                 | (Use `node --trace-warnings ...` to show where the warning was created)
+app1                 | (node:19) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+app1                 | (Use `node --trace-warnings ...` to show where the warning was created)
+mongodb              | {"t":{"$date":"2025-07-21T11:05:32.641+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.20.0.4:36494","isLoadBalanced":false,"uuid":{"uuid":{"$uuid":"18ccec18-bfed-485a-8396-fe114696b6b6"}},"connectionId":1,"connectionCount":1}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:32.682+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.20.0.5:46482","isLoadBalanced":false,"uuid":{"uuid":{"$uuid":"9526b3e8-e0f7-4696-857a-78475373ff22"}},"connectionId":2,"connectionCount":2}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:32.685+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn1","msg":"client metadata","attr":{"remote":"172.20.0.4:36494","client":"conn1","negotiatedCompressors":[],"doc":{"driver":{"name":"nodejs|TypeORM","version":"6.17.0"},"platform":"Node.js v20.19.4, LE","os":{"name":"linux","architecture":"x64","version":"6.1.0-37-amd64","type":"Linux"},"env":{"container":{"runtime":"docker"}}}}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:32.686+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn2","msg":"client metadata","attr":{"remote":"172.20.0.5:46482","client":"conn2","negotiatedCompressors":[],"doc":{"driver":{"name":"nodejs|TypeORM","version":"6.17.0"},"platform":"Node.js v20.19.4, LE","os":{"name":"linux","architecture":"x64","version":"6.1.0-37-amd64","type":"Linux"},"env":{"container":{"runtime":"docker"}}}}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:32.702+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.20.0.4:36502","isLoadBalanced":false,"uuid":{"uuid":{"$uuid":"44139b30-9682-426e-8868-db1241008995"}},"connectionId":3,"connectionCount":3}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:32.704+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.20.0.5:46490","isLoadBalanced":false,"uuid":{"uuid":{"$uuid":"a6453461-f753-4c6b-a230-7194c5c6849e"}},"connectionId":4,"connectionCount":4}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:32.704+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn3","msg":"client metadata","attr":{"remote":"172.20.0.4:36502","client":"conn3","negotiatedCompressors":[],"doc":{"driver":{"name":"nodejs|TypeORM","version":"6.17.0"},"platform":"Node.js v20.19.4, LE","os":{"name":"linux","architecture":"x64","version":"6.1.0-37-amd64","type":"Linux"},"env":{"container":{"runtime":"docker"}}}}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:32.706+00:00"},"s":"I",  "c":"NETWORK",  "id":6788700, "ctx":"conn3","msg":"Received first command on ingress connection since session start or auth handshake","attr":{"elapsedMillis":2}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:32.707+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"conn3","msg":"createCollection","attr":{"namespace":"test.payment","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"e6450f33-46e8-456f-8867-1f51ee735bdf"}},"options":{}}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:32.707+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn4","msg":"client metadata","attr":{"remote":"172.20.0.5:46490","client":"conn4","negotiatedCompressors":[],"doc":{"driver":{"name":"nodejs|TypeORM","version":"6.17.0"},"platform":"Node.js v20.19.4, LE","os":{"name":"linux","architecture":"x64","version":"6.1.0-37-amd64","type":"Linux"},"env":{"container":{"runtime":"docker"}}}}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:32.710+00:00"},"s":"I",  "c":"NETWORK",  "id":6788700, "ctx":"conn4","msg":"Received first command on ingress connection since session start or auth handshake","attr":{"elapsedMillis":3}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:32.710+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"conn4","msg":"createCollection","attr":{"namespace":"test.payment","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"988222f3-7548-42cc-bf71-e64732f5d951"}},"options":{}}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:32.814+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"conn3","msg":"Index build: done building","attr":{"buildUUID":null,"collectionUUID":{"uuid":{"$uuid":"e6450f33-46e8-456f-8867-1f51ee735bdf"}},"namespace":"test.payment","index":"_id_","ident":"index-9-17670882528470361080","collectionIdent":"collection-7-17670882528470361080","commitTimestamp":null}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:32.814+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"conn3","msg":"Index build: done building","attr":{"buildUUID":null,"collectionUUID":{"uuid":{"$uuid":"e6450f33-46e8-456f-8867-1f51ee735bdf"}},"namespace":"test.payment","index":"UQ_b8cf47def87aed3c59055708fb8","ident":"index-11-17670882528470361080","collectionIdent":"collection-7-17670882528470361080","commitTimestamp":null}}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:32.814+00:00"},"s":"I",  "c":"COMMAND",  "id":51803,   "ctx":"conn3","msg":"Slow query","attr":{"type":"command","isFromUserConnection":true,"ns":"test.payment","collectionType":"normal","command":{"createIndexes":"payment","indexes":[{"name":"UQ_b8cf47def87aed3c59055708fb8","unique":true,"key":{"correlationId":1}}],"lsid":{"id":{"$uuid":"b1291d7c-3e51-4904-a9d7-99a30b2991df"}},"$db":"test"},"numYields":0,"reslen":114,"locks":{"ReplicationStateTransition":{"acquireCount":{"w":2}},"Global":{"acquireCount":{"w":2}},"Database":{"acquireCount":{"w":2}},"Collection":{"acquireCount":{"w":2}},"Mutex":{"acquireCount":{"r":2}}},"flowControl":{"acquireCount":1},"storage":{"data":{"txnBytesDirty":2425}},"cpuNanos":7505336,"remote":"172.20.0.4:36502","protocol":"op_msg","queues":{"ingress":{"admissions":1},"execution":{"admissions":2}},"workingMillis":107,"durationMillis":107}}
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmCoreModule dependencies initialized[39m[38;5;3m +201ms[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPaymentsModule dependencies initialized[39m[38;5;3m +1ms[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +10ms[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +3ms[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCreatePaymentController {/payments}:[39m[38;5;3m +0ms[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/payments, POST} route[39m[38;5;3m +1ms[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPaymentsSummaryController {/payments-summary}:[39m[38;5;3m +0ms[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/payments-summary, GET} route[39m[38;5;3m +1ms[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPurgeController {/purge-payments}:[39m[38;5;3m +0ms[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/purge-payments, POST} route[39m[38;5;3m +0ms[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +7ms[39m
+mongodb              | {"t":{"$date":"2025-07-21T11:05:32.840+00:00"},"s":"I",  "c":"STORAGE",  "id":5725001, "ctx":"conn4","msg":"Conflicted registering namespace, already have a collection with the same namespace","attr":{"nss":"test.payment"}}
+app2                 | {"level":30,"time":1753095932844,"pid":19,"hostname":"c9d8ffe69006","msg":"Server listening at http://0.0.0.0:3000"}
+mongodb              | {"t":{"$date":"2025-07-21T11:05:32.845+00:00"},"s":"I",  "c":"COMMAND",  "id":51803,   "ctx":"conn4","msg":"Slow query","attr":{"type":"command","isFromUserConnection":true,"ns":"test.payment","collectionType":"normal","command":{"createIndexes":"payment","indexes":[{"name":"UQ_b8cf47def87aed3c59055708fb8","unique":true,"key":{"correlationId":1}}],"lsid":{"id":{"$uuid":"ceccff0f-0938-436a-8c33-688eed56bb8f"}},"$db":"test"},"writeConflicts":1,"numYields":0,"reslen":117,"locks":{"ReplicationStateTransition":{"acquireCount":{"w":3}},"Global":{"acquireCount":{"w":3}},"Database":{"acquireCount":{"w":3}},"Collection":{"acquireCount":{"w":3}},"Mutex":{"acquireCount":{"r":3}}},"flowControl":{"acquireCount":2},"storage":{},"cpuNanos":8464295,"remote":"172.20.0.5:46490","protocol":"op_msg","queues":{"ingress":{"admissions":1},"execution":{"admissions":3}},"workingMillis":134,"durationMillis":134}}
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmCoreModule dependencies initialized[39m[38;5;3m +232ms[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPaymentsModule dependencies initialized[39m[38;5;3m +1ms[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +10ms[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +3ms[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCreatePaymentController {/payments}:[39m[38;5;3m +0ms[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/payments, POST} route[39m[38;5;3m +1ms[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPaymentsSummaryController {/payments-summary}:[39m[38;5;3m +0ms[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/payments-summary, GET} route[39m[38;5;3m +0ms[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPurgeController {/purge-payments}:[39m[38;5;3m +0ms[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/purge-payments, POST} route[39m[38;5;3m +1ms[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:32 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +7ms[39m
+app1                 | {"level":30,"time":1753095932875,"pid":19,"hostname":"837f20d7f06b","msg":"Server listening at http://0.0.0.0:3000"}
+app1                 | {"level":30,"time":1753095933795,"pid":19,"hostname":"837f20d7f06b","reqId":"req-1","req":{"method":"GET","url":"/payments-summary","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":53024},"msg":"incoming request"}
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:33 AM [95m  DEBUG[39m [38;5;3m[PaymentsSummaryService] [39m[95mGet payments summary: {}[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:33 AM [32m    LOG[39m [38;5;3m[PaymentsSummaryService] [39m[32mGet payments summary: {"fallback":{"totalRequests":0,"totalAmount":0},"default":{"totalRequests":0,"totalAmount":0}}[39m
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:33 +0000] "GET /payments-summary HTTP/1.1" 200 94 "-" "curl/7.88.1"
+app1                 | {"level":30,"time":1753095933806,"pid":19,"hostname":"837f20d7f06b","reqId":"req-1","res":{"statusCode":200},"responseTime":10.269728899002075,"msg":"request completed"}
+app1                 | {"level":30,"time":1753095939961,"pid":19,"hostname":"837f20d7f06b","reqId":"req-2","req":{"method":"POST","url":"/purge-payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":44694},"msg":"incoming request"}
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:39 +0000] "POST /purge-payments HTTP/1.1" 500 106 "-" "Grafana k6/1.1.0"
+app1                 | {"level":50,"time":1753095939963,"pid":19,"hostname":"837f20d7f06b","reqId":"req-2","req":{"method":"POST","url":"/purge-payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":44694},"res":{"statusCode":500},"err":{"type":"TypeError","message":"response.status(...).json is not a function","stack":"TypeError: response.status(...).json is not a function\n    at AllExceptionsFilter.catch (/app/dist/exception-filters/all-errors/all-errors.filter.js:20:33)\n    at ExceptionsHandler.invokeCustomFilters (/app/node_modules/@nestjs/core/exceptions/exceptions-handler.js:30:26)\n    at ExceptionsHandler.next (/app/node_modules/@nestjs/core/exceptions/exceptions-handler.js:14:18)\n    at Object.<anonymous> (/app/node_modules/@nestjs/core/router/router-proxy.js:25:35)\n    at handleError (/app/node_modules/fastify/lib/error-handler.js:69:20)\n    at onErrorHook (/app/node_modules/fastify/lib/reply.js:845:5)\n    at Reply.send (/app/node_modules/fastify/lib/reply.js:157:5)\n    at /app/node_modules/fastify/lib/contentTypeParser.js:196:15\n    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)\n    at done (/app/node_modules/fastify/lib/contentTypeParser.js:192:14)"},"msg":"response.status(...).json is not a function"}
+app1                 | {"level":30,"time":1753095939964,"pid":19,"hostname":"837f20d7f06b","reqId":"req-2","res":{"statusCode":500},"responseTime":2.6682491302490234,"msg":"request completed"}
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:39 AM [95m  DEBUG[39m [38;5;3m[PaymentsSummaryService] [39m[95mGet payments summary: {"to":"2025-07-21T11:05:39.865Z","from":"2025-07-21T11:05:29.965Z"}[39m
+app1                 | {"level":30,"time":1753095939967,"pid":19,"hostname":"837f20d7f06b","reqId":"req-3","req":{"method":"GET","url":"/payments-summary?from=2025-07-21T11:05:29.965Z&to=2025-07-21T11:05:39.865Z","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":44698},"msg":"incoming request"}
+app1                 | {"level":30,"time":1753095939971,"pid":19,"hostname":"837f20d7f06b","reqId":"req-4","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":44714},"msg":"incoming request"}
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:39 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"bdbe8f3b-e970-405f-8d03-97e5357fa58c","amount":19.9}[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:39 AM [32m    LOG[39m [38;5;3m[PaymentsSummaryService] [39m[32mGet payments summary: {"fallback":{"totalRequests":0,"totalAmount":0},"default":{"totalRequests":0,"totalAmount":0}}[39m
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:39 +0000] "GET /payments-summary?from=2025-07-21T11:05:29.965Z&to=2025-07-21T11:05:39.865Z HTTP/1.1" 200 94 "-" "Grafana k6/1.1.0"
+app1                 | {"level":30,"time":1753095939988,"pid":19,"hostname":"837f20d7f06b","reqId":"req-3","res":{"statusCode":200},"responseTime":20.049744129180908,"msg":"request completed"}
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:40 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app1                 | {"level":30,"time":1753095940007,"pid":19,"hostname":"837f20d7f06b","reqId":"req-4","res":{"statusCode":201},"responseTime":36.13592505455017,"msg":"request completed"}
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"bdbe8f3b-e970-405f-8d03-97e5357fa58c","amount":19.9}[39m
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"bdbe8f3b-e970-405f-8d03-97e5357fa58c","amount":19.9}[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"bdbe8f3b-e970-405f-8d03-97e5357fa58c","amount":19.9}, host: default[39m
+app2                 | {"level":30,"time":1753095940078,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-1","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":48820},"msg":"incoming request"}
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"a0a148f6-8faa-4613-99cf-c7e7dbf0d505","amount":19.9}[39m
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:40 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app2                 | {"level":30,"time":1753095940091,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-1","res":{"statusCode":201},"responseTime":12.996796131134033,"msg":"request completed"}
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"a0a148f6-8faa-4613-99cf-c7e7dbf0d505","amount":19.9}[39m
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"a0a148f6-8faa-4613-99cf-c7e7dbf0d505","amount":19.9}[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"a0a148f6-8faa-4613-99cf-c7e7dbf0d505","amount":19.9}, host: default[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"bdbe8f3b-e970-405f-8d03-97e5357fa58c","amount":19.9,"requestedAt":"2025-07-21T11:05:40.012Z","source":"default","_id":"687e1f04737e8c6af4254147"}[39m
+app1                 | {"level":30,"time":1753095940186,"pid":19,"hostname":"837f20d7f06b","reqId":"req-5","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":44716},"msg":"incoming request"}
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"00298859-2bb1-42c5-a771-1d2d3215e16f","amount":19.9}[39m
+app1                 | {"level":30,"time":1753095940192,"pid":19,"hostname":"837f20d7f06b","reqId":"req-5","res":{"statusCode":201},"responseTime":5.459386825561523,"msg":"request completed"}
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:40 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"00298859-2bb1-42c5-a771-1d2d3215e16f","amount":19.9}[39m
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"00298859-2bb1-42c5-a771-1d2d3215e16f","amount":19.9}[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"00298859-2bb1-42c5-a771-1d2d3215e16f","amount":19.9}, host: default[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"00298859-2bb1-42c5-a771-1d2d3215e16f","amount":19.9,"requestedAt":"2025-07-21T11:05:40.193Z","source":"default","_id":"687e1f04737e8c6af4254148"}[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"a0a148f6-8faa-4613-99cf-c7e7dbf0d505","amount":19.9,"requestedAt":"2025-07-21T11:05:40.093Z","source":"default","_id":"687e1f042e39c22add84f676"}[39m
+app2                 | {"level":30,"time":1753095940295,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-2","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":48826},"msg":"incoming request"}
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"9b0a86aa-cc77-46c9-837e-679f92a74700","amount":19.9}[39m
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:40 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app2                 | {"level":30,"time":1753095940297,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-2","res":{"statusCode":201},"responseTime":2.3826630115509033,"msg":"request completed"}
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"9b0a86aa-cc77-46c9-837e-679f92a74700","amount":19.9}[39m
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"9b0a86aa-cc77-46c9-837e-679f92a74700","amount":19.9}[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"9b0a86aa-cc77-46c9-837e-679f92a74700","amount":19.9}, host: default[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"9b0a86aa-cc77-46c9-837e-679f92a74700","amount":19.9,"requestedAt":"2025-07-21T11:05:40.298Z","source":"default","_id":"687e1f04737e8c6af4254149"}[39m
+app1                 | {"level":30,"time":1753095940405,"pid":19,"hostname":"837f20d7f06b","reqId":"req-6","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":44720},"msg":"incoming request"}
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"0e11815c-9c42-44b7-a922-e4ac713bc115","amount":19.9}[39m
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"0e11815c-9c42-44b7-a922-e4ac713bc115","amount":19.9}[39m
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"0e11815c-9c42-44b7-a922-e4ac713bc115","amount":19.9}[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"0e11815c-9c42-44b7-a922-e4ac713bc115","amount":19.9}, host: default[39m
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:40 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app1                 | {"level":30,"time":1753095940411,"pid":19,"hostname":"837f20d7f06b","reqId":"req-6","res":{"statusCode":201},"responseTime":5.613492012023926,"msg":"request completed"}
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"0e11815c-9c42-44b7-a922-e4ac713bc115","amount":19.9,"requestedAt":"2025-07-21T11:05:40.408Z","source":"default","_id":"687e1f042e39c22add84f677"}[39m
+app2                 | {"level":30,"time":1753095940513,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-3","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":48842},"msg":"incoming request"}
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"cb286bf1-58a2-4238-a163-d988e365fb76","amount":19.9}[39m
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:40 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app2                 | {"level":30,"time":1753095940515,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-3","res":{"statusCode":201},"responseTime":1.7602109909057617,"msg":"request completed"}
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"cb286bf1-58a2-4238-a163-d988e365fb76","amount":19.9}[39m
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"cb286bf1-58a2-4238-a163-d988e365fb76","amount":19.9}[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"cb286bf1-58a2-4238-a163-d988e365fb76","amount":19.9}, host: default[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"cb286bf1-58a2-4238-a163-d988e365fb76","amount":19.9,"requestedAt":"2025-07-21T11:05:40.516Z","source":"default","_id":"687e1f042e39c22add84f678"}[39m
+app1                 | {"level":30,"time":1753095940623,"pid":19,"hostname":"837f20d7f06b","reqId":"req-7","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":44722},"msg":"incoming request"}
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"4a8248da-77a0-4532-b9ff-eb04ab44361f","amount":19.9}[39m
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:40 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app1                 | {"level":30,"time":1753095940625,"pid":19,"hostname":"837f20d7f06b","reqId":"req-7","res":{"statusCode":201},"responseTime":2.4021129608154297,"msg":"request completed"}
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"4a8248da-77a0-4532-b9ff-eb04ab44361f","amount":19.9}[39m
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"4a8248da-77a0-4532-b9ff-eb04ab44361f","amount":19.9}[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"4a8248da-77a0-4532-b9ff-eb04ab44361f","amount":19.9}, host: default[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"4a8248da-77a0-4532-b9ff-eb04ab44361f","amount":19.9,"requestedAt":"2025-07-21T11:05:40.626Z","source":"default","_id":"687e1f04737e8c6af425414a"}[39m
+app2                 | {"level":30,"time":1753095940732,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-4","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":48858},"msg":"incoming request"}
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"70b72335-0a22-4822-9c9d-83fa3eb2aeea","amount":19.9}[39m
+app2                 | {"level":30,"time":1753095940734,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-4","res":{"statusCode":201},"responseTime":2.176162004470825,"msg":"request completed"}
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:40 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"70b72335-0a22-4822-9c9d-83fa3eb2aeea","amount":19.9}[39m
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"70b72335-0a22-4822-9c9d-83fa3eb2aeea","amount":19.9}[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"70b72335-0a22-4822-9c9d-83fa3eb2aeea","amount":19.9}, host: default[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"70b72335-0a22-4822-9c9d-83fa3eb2aeea","amount":19.9,"requestedAt":"2025-07-21T11:05:40.735Z","source":"default","_id":"687e1f042e39c22add84f679"}[39m
+app1                 | {"level":30,"time":1753095940840,"pid":19,"hostname":"837f20d7f06b","reqId":"req-8","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":44728},"msg":"incoming request"}
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"e6a889e3-d8ac-4ce8-b0dd-c1d8019c4591","amount":19.9}[39m
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:40 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app1                 | {"level":30,"time":1753095940843,"pid":19,"hostname":"837f20d7f06b","reqId":"req-8","res":{"statusCode":201},"responseTime":2.585114002227783,"msg":"request completed"}
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"e6a889e3-d8ac-4ce8-b0dd-c1d8019c4591","amount":19.9}[39m
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"e6a889e3-d8ac-4ce8-b0dd-c1d8019c4591","amount":19.9}[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"e6a889e3-d8ac-4ce8-b0dd-c1d8019c4591","amount":19.9}, host: default[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"e6a889e3-d8ac-4ce8-b0dd-c1d8019c4591","amount":19.9,"requestedAt":"2025-07-21T11:05:40.845Z","source":"default","_id":"687e1f04737e8c6af425414b"}[39m
+app2                 | {"level":30,"time":1753095940950,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-5","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":48874},"msg":"incoming request"}
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"b796a2ac-4738-43cc-a624-4ae9ef14ac54","amount":19.9}[39m
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:40 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app2                 | {"level":30,"time":1753095940952,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-5","res":{"statusCode":201},"responseTime":1.9603099822998047,"msg":"request completed"}
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"b796a2ac-4738-43cc-a624-4ae9ef14ac54","amount":19.9}[39m
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"b796a2ac-4738-43cc-a624-4ae9ef14ac54","amount":19.9}[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"b796a2ac-4738-43cc-a624-4ae9ef14ac54","amount":19.9}, host: default[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:40 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"b796a2ac-4738-43cc-a624-4ae9ef14ac54","amount":19.9,"requestedAt":"2025-07-21T11:05:40.953Z","source":"default","_id":"687e1f042e39c22add84f67a"}[39m
+app2                 | {"level":30,"time":1753095941010,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-6","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":48880},"msg":"incoming request"}
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"c6cdbfe8-cdd0-4571-a5b1-d9b9f81faef9","amount":19.9}[39m
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:41 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"c6cdbfe8-cdd0-4571-a5b1-d9b9f81faef9","amount":19.9}[39m
+app2                 | {"level":30,"time":1753095941013,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-6","res":{"statusCode":201},"responseTime":3.1886820793151855,"msg":"request completed"}
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"c6cdbfe8-cdd0-4571-a5b1-d9b9f81faef9","amount":19.9}[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"c6cdbfe8-cdd0-4571-a5b1-d9b9f81faef9","amount":19.9}, host: default[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"c6cdbfe8-cdd0-4571-a5b1-d9b9f81faef9","amount":19.9,"requestedAt":"2025-07-21T11:05:41.014Z","source":"default","_id":"687e1f05737e8c6af425414c"}[39m
+app1                 | {"level":30,"time":1753095941059,"pid":19,"hostname":"837f20d7f06b","reqId":"req-9","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":44734},"msg":"incoming request"}
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"4a8eb87c-1405-441b-9d9f-f64f60e14382","amount":19.9}[39m
+app1                 | {"level":30,"time":1753095941061,"pid":19,"hostname":"837f20d7f06b","reqId":"req-9","res":{"statusCode":201},"responseTime":1.687291145324707,"msg":"request completed"}
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:41 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"4a8eb87c-1405-441b-9d9f-f64f60e14382","amount":19.9}[39m
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"4a8eb87c-1405-441b-9d9f-f64f60e14382","amount":19.9}[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"4a8eb87c-1405-441b-9d9f-f64f60e14382","amount":19.9}, host: default[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"4a8eb87c-1405-441b-9d9f-f64f60e14382","amount":19.9,"requestedAt":"2025-07-21T11:05:41.062Z","source":"default","_id":"687e1f052e39c22add84f67b"}[39m
+app2                 | {"level":30,"time":1753095941092,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-7","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":48886},"msg":"incoming request"}
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"2b98f89d-ec4f-460e-99e7-b67d38f0649d","amount":19.9}[39m
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:41 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app2                 | {"level":30,"time":1753095941094,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-7","res":{"statusCode":201},"responseTime":1.5699141025543213,"msg":"request completed"}
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"2b98f89d-ec4f-460e-99e7-b67d38f0649d","amount":19.9}[39m
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"2b98f89d-ec4f-460e-99e7-b67d38f0649d","amount":19.9}[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"2b98f89d-ec4f-460e-99e7-b67d38f0649d","amount":19.9}, host: default[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"2b98f89d-ec4f-460e-99e7-b67d38f0649d","amount":19.9,"requestedAt":"2025-07-21T11:05:41.095Z","source":"default","_id":"687e1f05737e8c6af425414d"}[39m
+app1                 | {"level":30,"time":1753095941169,"pid":19,"hostname":"837f20d7f06b","reqId":"req-a","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":44738},"msg":"incoming request"}
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"eedccf57-1445-47b0-b3a3-026a0204d9bd","amount":19.9}[39m
+app1                 | {"level":30,"time":1753095941171,"pid":19,"hostname":"837f20d7f06b","reqId":"req-a","res":{"statusCode":201},"responseTime":1.7332189083099365,"msg":"request completed"}
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:41 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"eedccf57-1445-47b0-b3a3-026a0204d9bd","amount":19.9}[39m
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"eedccf57-1445-47b0-b3a3-026a0204d9bd","amount":19.9}[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"eedccf57-1445-47b0-b3a3-026a0204d9bd","amount":19.9}, host: default[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"eedccf57-1445-47b0-b3a3-026a0204d9bd","amount":19.9,"requestedAt":"2025-07-21T11:05:41.172Z","source":"default","_id":"687e1f052e39c22add84f67c"}[39m
+app2                 | {"level":30,"time":1753095941194,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-8","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":48898},"msg":"incoming request"}
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"5f08df38-ef77-40f4-aa7b-609565b7f619","amount":19.9}[39m
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:41 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app2                 | {"level":30,"time":1753095941197,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-8","res":{"statusCode":201},"responseTime":2.6993300914764404,"msg":"request completed"}
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"5f08df38-ef77-40f4-aa7b-609565b7f619","amount":19.9}[39m
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"5f08df38-ef77-40f4-aa7b-609565b7f619","amount":19.9}[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"5f08df38-ef77-40f4-aa7b-609565b7f619","amount":19.9}, host: default[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"5f08df38-ef77-40f4-aa7b-609565b7f619","amount":19.9,"requestedAt":"2025-07-21T11:05:41.198Z","source":"default","_id":"687e1f05737e8c6af425414e"}[39m
+app1                 | {"level":30,"time":1753095941278,"pid":19,"hostname":"837f20d7f06b","reqId":"req-b","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":44748},"msg":"incoming request"}
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"52bb6ffa-e143-4d9b-84cd-7dee927f6f8d","amount":19.9}[39m
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:41 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app1                 | {"level":30,"time":1753095941280,"pid":19,"hostname":"837f20d7f06b","reqId":"req-b","res":{"statusCode":201},"responseTime":2.0752968788146973,"msg":"request completed"}
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"52bb6ffa-e143-4d9b-84cd-7dee927f6f8d","amount":19.9}[39m
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"52bb6ffa-e143-4d9b-84cd-7dee927f6f8d","amount":19.9}[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"52bb6ffa-e143-4d9b-84cd-7dee927f6f8d","amount":19.9}, host: default[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"52bb6ffa-e143-4d9b-84cd-7dee927f6f8d","amount":19.9,"requestedAt":"2025-07-21T11:05:41.282Z","source":"default","_id":"687e1f052e39c22add84f67d"}[39m
+app2                 | {"level":30,"time":1753095941299,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-9","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":48908},"msg":"incoming request"}
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"0ca88427-268a-4077-801a-0f28d3731df4","amount":19.9}[39m
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:41 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app2                 | {"level":30,"time":1753095941302,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-9","res":{"statusCode":201},"responseTime":2.27687406539917,"msg":"request completed"}
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"0ca88427-268a-4077-801a-0f28d3731df4","amount":19.9}[39m
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"0ca88427-268a-4077-801a-0f28d3731df4","amount":19.9}[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"0ca88427-268a-4077-801a-0f28d3731df4","amount":19.9}, host: default[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"0ca88427-268a-4077-801a-0f28d3731df4","amount":19.9,"requestedAt":"2025-07-21T11:05:41.303Z","source":"default","_id":"687e1f052e39c22add84f67e"}[39m
+app1                 | {"level":30,"time":1753095941388,"pid":19,"hostname":"837f20d7f06b","reqId":"req-c","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":44760},"msg":"incoming request"}
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"5d27c785-a425-4548-95cc-1cb6d0f105a1","amount":19.9}[39m
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:41 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app1                 | {"level":30,"time":1753095941390,"pid":19,"hostname":"837f20d7f06b","reqId":"req-c","res":{"statusCode":201},"responseTime":1.9335451126098633,"msg":"request completed"}
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"5d27c785-a425-4548-95cc-1cb6d0f105a1","amount":19.9}[39m
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"5d27c785-a425-4548-95cc-1cb6d0f105a1","amount":19.9}[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"5d27c785-a425-4548-95cc-1cb6d0f105a1","amount":19.9}, host: default[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"5d27c785-a425-4548-95cc-1cb6d0f105a1","amount":19.9,"requestedAt":"2025-07-21T11:05:41.390Z","source":"default","_id":"687e1f05737e8c6af425414f"}[39m
+app2                 | {"level":30,"time":1753095941413,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-a","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":48922},"msg":"incoming request"}
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"d444eb44-f8bb-444a-8e65-0df589b5a6d9","amount":19.9}[39m
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:41 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app2                 | {"level":30,"time":1753095941415,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-a","res":{"statusCode":201},"responseTime":2.0243709087371826,"msg":"request completed"}
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"d444eb44-f8bb-444a-8e65-0df589b5a6d9","amount":19.9}[39m
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"d444eb44-f8bb-444a-8e65-0df589b5a6d9","amount":19.9}[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"d444eb44-f8bb-444a-8e65-0df589b5a6d9","amount":19.9}, host: default[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"d444eb44-f8bb-444a-8e65-0df589b5a6d9","amount":19.9,"requestedAt":"2025-07-21T11:05:41.416Z","source":"default","_id":"687e1f052e39c22add84f67f"}[39m
+app1                 | {"level":30,"time":1753095941497,"pid":19,"hostname":"837f20d7f06b","reqId":"req-d","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":44766},"msg":"incoming request"}
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"828bb67d-6229-47f5-ad10-f40ba933bdce","amount":19.9}[39m
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:41 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app1                 | {"level":30,"time":1753095941499,"pid":19,"hostname":"837f20d7f06b","reqId":"req-d","res":{"statusCode":201},"responseTime":2.0030698776245117,"msg":"request completed"}
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"828bb67d-6229-47f5-ad10-f40ba933bdce","amount":19.9}[39m
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"828bb67d-6229-47f5-ad10-f40ba933bdce","amount":19.9}[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"828bb67d-6229-47f5-ad10-f40ba933bdce","amount":19.9}, host: default[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"828bb67d-6229-47f5-ad10-f40ba933bdce","amount":19.9,"requestedAt":"2025-07-21T11:05:41.500Z","source":"default","_id":"687e1f05737e8c6af4254150"}[39m
+app2                 | {"level":30,"time":1753095941517,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-b","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":48938},"msg":"incoming request"}
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"c10e1d03-5bcb-4a52-b9f2-653203b881cf","amount":19.9}[39m
+app2                 | {"level":30,"time":1753095941519,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-b","res":{"statusCode":201},"responseTime":1.8835179805755615,"msg":"request completed"}
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:41 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"c10e1d03-5bcb-4a52-b9f2-653203b881cf","amount":19.9}[39m
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"c10e1d03-5bcb-4a52-b9f2-653203b881cf","amount":19.9}[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"c10e1d03-5bcb-4a52-b9f2-653203b881cf","amount":19.9}, host: default[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"c10e1d03-5bcb-4a52-b9f2-653203b881cf","amount":19.9,"requestedAt":"2025-07-21T11:05:41.520Z","source":"default","_id":"687e1f052e39c22add84f680"}[39m
+app1                 | {"level":30,"time":1753095941606,"pid":19,"hostname":"837f20d7f06b","reqId":"req-e","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":44780},"msg":"incoming request"}
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"faad7ed0-1174-4280-8392-ae165e518946","amount":19.9}[39m
+app1                 | {"level":30,"time":1753095941609,"pid":19,"hostname":"837f20d7f06b","reqId":"req-e","res":{"statusCode":201},"responseTime":2.3950679302215576,"msg":"request completed"}
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:41 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"faad7ed0-1174-4280-8392-ae165e518946","amount":19.9}[39m
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"faad7ed0-1174-4280-8392-ae165e518946","amount":19.9}[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"faad7ed0-1174-4280-8392-ae165e518946","amount":19.9}, host: default[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"faad7ed0-1174-4280-8392-ae165e518946","amount":19.9,"requestedAt":"2025-07-21T11:05:41.610Z","source":"default","_id":"687e1f05737e8c6af4254151"}[39m
+app2                 | {"level":30,"time":1753095941628,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-c","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":48944},"msg":"incoming request"}
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"cb8ed30d-0635-404e-a662-39bdfd29f711","amount":19.9}[39m
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:41 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app2                 | {"level":30,"time":1753095941629,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-c","res":{"statusCode":201},"responseTime":1.819969892501831,"msg":"request completed"}
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"cb8ed30d-0635-404e-a662-39bdfd29f711","amount":19.9}[39m
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"cb8ed30d-0635-404e-a662-39bdfd29f711","amount":19.9}[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"cb8ed30d-0635-404e-a662-39bdfd29f711","amount":19.9}, host: default[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"cb8ed30d-0635-404e-a662-39bdfd29f711","amount":19.9,"requestedAt":"2025-07-21T11:05:41.630Z","source":"default","_id":"687e1f052e39c22add84f681"}[39m
+app1                 | {"level":30,"time":1753095941716,"pid":19,"hostname":"837f20d7f06b","reqId":"req-f","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":44796},"msg":"incoming request"}
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"66a96af1-940c-467e-8727-e0a0828ca805","amount":19.9}[39m
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:41 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app1                 | {"level":30,"time":1753095941717,"pid":19,"hostname":"837f20d7f06b","reqId":"req-f","res":{"statusCode":201},"responseTime":1.561495065689087,"msg":"request completed"}
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"66a96af1-940c-467e-8727-e0a0828ca805","amount":19.9}[39m
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"66a96af1-940c-467e-8727-e0a0828ca805","amount":19.9}[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"66a96af1-940c-467e-8727-e0a0828ca805","amount":19.9}, host: default[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"66a96af1-940c-467e-8727-e0a0828ca805","amount":19.9,"requestedAt":"2025-07-21T11:05:41.718Z","source":"default","_id":"687e1f05737e8c6af4254152"}[39m
+app2                 | {"level":30,"time":1753095941736,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-d","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":48946},"msg":"incoming request"}
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"4a18d87f-2693-4d4d-a39e-54605bfc4d5e","amount":19.9}[39m
+app2                 | {"level":30,"time":1753095941738,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-d","res":{"statusCode":201},"responseTime":2.048151969909668,"msg":"request completed"}
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:41 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"4a18d87f-2693-4d4d-a39e-54605bfc4d5e","amount":19.9}[39m
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"4a18d87f-2693-4d4d-a39e-54605bfc4d5e","amount":19.9}[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"4a18d87f-2693-4d4d-a39e-54605bfc4d5e","amount":19.9}, host: default[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"4a18d87f-2693-4d4d-a39e-54605bfc4d5e","amount":19.9,"requestedAt":"2025-07-21T11:05:41.739Z","source":"default","_id":"687e1f052e39c22add84f682"}[39m
+app2                 | {"level":30,"time":1753095941824,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-e","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":48962},"msg":"incoming request"}
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"aa48f463-80d3-4d71-8379-2d57efcdedb4","amount":19.9}[39m
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:41 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app2                 | {"level":30,"time":1753095941826,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-e","res":{"statusCode":201},"responseTime":1.5819108486175537,"msg":"request completed"}
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"aa48f463-80d3-4d71-8379-2d57efcdedb4","amount":19.9}[39m
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"aa48f463-80d3-4d71-8379-2d57efcdedb4","amount":19.9}[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"aa48f463-80d3-4d71-8379-2d57efcdedb4","amount":19.9}, host: default[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"aa48f463-80d3-4d71-8379-2d57efcdedb4","amount":19.9,"requestedAt":"2025-07-21T11:05:41.827Z","source":"default","_id":"687e1f05737e8c6af4254153"}[39m
+app1                 | {"level":30,"time":1753095941846,"pid":19,"hostname":"837f20d7f06b","reqId":"req-g","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":44802},"msg":"incoming request"}
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"85dc3956-8fe3-4729-9275-37bff0bad914","amount":19.9}[39m
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:41 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app1                 | {"level":30,"time":1753095941847,"pid":19,"hostname":"837f20d7f06b","reqId":"req-g","res":{"statusCode":201},"responseTime":1.4672391414642334,"msg":"request completed"}
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"85dc3956-8fe3-4729-9275-37bff0bad914","amount":19.9}[39m
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"85dc3956-8fe3-4729-9275-37bff0bad914","amount":19.9}[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"85dc3956-8fe3-4729-9275-37bff0bad914","amount":19.9}, host: default[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"85dc3956-8fe3-4729-9275-37bff0bad914","amount":19.9,"requestedAt":"2025-07-21T11:05:41.848Z","source":"default","_id":"687e1f052e39c22add84f683"}[39m
+app1                 | {"level":30,"time":1753095941933,"pid":19,"hostname":"837f20d7f06b","reqId":"req-h","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":44808},"msg":"incoming request"}
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"2b217dda-13b3-4c25-9513-5e1aeb28cfd7","amount":19.9}[39m
+app1                 | {"level":30,"time":1753095941936,"pid":19,"hostname":"837f20d7f06b","reqId":"req-h","res":{"statusCode":201},"responseTime":2.076327085494995,"msg":"request completed"}
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:41 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"2b217dda-13b3-4c25-9513-5e1aeb28cfd7","amount":19.9}[39m
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"2b217dda-13b3-4c25-9513-5e1aeb28cfd7","amount":19.9}[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"2b217dda-13b3-4c25-9513-5e1aeb28cfd7","amount":19.9}, host: default[39m
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"2b217dda-13b3-4c25-9513-5e1aeb28cfd7","amount":19.9,"requestedAt":"2025-07-21T11:05:41.937Z","source":"default","_id":"687e1f05737e8c6af4254154"}[39m
+app2                 | {"level":30,"time":1753095941954,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-f","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":48976},"msg":"incoming request"}
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"d6715e5c-40fc-49b8-9be1-e745995e814f","amount":19.9}[39m
+app2                 | {"level":30,"time":1753095941956,"pid":19,"hostname":"c9d8ffe69006","reqId":"req-f","res":{"statusCode":201},"responseTime":1.766448974609375,"msg":"request completed"}
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:41 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"d6715e5c-40fc-49b8-9be1-e745995e814f","amount":19.9}[39m
+app2                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"d6715e5c-40fc-49b8-9be1-e745995e814f","amount":19.9}[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[RinhaPaymentProcessorAdapter] [39m[32mProcessing payment: {"correlationId":"d6715e5c-40fc-49b8-9be1-e745995e814f","amount":19.9}, host: default[39m
+app2                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:41 AM [32m    LOG[39m [38;5;3m[ProcessPaymentProcessor] [39m[32mPayment processed: {"correlationId":"d6715e5c-40fc-49b8-9be1-e745995e814f","amount":19.9,"requestedAt":"2025-07-21T11:05:41.957Z","source":"default","_id":"687e1f052e39c22add84f684"}[39m
+app1                 | {"level":30,"time":1753095942014,"pid":19,"hostname":"837f20d7f06b","reqId":"req-i","req":{"method":"POST","url":"/payments","hostname":"localhost","remoteAddress":"172.20.0.6","remotePort":44816},"msg":"incoming request"}
+app1                 | [32m[Nest] 19  - [39m07/21/2025, 11:05:42 AM [32m    LOG[39m [38;5;3m[CreatePaymentController] [39m[32mAdding payment to a queue: {"correlationId":"355b925a-2ee3-485c-a2ab-08693ade17f9","amount":19.9}[39m
+app1                 | {"level":30,"time":1753095942016,"pid":19,"hostname":"837f20d7f06b","reqId":"req-i","res":{"statusCode":201},"responseTime":2.2284929752349854,"msg":"request completed"}
+nginx-load-balancer  | 172.20.0.1 - - [21/Jul/2025:11:05:42 +0000] "POST /payments HTTP/1.1" 201 11 "-" "Grafana k6/1.1.0"
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:42 AM [95m  DEBUG[39m [38;5;3m[ProcessPaymentProcessor] [39m[95mStarting to process payment: {"correlationId":"355b925a-2ee3-485c-a2ab-08693ade17f9","amount":19.9}[39m
+app1                 | [95m[Nest] 19  - [39m07/21/2025, 11:05:42 AM [95m  DEBUG[39m [38;5;3m[CreatePaymentService] [39m[95mRegistering payment: {"correlationId":"355b925a-2ee3-485c-a2ab-08693ade17f9","amount":19.9}[39m
+log truncated at line 1000

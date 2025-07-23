@@ -1,0 +1,40 @@
+
+ service1 Pulling 
+ 9824c27679d3 Already exists 
+ ccf5d6e6ff24 Already exists 
+ 79a0252b29f6 Already exists 
+ 4f24e34311a0 Already exists 
+ d6ca50540464 Already exists 
+ 5b169c8aec51 Already exists 
+ 6a99ced2770f Already exists 
+ 11cccf87d7aa Pulling fs layer 
+ 11cccf87d7aa Downloading [>                                                  ]  24.64kB/2.353MB
+ 11cccf87d7aa Downloading [======>                                            ]  294.9kB/2.353MB
+ 11cccf87d7aa Downloading [===============>                                   ]  733.2kB/2.353MB
+ 11cccf87d7aa Downloading [================================>                  ]  1.528MB/2.353MB
+ 11cccf87d7aa Verifying Checksum 
+ 11cccf87d7aa Download complete 
+ 11cccf87d7aa Extracting [>                                                  ]  32.77kB/2.353MB
+ 11cccf87d7aa Extracting [======>                                            ]  327.7kB/2.353MB
+ 11cccf87d7aa Extracting [==========>                                        ]  491.5kB/2.353MB
+ 11cccf87d7aa Extracting [===========>                                       ]  557.1kB/2.353MB
+ 11cccf87d7aa Extracting [==============>                                    ]  688.1kB/2.353MB
+ 11cccf87d7aa Extracting [==================>                                ]  884.7kB/2.353MB
+ 11cccf87d7aa Extracting [=========================>                         ]   1.18MB/2.353MB
+ 11cccf87d7aa Extracting [===================================>               ]  1.671MB/2.353MB
+ 11cccf87d7aa Extracting [==========================================>        ]  1.999MB/2.353MB
+ 11cccf87d7aa Extracting [================================================>  ]  2.294MB/2.353MB
+ 11cccf87d7aa Extracting [==================================================>]  2.353MB/2.353MB
+ 11cccf87d7aa Extracting [==================================================>]  2.353MB/2.353MB
+ 11cccf87d7aa Pull complete 
+ service1 Pulled 
+#1 [internal] load local bake definitions
+#1 reading from stdin 475B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile:
+#2 transferring dockerfile: 2B done
+#2 DONE 0.1s
+failed to solve: failed to read dockerfile: open Dockerfile: no such file or directory
+

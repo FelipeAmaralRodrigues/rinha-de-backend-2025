@@ -1,0 +1,11 @@
+{
+  "name": "Adriano Silva",
+  "social": [
+    "https://www.linkedin.com/in/adriano-c-silva-010a5179"
+  ],
+  "source-code-repo": "https://github.com/acslook/payment-proxy",
+  "langs": ["go"],
+  "storages": ["postgres"],
+  "messaging": ["redis"],
+  "load-balancers": ["nginx"]
+}

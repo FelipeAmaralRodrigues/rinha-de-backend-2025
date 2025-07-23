@@ -1,0 +1,540 @@
+
+ valkey Pulling 
+ 3da95a905ed5 Already exists 
+ e7b573b6c87a Pulling fs layer 
+ f91698d5e83b Pulling fs layer 
+ 3e720c4e11ac Pulling fs layer 
+ acef9caa6c59 Pulling fs layer 
+ 4f4fb700ef54 Pulling fs layer 
+ dbc3459c8f32 Pulling fs layer 
+ acef9caa6c59 Waiting 
+ 4f4fb700ef54 Waiting 
+ dbc3459c8f32 Waiting 
+ f91698d5e83b Downloading [>                                                  ]  24.06kB/2.402MB
+ 3e720c4e11ac Downloading [>                                                  ]  131.4kB/13.04MB
+ e7b573b6c87a Downloading [=========================================>         ]     934B/1.113kB
+ e7b573b6c87a Downloading [==================================================>]  1.113kB/1.113kB
+ e7b573b6c87a Verifying Checksum 
+ e7b573b6c87a Download complete 
+ e7b573b6c87a Extracting [==================================================>]  1.113kB/1.113kB
+ e7b573b6c87a Extracting [==================================================>]  1.113kB/1.113kB
+ f91698d5e83b Verifying Checksum 
+ f91698d5e83b Download complete 
+ e7b573b6c87a Pull complete 
+ f91698d5e83b Extracting [>                                                  ]  32.77kB/2.402MB
+ 3e720c4e11ac Downloading [==============================>                    ]  7.977MB/13.04MB
+ 3e720c4e11ac Verifying Checksum 
+ 3e720c4e11ac Download complete 
+ f91698d5e83b Extracting [==================================================>]  2.402MB/2.402MB
+ f91698d5e83b Pull complete 
+ 3e720c4e11ac Extracting [>                                                  ]  131.1kB/13.04MB
+ 3e720c4e11ac Extracting [===================>                               ]  4.981MB/13.04MB
+ acef9caa6c59 Downloading [==================================================>]      96B/96B
+ acef9caa6c59 Verifying Checksum 
+ acef9caa6c59 Download complete 
+ 3e720c4e11ac Extracting [==============================================>    ]  12.06MB/13.04MB
+ 3e720c4e11ac Extracting [==================================================>]  13.04MB/13.04MB
+ 4f4fb700ef54 Downloading [==================================================>]      32B/32B
+ 4f4fb700ef54 Verifying Checksum 
+ 4f4fb700ef54 Download complete 
+ 3e720c4e11ac Pull complete 
+ acef9caa6c59 Extracting [==================================================>]      96B/96B
+ acef9caa6c59 Extracting [==================================================>]      96B/96B
+ dbc3459c8f32 Downloading [==================================================>]     522B/522B
+ dbc3459c8f32 Verifying Checksum 
+ dbc3459c8f32 Download complete 
+ acef9caa6c59 Pull complete 
+ 4f4fb700ef54 Extracting [==================================================>]      32B/32B
+ 4f4fb700ef54 Extracting [==================================================>]      32B/32B
+ 4f4fb700ef54 Pull complete 
+ dbc3459c8f32 Extracting [==================================================>]     522B/522B
+ dbc3459c8f32 Extracting [==================================================>]     522B/522B
+ dbc3459c8f32 Pull complete 
+ valkey Pulled 
+ Network not4rt-rustcoroutines_backend  Creating
+ Network not4rt-rustcoroutines_backend  Created
+ Container not4rt-rustcoroutines-valkey-1  Creating
+ Container not4rt-rustcoroutines-valkey-1  Created
+ Container not4rt-rustcoroutines-backend1-1  Creating
+ Container not4rt-rustcoroutines-worker1-1  Creating
+ Container not4rt-rustcoroutines-worker2-1  Creating
+ Container not4rt-rustcoroutines-backend2-1  Creating
+ Container not4rt-rustcoroutines-backend2-1  Created
+ Container not4rt-rustcoroutines-worker2-1  Created
+ Container not4rt-rustcoroutines-backend1-1  Created
+ Container not4rt-rustcoroutines-worker1-1  Created
+ Container not4rt-rustcoroutines-haproxy-1  Creating
+ Container not4rt-rustcoroutines-haproxy-1  Created
+Attaching to backend1-1, backend2-1, haproxy-1, valkey-1, worker1-1, worker2-1
+valkey-1    | 1:M 22 Jul 2025 16:58:49.807 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+valkey-1    | 1:M 22 Jul 2025 16:58:49.807 * oO0OoO0OoO0Oo Valkey is starting oO0OoO0OoO0Oo
+valkey-1    | 1:M 22 Jul 2025 16:58:49.807 * Valkey version=8.1.3, bits=64, commit=00000000, modified=0, pid=1, just started
+valkey-1    | 1:M 22 Jul 2025 16:58:49.807 * Configuration loaded
+valkey-1    | 1:M 22 Jul 2025 16:58:49.808 * monotonic clock: POSIX clock_gettime
+valkey-1    | 1:M 22 Jul 2025 16:58:49.808 * Running mode=standalone, port=6379.
+valkey-1    | 1:M 22 Jul 2025 16:58:49.808 # WARNING: The TCP backlog setting of 65535 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 4096.
+valkey-1    | 1:M 22 Jul 2025 16:58:49.808 * Server initialized
+valkey-1    | 1:M 22 Jul 2025 16:58:49.808 * Ready to accept connections tcp
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker1-1   | 
+worker1-1   | thread 'main' panicked at src/main.rs:100:10:
+worker1-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker1-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker1-1   | Aborted (core dumped)
+backend2-1  | 
+backend2-1  | thread 'main' panicked at src/main.rs:100:10:
+backend2-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend2-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend1-1  | 
+backend1-1  | thread 'main' panicked at src/main.rs:100:10:
+backend1-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend1-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend2-1  | Aborted (core dumped)
+backend1-1  | Aborted (core dumped)
+[Kworker1-1 exited with code 0
+[Kworker2-1 exited with code 0
+[Kbackend1-1 exited with code 0
+haproxy-1   | [NOTICE]   (7) : haproxy version is 3.2.3-1844da7
+haproxy-1   | [NOTICE]   (7) : path to executable is /usr/local/sbin/haproxy
+haproxy-1   | [WARNING]  (7) : missing timeouts for frontend 'api_frontend'.
+haproxy-1   |    | While not properly invalid, you will certainly encounter various problems
+haproxy-1   |    | with such a configuration. To fix this, please ensure that all following
+haproxy-1   |    | timeouts are set to a non-zero value: 'client', 'connect', 'server'.
+haproxy-1   | [WARNING]  (7) : missing timeouts for backend 'api_backend'.
+haproxy-1   |    | While not properly invalid, you will certainly encounter various problems
+haproxy-1   |    | with such a configuration. To fix this, please ensure that all following
+haproxy-1   |    | timeouts are set to a non-zero value: 'client', 'connect', 'server'.
+[Kbackend2-1 exited with code 0
+worker1-1   | Aborted (core dumped)
+worker2-1   | Aborted (core dumped)
+backend1-1  | Aborted (core dumped)
+[Kworker1-1 exited with code 134
+backend2-1  | Aborted (core dumped)
+[Kworker2-1 exited with code 0
+[Kbackend1-1 exited with code 0
+[Kbackend2-1 exited with code 0
+worker1-1   | Aborted (core dumped)
+worker2-1   | Aborted (core dumped)
+[Kworker1-1 exited with code 134
+backend1-1  | Aborted (core dumped)
+[Kworker2-1 exited with code 134
+backend2-1  | Aborted (core dumped)
+[Kbackend1-1 exited with code 134
+worker1-1   | 
+worker1-1   | thread 'main' panicked at src/main.rs:100:10:
+worker1-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker1-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker1-1   | Aborted (core dumped)
+worker1-1   | 
+worker1-1   | thread 'main' panicked at src/main.rs:100:10:
+worker1-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker1-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker1-1   | Aborted (core dumped)
+worker1-1   | 
+worker1-1   | thread 'main' panicked at src/main.rs:100:10:
+worker1-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker1-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker1-1   | Aborted (core dumped)
+worker1-1   | 
+worker1-1   | thread 'main' panicked at src/main.rs:100:10:
+worker1-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker1-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker1-1   | Aborted (core dumped)
+worker1-1   | 
+worker1-1   | thread 'main' panicked at src/main.rs:100:10:
+worker1-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker1-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker1-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+[Kbackend2-1 exited with code 134
+backend1-1  | 
+backend1-1  | thread 'main' panicked at src/main.rs:100:10:
+backend1-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend1-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend1-1  | Aborted (core dumped)
+backend1-1  | 
+backend1-1  | thread 'main' panicked at src/main.rs:100:10:
+backend1-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend1-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend1-1  | Aborted (core dumped)
+backend1-1  | 
+backend1-1  | thread 'main' panicked at src/main.rs:100:10:
+backend1-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend1-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend1-1  | Aborted (core dumped)
+backend1-1  | 
+backend1-1  | thread 'main' panicked at src/main.rs:100:10:
+backend1-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend1-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend1-1  | Aborted (core dumped)
+backend1-1  | 
+backend1-1  | thread 'main' panicked at src/main.rs:100:10:
+backend1-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend1-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend1-1  | Aborted (core dumped)
+[Kworker1-1 exited with code 134
+[Kworker2-1 exited with code 134
+backend2-1  | 
+backend2-1  | thread 'main' panicked at src/main.rs:100:10:
+backend2-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend2-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend2-1  | Aborted (core dumped)
+backend2-1  | 
+backend2-1  | thread 'main' panicked at src/main.rs:100:10:
+backend2-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend2-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend2-1  | Aborted (core dumped)
+backend2-1  | 
+backend2-1  | thread 'main' panicked at src/main.rs:100:10:
+backend2-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend2-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend2-1  | Aborted (core dumped)
+backend2-1  | 
+backend2-1  | thread 'main' panicked at src/main.rs:100:10:
+backend2-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend2-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend2-1  | Aborted (core dumped)
+backend2-1  | 
+backend2-1  | thread 'main' panicked at src/main.rs:100:10:
+backend2-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend2-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend2-1  | Aborted (core dumped)
+[Kbackend1-1 exited with code 134
+worker1-1   | 
+worker1-1   | thread 'main' panicked at src/main.rs:100:10:
+worker1-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+[Kbackend2-1 exited with code 134
+worker1-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker1-1   | Aborted (core dumped)
+worker1-1   | 
+worker1-1   | thread 'main' panicked at src/main.rs:100:10:
+worker1-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker1-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker1-1   | Aborted (core dumped)
+worker1-1   | 
+worker1-1   | thread 'main' panicked at src/main.rs:100:10:
+worker1-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker1-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker1-1   | Aborted (core dumped)
+worker1-1   | 
+worker1-1   | thread 'main' panicked at src/main.rs:100:10:
+worker1-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker1-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker1-1   | Aborted (core dumped)
+worker1-1   | 
+worker1-1   | thread 'main' panicked at src/main.rs:100:10:
+worker1-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker1-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker1-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+[Kworker1-1 exited with code 0
+backend1-1  | 
+backend1-1  | thread 'main' panicked at src/main.rs:100:10:
+backend1-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend1-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend1-1  | Aborted (core dumped)
+backend1-1  | 
+backend1-1  | thread 'main' panicked at src/main.rs:100:10:
+backend1-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend1-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend1-1  | Aborted (core dumped)
+backend1-1  | 
+backend1-1  | thread 'main' panicked at src/main.rs:100:10:
+backend1-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend1-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend1-1  | Aborted (core dumped)
+backend1-1  | 
+backend1-1  | thread 'main' panicked at src/main.rs:100:10:
+backend1-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend1-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend1-1  | Aborted (core dumped)
+backend1-1  | 
+backend1-1  | thread 'main' panicked at src/main.rs:100:10:
+backend1-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend1-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend1-1  | Aborted (core dumped)
+[Kworker2-1 exited with code 134
+backend2-1  | 
+backend2-1  | thread 'main' panicked at src/main.rs:100:10:
+backend2-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend2-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend2-1  | Aborted (core dumped)
+backend2-1  | 
+backend2-1  | thread 'main' panicked at src/main.rs:100:10:
+backend2-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend2-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend2-1  | Aborted (core dumped)
+backend2-1  | 
+backend2-1  | thread 'main' panicked at src/main.rs:100:10:
+backend2-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend2-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend2-1  | Aborted (core dumped)
+backend2-1  | 
+backend2-1  | thread 'main' panicked at src/main.rs:100:10:
+backend2-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend2-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend2-1  | Aborted (core dumped)
+backend2-1  | 
+backend2-1  | thread 'main' panicked at src/main.rs:100:10:
+backend2-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend2-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend2-1  | Aborted (core dumped)
+[Kbackend1-1 exited with code 134
+[Kbackend2-1 exited with code 134
+worker1-1   | Aborted (core dumped)
+[Kworker1-1 exited with code 134
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+backend1-1  | 
+backend1-1  | thread 'main' panicked at src/main.rs:100:10:
+backend1-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend1-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend1-1  | Aborted (core dumped)
+backend1-1  | 
+backend1-1  | thread 'main' panicked at src/main.rs:100:10:
+backend1-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend1-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend1-1  | Aborted (core dumped)
+backend1-1  | 
+backend1-1  | thread 'main' panicked at src/main.rs:100:10:
+backend1-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend1-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend1-1  | Aborted (core dumped)
+backend1-1  | 
+backend1-1  | thread 'main' panicked at src/main.rs:100:10:
+backend1-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend1-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend1-1  | Aborted (core dumped)
+backend1-1  | 
+backend1-1  | thread 'main' panicked at src/main.rs:100:10:
+backend1-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend1-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend1-1  | Aborted (core dumped)
+backend1-1  | 
+backend1-1  | thread 'main' panicked at src/main.rs:100:10:
+backend1-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend1-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend1-1  | Aborted (core dumped)
+backend2-1  | 
+backend2-1  | thread 'main' panicked at src/main.rs:100:10:
+backend2-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend2-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend2-1  | Aborted (core dumped)
+backend2-1  | 
+backend2-1  | thread 'main' panicked at src/main.rs:100:10:
+backend2-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend2-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend2-1  | Aborted (core dumped)
+backend2-1  | 
+backend2-1  | thread 'main' panicked at src/main.rs:100:10:
+backend2-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend2-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend2-1  | Aborted (core dumped)
+backend2-1  | 
+backend2-1  | thread 'main' panicked at src/main.rs:100:10:
+backend2-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend2-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend2-1  | Aborted (core dumped)
+backend2-1  | 
+backend2-1  | thread 'main' panicked at src/main.rs:100:10:
+backend2-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend2-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend2-1  | Aborted (core dumped)
+backend2-1  | 
+backend2-1  | thread 'main' panicked at src/main.rs:100:10:
+backend2-1  | called `Result::unwrap()` on an `Err` value: NotPresent
+backend2-1  | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+backend2-1  | Aborted (core dumped)
+[Kworker2-1 exited with code 134
+[Kbackend1-1 exited with code 134
+[Kbackend2-1 exited with code 134
+worker1-1   | Aborted (core dumped)
+[Kworker1-1 exited with code 134
+worker2-1   | Aborted (core dumped)
+[Kworker2-1 exited with code 134
+backend1-1  | Aborted (core dumped)
+[Kbackend1-1 exited with code 134
+backend2-1  | Aborted (core dumped)
+[Kbackend2-1 exited with code 134
+worker1-1   | Aborted (core dumped)
+[Kworker1-1 exited with code 134
+worker2-1   | Aborted (core dumped)
+[Kworker2-1 exited with code 134
+backend1-1  | Aborted (core dumped)
+[Kbackend1-1 exited with code 134
+backend2-1  | Aborted (core dumped)
+[Kbackend2-1 exited with code 134
+worker1-1   | Aborted (core dumped)
+[Kworker1-1 exited with code 134
+worker2-1   | Aborted (core dumped)
+[Kworker2-1 exited with code 134
+backend1-1  | Aborted (core dumped)
+[Kbackend1-1 exited with code 134
+backend2-1  | Aborted (core dumped)
+[Kbackend2-1 exited with code 134
+worker1-1   | Aborted (core dumped)
+[Kworker1-1 exited with code 134
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+[Kworker2-1 exited with code 134
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+worker2-1   | 
+worker2-1   | thread 'main' panicked at src/main.rs:100:10:
+worker2-1   | called `Result::unwrap()` on an `Err` value: NotPresent
+worker2-1   | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+worker2-1   | Aborted (core dumped)
+backend1-1  | Aborted (core dumped)
+[Kbackend1-1 exited with code 134
+backend2-1  | Aborted (core dumped)
+[Kbackend2-1 exited with code 134
+worker1-1   | Aborted (core dumped)
+[Kworker1-1 exited with code 134
+worker2-1   | Aborted (core dumped)
+[Kworker2-1 exited with code 134
+backend1-1  | Aborted (core dumped)
+[Kbackend1-1 exited with code 134
+backend2-1  | Aborted (core dumped)
+[Kbackend2-1 exited with code 134
+worker1-1   | Aborted (core dumped)
+[Kworker1-1 exited with code 134
+worker2-1   | Aborted (core dumped)
+[Kworker2-1 exited with code 134
+backend1-1  | Aborted (core dumped)
+[Kbackend1-1 exited with code 134
+backend2-1  | Aborted (core dumped)
+[Kbackend2-1 exited with code 134
+worker1-1   | Aborted (core dumped)
+[Kworker1-1 exited with code 134
+worker2-1   | Aborted (core dumped)
+[Kworker2-1 exited with code 134
+backend1-1  | Aborted (core dumped)
+[Kbackend1-1 exited with code 134
+backend2-1  | Aborted (core dumped)
+[Kbackend2-1 exited with code 134
+[Khaproxy-1 exited with code 137
+valkey-1    | 1:signal-handler (1753203780) Received SIGTERM scheduling shutdown...
+valkey-1    | 1:M 22 Jul 2025 17:03:00.152 * User requested shutdown...
+valkey-1    | 1:M 22 Jul 2025 17:03:00.152 # Valkey is now ready to exit, bye bye...
+[Kvalkey-1 exited with code 0
