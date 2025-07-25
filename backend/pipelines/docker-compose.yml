@@ -1,0 +1,69 @@
+services:
+  rabbitmq:
+    image: masstransit/rabbitmq
+    hostname: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    deploy:
+        resources:
+            limits:
+                cpus: '0.3'
+                memory: 255M
+    environment:
+      RABBITMQ_DEFAULT_USER: user
+      RABBITMQ_DEFAULT_PASS: RabbitMq!123
+    networks:
+      - local_network
+    healthcheck:
+        test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+        interval: 5s
+        timeout: 5s
+        retries: 5
+    
+  api1:
+    build:
+      context: ../src
+      dockerfile: ../src/MandiocaCozidinha.Services.Api/Dockerfile
+    hostname: api1
+    deploy:
+      resources:
+        limits:
+          cpus: '0.6'
+          memory: 35M
+    ports:
+      - "9999:9999"
+    networks:
+      - local_network
+
+  worker1: &worker
+    build:
+      context: ../src
+      dockerfile: ../src/MandiocaCozidinha.Services.Worker/Dockerfile
+    hostname: worker1
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    deploy:
+      resources:
+        limits:
+          cpus: '0.3'
+          memory: 30M
+    environment:
+      Services__PaymentProcessor__Default: "http://localhost:8001"
+      Services__PaymentProcessor__Fallback: "http://localhost:8002"
+      Services__PaymentProcessor__Token: "123"
+    ports:
+      - "5001:80"
+    networks:
+      - local_network 
+
+  worker2: 
+    <<: *worker
+    hostname: worker-2
+    ports:
+      - "5002:80"
+
+networks:
+  local_network:
+    driver: bridge

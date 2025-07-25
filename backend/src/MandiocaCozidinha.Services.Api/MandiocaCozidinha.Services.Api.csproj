@@ -4,14 +4,19 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>8b755893-24fd-4762-818a-7fe2625b4c52</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.7" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
     <PackageReference Include="Scalar.AspNetCore" Version="2.5.6" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MandiocaCozidinha.CrossCutting.Contracts\MandiocaCozidinha.CrossCutting.Contracts.csproj" />
     <ProjectReference Include="..\MandiocaCozidinha.CrossCutting.PaymentProcessor\MandiocaCozidinha.CrossCutting.PaymentProcessor.csproj" />
   </ItemGroup>
 

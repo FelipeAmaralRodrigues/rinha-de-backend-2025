@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MandiocaCozidinha.Services.Worker": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
